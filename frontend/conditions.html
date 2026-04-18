@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match Conditions | IPL Score Predictor</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="logo">🏏 <span>IPL</span> Score Predictor</a>
+  <div class="nav-steps">
+    <div class="step-dot done"></div>
+    <div class="step-dot done"></div>
+    <div class="step-dot active"></div>
+    <div class="step-dot"></div>
+  </div>
+</nav>
+
+<div class="page-header fade-in">
+  <h2>Match Conditions</h2>
+  <p>Set the venue and environmental conditions for accurate prediction</p>
+</div>
+
+<div class="conditions-form fade-in-delay-1">
+
+  <!-- Venue Section -->
+  <div class="form-section">
+    <div class="form-section-title">🏟️ Venue</div>
+    <div class="form-group">
+      <label>Select Stadium</label>
+      <select class="form-control" id="venueSelect" onchange="onVenueChange()">
+        <option value="">Choose a venue...</option>
+      </select>
+    </div>
+    <div class="venue-card-preview" id="venuePreview" style="display:none">
+      <div>
+        <div class="v-name" id="venueName">—</div>
+        <div class="v-city" id="venueCity">—</div>
+        <div class="v-avg">Avg Score: <strong id="venueAvg">—</strong></div>
+      </div>
+      <div class="pitch-badge" id="pitchBadge">—</div>
+    </div>
+  </div>
+
+  <!-- Pitch Type Section -->
+  <div class="form-section">
+    <div class="form-section-title">🏏 Pitch Type</div>
+    <div class="pitch-toggle-group">
+      <div class="pitch-toggle-card" id="ptc-Batting" onclick="setPitch('Batting')">
+        <div class="ptc-icon">🏏</div>
+        <div class="ptc-label">Batting</div>
+        <div class="ptc-sub">High scoring</div>
+      </div>
+      <div class="pitch-toggle-card active-balanced" id="ptc-Balanced" onclick="setPitch('Balanced')">
+        <div class="ptc-icon">⚖️</div>
+        <div class="ptc-label">Balanced</div>
+        <div class="ptc-sub">Even contest</div>
+      </div>
+      <div class="pitch-toggle-card" id="ptc-Bowling" onclick="setPitch('Bowling')">
+        <div class="ptc-icon">��</div>
+        <div class="ptc-label">Bowling</div>
+        <div class="ptc-sub">Low scoring</div>
+      </div>
+    </div>
+    <input type="hidden" id="pitchType" value="Balanced">
+  </div>
+
+  <!-- Weather Section -->
+  <div class="form-section">
+    <div class="form-section-title">🌤️ Weather Conditions</div>
+
+    <div class="form-group">
+      <label>🌡️ Temperature</label>
+      <div class="range-row">
+        <input type="range" id="tempRange" min="15" max="45" value="30"
+               oninput="updateSlider('tempVal',this.value,'°C'); updateWeatherImpact()">
+        <div class="range-val" id="tempVal">30°C</div>
+      </div>
+      <div class="range-hint">15°C (cool) → 45°C (very hot)</div>
+    </div>
+
+    <div class="form-group" style="margin-top:1rem">
+      <label>💧 Humidity</label>
+      <div class="range-row">
+        <input type="range" id="humidRange" min="20" max="95" value="60"
+               oninput="updateSlider('humidVal',this.value,'%'); updateWeatherImpact()">
+        <div class="range-val" id="humidVal">60%</div>
+      </div>
+      <div class="range-hint">20% (dry) → 95% (very humid)</div>
+    </div>
+
+    <div class="form-group" style="margin-top:1rem">
+      <label>🌫️ Dew Factor</label>
+      <div class="range-row">
+        <input type="range" id="dewRange" min="0" max="10" value="3"
+               oninput="updateSlider('dewVal',this.value,''); updateWeatherImpact()">
+        <div class="range-val" id="dewVal">3</div>
+      </div>
+      <div class="range-hint">0 = No dew &nbsp;|&nbsp; 10 = Heavy dew (favours batting team)</div>
+    </div>
+
+    <div class="weather-impact-card" id="weatherImpact" style="margin-top:1.25rem">
+      <div class="wi-icon">📊</div>
+      <div>
+        <div class="wi-label">Expected weather impact on score</div>
+        <div class="wi-val" id="weatherImpactVal">+0 runs</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="bottom-bar">
+  <button class="btn btn-secondary" onclick="window.location.href='squad.html'">← Back</button>
+  <button class="btn btn-primary" id="predictBtn" onclick="goPredict()">
+    🔮 Predict Score →
+  </button>
+</div>
+
+<div class="loading-overlay" id="loader">
+  <div class="cricket-ball"></div>
+  <div class="loading-text">Running AI prediction...</div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="js/api.js"></script>
+<script src="js/state.js"></script>
+<script>
+const state = loadState();
+if (!state.battingXI || !state.bowlingXI) window.location.href = 'squad.html';
+
+let venues = [];
+let currentPitch = 'Balanced';
+
+function updateSlider(id, val, suffix) {
+  document.getElementById(id).textContent = val + suffix;
+}
+
+function setPitch(type) {
+  currentPitch = type;
+  document.getElementById('pitchType').value = type;
+  ['Batting','Balanced','Bowling'].forEach(t => {
+    const el = document.getElementById(`ptc-${t}`);
+    el.className = 'pitch-toggle-card' + (t === type ? ` active-${t.toLowerCase()}` : '');
+  });
+}
+
+function updateWeatherImpact() {
+  const temp  = parseFloat(document.getElementById('tempRange').value);
+  const humid = parseFloat(document.getElementById('humidRange').value);
+  const dew   = parseFloat(document.getElementById('dewRange').value);
+  let impact = 0;
+  if (temp > 35) impact -= Math.round((temp - 35) * 0.5);
+  if (humid > 70) impact -= Math.round((humid - 70) * 0.2);
+  impact += Math.round(dew * 1.2);
+  const el = document.getElementById('weatherImpactVal');
+  el.textContent = (impact >= 0 ? '+' : '') + impact + ' runs';
+  el.style.color = impact >= 0 ? 'var(--accent3)' : 'var(--red)';
+}
+
+async function init() {
+  venues = await fetchVenues();
+  const sel = document.getElementById('venueSelect');
+  venues.forEach(v => {
+    const opt = document.createElement('option');
+    opt.value = v.venue_id;
+    opt.textContent = `${v.venue_name} (${v.city})`;
+    sel.appendChild(opt);
+  });
+  if (state.venueId) {
+    sel.value = state.venueId;
+    onVenueChange();
+  }
+  updateWeatherImpact();
+}
+
+function onVenueChange() {
+  const vid = document.getElementById('venueSelect').value;
+  const v = venues.find(x => x.venue_id === vid);
+  if (!v) { document.getElementById('venuePreview').style.display = 'none'; return; }
+  document.getElementById('venuePreview').style.display = 'flex';
+  document.getElementById('venueName').textContent = v.venue_name;
+  document.getElementById('venueCity').textContent  = v.city;
+  document.getElementById('venueAvg').textContent   = v.avg_score;
+  const badge = document.getElementById('pitchBadge');
+  badge.textContent = v.pitch_type;
+  badge.className = `pitch-badge pitch-${v.pitch_type}`;
+  setPitch(v.pitch_type);
+}
+
+async function goPredict() {
+  const venueId = document.getElementById('venueSelect').value;
+  if (!venueId) { showToast('Please select a venue', 'error'); return; }
+  const payload = {
+    batting_team_id: state.battingTeam,
+    bowling_team_id: state.bowlingTeam,
+    batting_xi:      state.battingXI,
+    bowling_xi:      state.bowlingXI,
+    venue_id:        venueId,
+    pitch_type:      currentPitch,
+    temperature:     parseFloat(document.getElementById('tempRange').value),
+    humidity:        parseFloat(document.getElementById('humidRange').value),
+    dew_factor:      parseFloat(document.getElementById('dewRange').value),
+    season:          2026,
+  };
+  document.getElementById('loader').classList.add('active');
+  try {
+    const result = await predictScore(payload);
+    if (result.error) { showToast(result.error.join(', '), 'error'); return; }
+    saveState({ ...state, venueId, prediction: result });
+    window.location.href = 'result.html';
+  } catch(e) {
+    showToast('Prediction failed. Is the backend running?', 'error');
+  }
+  document.getElementById('loader').classList.remove('active');
+}
+
+init();
+</script>
+</body>
+</html>

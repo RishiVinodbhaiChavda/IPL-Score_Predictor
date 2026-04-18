@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prediction Result | IPL Score Predictor</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="logo">🏏 <span>IPL</span> Score Predictor</a>
+  <div class="nav-steps">
+    <div class="step-dot done"></div>
+    <div class="step-dot done"></div>
+    <div class="step-dot done"></div>
+    <div class="step-dot active"></div>
+  </div>
+</nav>
+
+<div class="page-header fade-in">
+  <h2>Prediction Result</h2>
+  <p id="matchTitle">—</p>
+</div>
+
+<div class="result-container fade-in-delay-1">
+
+  <!-- Main Score Card -->
+  <div class="score-card">
+    <div class="score-label">Predicted First Innings Score</div>
+    <div class="score-value" id="scoreVal">—</div>
+    <div class="score-range">
+      Expected range: <strong id="scoreRange">—</strong>
+    </div>
+
+    <!-- Range Bar -->
+    <div class="range-bar-wrap">
+      <div class="range-bar-track">
+        <div class="range-bar-fill" id="rangeBarFill" style="left:0%;width:0%"></div>
+        <div class="range-bar-marker" id="rangeBarMarker" style="left:50%"></div>
+      </div>
+      <div class="range-bar-labels">
+        <span id="rangeLow">—</span>
+        <span style="color:var(--accent);font-weight:700" id="rangeMid">—</span>
+        <span id="rangeHigh">—</span>
+      </div>
+    </div>
+
+    <!-- Confidence Arc -->
+    <div class="confidence-section">
+      <div class="confidence-arc-wrap">
+        <div class="confidence-arc">
+          <svg viewBox="0 0 160 80">
+            <path class="conf-track" d="M 10 80 A 70 70 0 0 1 150 80"/>
+            <path class="conf-fill" id="confArcFill" d="M 10 80 A 70 70 0 0 1 150 80"
+                  stroke="url(#confGrad)"/>
+            <defs>
+              <linearGradient id="confGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:#7c3aed"/>
+                <stop offset="100%" style="stop-color:#ff6b35"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="conf-pct" id="confVal">—%</div>
+        <div class="conf-label">Model Confidence</div>
+      </div>
+    </div>
+
+    <!-- Model Breakdown -->
+    <div class="model-breakdown">
+      <div class="model-pill">XGBoost: <span id="xgbScore">—</span></div>
+      <div class="model-pill">Neural Net: <span id="nnScore">—</span></div>
+      <div class="model-pill">Hybrid (60/40): <span id="hybridScore">—</span></div>
+    </div>
+  </div>
+
+  <!-- Model Comparison -->
+  <div class="simulation-chart" style="margin-bottom:1.5rem">
+    <div class="sim-title">🤖 Model Comparison</div>
+    <div class="model-bars" id="modelBars"></div>
+  </div>
+
+  <!-- Top Factors -->
+  <div style="margin-bottom:1.5rem">
+    <div class="section-heading">🔍 Top Contributing Factors</div>
+    <div class="factors-grid" id="factorsGrid"></div>
+  </div>
+
+  <!-- Simulation Chart -->
+  <div class="simulation-chart">
+    <div class="sim-title">📊 Score Simulation (5 runs)</div>
+    <div class="sim-bars" id="simBars"></div>
+  </div>
+
+  <!-- Match Summary -->
+  <div class="match-summary" id="matchSummary"></div>
+
+  <!-- Actions -->
+  <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem">
+    <button class="btn btn-secondary" onclick="window.location.href='conditions.html'">← Change Conditions</button>
+    <button class="btn btn-secondary" onclick="window.location.href='squad.html'">← Change XI</button>
+    <button class="btn btn-primary" onclick="window.location.href='index.html'">🔄 New Prediction</button>
+  </div>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/state.js"></script>
+<script>
+const state = loadState();
+if (!state.prediction) window.location.href = 'conditions.html';
+
+const FACTOR_ICONS = {
+  'venue_avg_score':'🏟️','batting_team_avg_at_venue':'📈','bat_venue_avg_sr':'⚡',
+  'bat_vs_opp_sr':'🏏','bat_vs_opp_avg':'📊','bat_powerplay_sr':'🚀','bat_death_sr':'💥',
+  'bat_form_score':'🔥','bowl_venue_econ':'🎯','bowl_vs_opp_econ':'🎳',
+  'bowl_powerplay_econ':'🛡️','bowl_death_econ':'⚔️','bowl_form_score':'��',
+  'pitch_batting':'🏏','weather_score':'🌤️',
+};
+
+function animateNumber(id, from, to, duration) {
+  const el = document.getElementById(id);
+  const start = performance.now();
+  function update(now) {
+    const t = Math.min((now - start) / duration, 1);
+    const ease = 1 - Math.pow(1 - t, 3);
+    el.textContent = Math.round(from + (to - from) * ease);
+    if (t < 1) requestAnimationFrame(update);
+  }
+  requestAnimationFrame(update);
+}
+
+async function init() {
+  const p = state.prediction;
+  const teams = await fetchTeams();
+  const batTeam  = teams.find(t => t.team_id === state.battingTeam);
+  const bowlTeam = teams.find(t => t.team_id === state.bowlingTeam);
+
+  document.getElementById('matchTitle').textContent =
+    `${batTeam?.team_name || 'Team 1'} vs ${bowlTeam?.team_name || 'Team 2'}`;
+
+  animateNumber('scoreVal', 0, p.score, 1400);
+  document.getElementById('scoreRange').textContent = `${p.range[0]} – ${p.range[1]}`;
+  document.getElementById('rangeLow').textContent  = p.range[0];
+  document.getElementById('rangeMid').textContent  = p.score;
+  document.getElementById('rangeHigh').textContent = p.range[1];
+
+  const span = p.range[1] - p.range[0] || 1;
+  const pct  = ((p.score - p.range[0]) / span) * 100;
+  setTimeout(() => {
+    document.getElementById('rangeBarFill').style.cssText   = `left:0%;width:100%`;
+    document.getElementById('rangeBarMarker').style.cssText = `left:${pct}%`;
+  }, 400);
+
+  const arcLen = 251;
+  document.getElementById('confVal').textContent = `${p.confidence}%`;
+  setTimeout(() => {
+    const offset = arcLen - (arcLen * p.confidence / 100);
+    document.getElementById('confArcFill').style.strokeDashoffset = offset;
+  }, 500);
+
+  document.getElementById('xgbScore').textContent    = p.xgb_score;
+  document.getElementById('nnScore').textContent     = p.nn_score;
+  document.getElementById('hybridScore').textContent = p.score;
+
+  const maxModel = Math.max(p.xgb_score, p.nn_score, p.score);
+  document.getElementById('modelBars').innerHTML = [
+    { label: 'XGBoost',    val: p.xgb_score, color: 'linear-gradient(90deg,#ff6b35,#e8541a)' },
+    { label: 'Neural Net', val: p.nn_score,   color: 'linear-gradient(90deg,#7c3aed,#6d28d9)' },
+    { label: 'Hybrid',     val: p.score,      color: 'linear-gradient(90deg,#ffd700,#f59e0b)' },
+  ].map(m => `
+    <div class="model-bar-row">
+      <div class="model-bar-label">${m.label}</div>
+      <div class="model-bar-track">
+        <div class="model-bar-fill" style="width:0%;background:${m.color}"
+             data-target="${(m.val/maxModel*100).toFixed(1)}"></div>
+      </div>
+      <div class="model-bar-val">${m.val}</div>
+    </div>
+  `).join('');
+  setTimeout(() => {
+    document.querySelectorAll('.model-bar-fill').forEach(el => {
+      el.style.width = el.dataset.target + '%';
+    });
+  }, 400);
+
+  document.getElementById('factorsGrid').innerHTML = p.factors.map(f => `
+    <div class="factor-card">
+      <div class="factor-icon">${FACTOR_ICONS[f.feature] || '📌'}</div>
+      <div>
+        <div class="factor-label">${f.label}</div>
+        <div class="factor-val">${f.value}</div>
+      </div>
+    </div>
+  `).join('');
+
+  const sims = p.simulations || [];
+  if (sims.length) {
+    const maxSim = Math.max(...sims, p.score);
+    const minSim = Math.min(...sims, p.score);
+    const range  = maxSim - minSim || 1;
+    document.getElementById('simBars').innerHTML = sims.map(s => {
+      const h = 20 + ((s - minSim) / range) * 75;
+      const isMain = Math.abs(s - p.score) < 2;
+      return `
+        <div class="sim-bar ${isMain ? 'main' : ''}" style="height:${h}px">
+          <div class="sim-bar-val">${Math.round(s)}</div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  document.getElementById('matchSummary').innerHTML = `
+    <div class="ms-item">
+      <div class="ms-label">Batting</div>
+      <div class="ms-val" style="color:var(--accent)">${batTeam?.short_name || '—'}</div>
+    </div>
+    <div class="ms-item">
+      <div class="ms-label">Bowling</div>
+      <div class="ms-val" style="color:var(--accent2)">${bowlTeam?.short_name || '—'}</div>
+    </div>
+    <div class="ms-item">
+      <div class="ms-label">Venue</div>
+      <div class="ms-val">—</div>
+    </div>
+    <div class="ms-item">
+      <div class="ms-label">Pitch</div>
+      <div class="ms-val">${p.pitch_type || '—'}</div>
+    </div>
+    <div class="ms-item">
+      <div class="ms-label">Season</div>
+      <div class="ms-val">IPL 2026</div>
+    </div>
+  `;
+}
+
+init();
+</script>
+</body>
+</html>

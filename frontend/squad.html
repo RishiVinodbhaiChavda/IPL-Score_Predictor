@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Playing XI | IPL Score Predictor</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="index.html" class="logo">🏏 <span>IPL</span> Score Predictor</a>
+  <div class="nav-steps">
+    <div class="step-dot done"></div>
+    <div class="step-dot active"></div>
+    <div class="step-dot"></div>
+    <div class="step-dot"></div>
+  </div>
+</nav>
+
+<div class="page-header fade-in">
+  <h2>Select Playing XI</h2>
+  <p>Choose exactly 11 players from each team's squad</p>
+</div>
+
+<!-- Mobile Tabs -->
+<div class="squad-tabs" id="squadTabs">
+  <button class="squad-tab-btn active" id="tabBat" onclick="switchTab('bat')">
+    🏏 <span id="tabBatName">Batting Team</span> (<span id="tabBatCount">0</span>/11)
+  </button>
+  <button class="squad-tab-btn" id="tabBowl" onclick="switchTab('bowl')">
+    🎯 <span id="tabBowlName">Bowling Team</span> (<span id="tabBowlCount">0</span>/11)
+  </button>
+</div>
+
+<div class="squad-layout fade-in-delay-1">
+  <!-- Batting Panel -->
+  <div class="squad-panel" id="panelBat">
+    <div class="squad-header">
+      <div class="team-info">
+        <img id="bat-logo" src="" alt="">
+        <div>
+          <h3 id="bat-name">Batting Team</h3>
+          <div class="team-role" style="color:var(--accent)">🏏 Batting First</div>
+        </div>
+      </div>
+      <div class="selection-count" id="bat-count">0 / 11</div>
+    </div>
+    <div class="filter-bar" id="batFilterBar">
+      <button class="filter-btn active" onclick="setFilter('bat','all',this)">All</button>
+      <button class="filter-btn" onclick="setFilter('bat','batter',this)">Batters</button>
+      <button class="filter-btn" onclick="setFilter('bat','bowler',this)">Bowlers</button>
+      <button class="filter-btn" onclick="setFilter('bat','allrounder',this)">All-rounders</button>
+      <button class="filter-btn" onclick="setFilter('bat','wicketkeeper',this)">WK</button>
+      <input class="search-input" type="text" placeholder="🔍 Search..." oninput="onSearch('bat',this.value)">
+    </div>
+    <div class="players-grid" id="bat-grid"></div>
+  </div>
+
+  <!-- Bowling Panel -->
+  <div class="squad-panel" id="panelBowl">
+    <div class="squad-header">
+      <div class="team-info">
+        <img id="bowl-logo" src="" alt="">
+        <div>
+          <h3 id="bowl-name">Bowling Team</h3>
+          <div class="team-role" style="color:var(--accent2)">🎯 Bowling First</div>
+        </div>
+      </div>
+      <div class="selection-count" id="bowl-count">0 / 11</div>
+    </div>
+    <div class="filter-bar" id="bowlFilterBar">
+      <button class="filter-btn active" onclick="setFilter('bowl','all',this)">All</button>
+      <button class="filter-btn" onclick="setFilter('bowl','batter',this)">Batters</button>
+      <button class="filter-btn" onclick="setFilter('bowl','bowler',this)">Bowlers</button>
+      <button class="filter-btn" onclick="setFilter('bowl','allrounder',this)">All-rounders</button>
+      <button class="filter-btn" onclick="setFilter('bowl','wicketkeeper',this)">WK</button>
+      <input class="search-input" type="text" placeholder="🔍 Search..." oninput="onSearch('bowl',this.value)">
+    </div>
+    <div class="players-grid" id="bowl-grid"></div>
+  </div>
+</div>
+
+<div class="bottom-bar">
+  <button class="btn btn-secondary" onclick="window.location.href='index.html'">← Back</button>
+  <div class="squad-status-bar" id="squad-status">
+    <div class="squad-status-item"><div class="dot"></div><span id="batStatusText">Bat: 0/11</span></div>
+    <div class="squad-status-item"><div class="dot bowl"></div><span id="bowlStatusText">Bowl: 0/11</span></div>
+  </div>
+  <button class="btn btn-primary" id="nextBtn" disabled onclick="goNext()">
+    Next: Conditions →
+  </button>
+</div>
+
+<div class="loading-overlay" id="loader">
+  <div class="cricket-ball"></div>
+  <div class="loading-text">Loading Super Cards...</div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="js/api.js"></script>
+<script src="js/state.js"></script>
+<script>
+const state = loadState();
+if (!state.battingTeam || !state.bowlingTeam) window.location.href = "index.html";
+
+let batPlayers = [], bowlPlayers = [];
+let batSelected = new Set(), bowlSelected = new Set();
+let batFilter = 'all', bowlFilter = 'all';
+let batSearch = '', bowlSearch = '';
+let allTeams = [];
+
+function getRoleClass(role) {
+  const r = (role || '').toLowerCase();
+  if (r.includes('allrounder')) return 'role-allrounder';
+  if (r.includes('bowler'))     return 'role-bowler';
+  if (r.includes('wicket'))     return 'role-wicketkeeper';
+  return 'role-batter';
+}
+function getRoleLabel(role) {
+  const r = (role || '').toLowerCase();
+  if (r.includes('allrounder')) return 'AR';
+  if (r.includes('bowler'))     return 'BWL';
+  if (r.includes('wicket'))     return 'WK';
+  return 'BAT';
+}
+function getFormClass(form) {
+  const map = {'Red-hot':'form-red-hot','Superb':'form-superb','Excellent':'form-excellent',
+               'Average':'form-average','Below Average':'form-below','Poor':'form-poor'};
+  return map[form] || 'form-average';
+}
+function getFormEmoji(form) {
+  const map = {'Red-hot':'🔥','Superb':'⭐','Excellent':'✅','Average':'➖','Below Average':'📉','Poor':'❌'};
+  return (map[form] || '') + ' ' + (form || 'Average');
+}
+function matchesFilter(p, filter) {
+  if (filter === 'all') return true;
+  const r = (p.role || '').toLowerCase();
+  if (filter === 'batter')       return !r.includes('bowler') && !r.includes('allrounder') && !r.includes('wicket');
+  if (filter === 'bowler')       return r.includes('bowler') && !r.includes('allrounder');
+  if (filter === 'allrounder')   return r.includes('allrounder');
+  if (filter === 'wicketkeeper') return r.includes('wicket');
+  return true;
+}
+
+function renderPlayerCard(p, side) {
+  const isSelected = side === 'bat' ? batSelected.has(p.player_id) : bowlSelected.has(p.player_id);
+  const count = side === 'bat' ? batSelected.size : bowlSelected.size;
+  const isDisabled = !isSelected && count >= 11;
+
+  const primaryPhoto = p.photo_url || `https://scores.iplt20.com/ipl/playerimages/${encodeURIComponent(p.player_name)}.png`;
+  const fallbackPhoto = `https://ui-avatars.com/api/?name=${encodeURIComponent(p.player_name)}&background=0a0f1e&color=00e5ff&size=150&bold=true&rounded=true`;
+
+  const role = (p.role || '').toLowerCase();
+  const isBowler = role.includes('bowler') && !role.includes('allrounder');
+  const isAR = role.includes('allrounder');
+
+  let statsHtml = '';
+  if (!isBowler) {
+    if (p.batting_avg > 0) statsHtml += `<div class="pc-stat"><span>Avg</span><span>${p.batting_avg}</span></div>`;
+    if (p.batting_sr > 0)  statsHtml += `<div class="pc-stat"><span>SR</span><span>${p.batting_sr}</span></div>`;
+  }
+  if (isBowler || isAR) {
+    if (p.economy > 0)  statsHtml += `<div class="pc-stat"><span>Eco</span><span>${p.economy}</span></div>`;
+    if (p.wickets > 0)  statsHtml += `<div class="pc-stat"><span>Wkt</span><span>${p.wickets}</span></div>`;
+  }
+
+  return `
+    <div class="player-card ${isSelected ? 'selected' : ''} ${isDisabled ? 'disabled' : ''}"
+         id="pc-${side}-${p.player_id}"
+         onclick="togglePlayer('${side}','${p.player_id}')">
+      <div class="pc-check">✓</div>
+      ${p.is_overseas ? '<div class="pc-overseas">🌍 OS</div>' : ''}
+      <div class="pc-photo-wrap">
+        <img class="pc-photo"
+             src="${primaryPhoto}"
+             alt="${p.player_name}"
+             loading="lazy"
+             onerror="if(this.src!=='${fallbackPhoto}'){this.src='${fallbackPhoto}';}">
+      </div>
+      <div class="pc-role ${getRoleClass(p.role)}">${getRoleLabel(p.role)}</div>
+      <div class="pc-name">${p.player_name}</div>
+      <div class="pc-stats">${statsHtml}</div>
+      <div class="pc-form ${getFormClass(p.form_level)}">${getFormEmoji(p.form_level)}</div>
+    </div>
+  `;
+}
+
+function getFilteredPlayers(side) {
+  const players = side === 'bat' ? batPlayers : bowlPlayers;
+  const filter  = side === 'bat' ? batFilter  : bowlFilter;
+  const search  = side === 'bat' ? batSearch  : bowlSearch;
+  return players.filter(p =>
+    matchesFilter(p, filter) &&
+    (!search || p.player_name.toLowerCase().includes(search.toLowerCase()))
+  );
+}
+
+function renderGrid(side) {
+  const filtered = getFilteredPlayers(side);
+  const grid = document.getElementById(`${side}-grid`);
+  grid.innerHTML = filtered.length
+    ? filtered.map(p => renderPlayerCard(p, side)).join('')
+    : '<div style="grid-column:1/-1;text-align:center;color:var(--muted);padding:2rem">No players found</div>';
+}
+
+function setFilter(side, filter, btn) {
+  if (side === 'bat') batFilter = filter;
+  else bowlFilter = filter;
+  const bar = document.getElementById(side === 'bat' ? 'batFilterBar' : 'bowlFilterBar');
+  bar.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderGrid(side);
+}
+
+function onSearch(side, val) {
+  if (side === 'bat') batSearch = val;
+  else bowlSearch = val;
+  renderGrid(side);
+}
+
+function togglePlayer(side, playerId) {
+  const selected = side === 'bat' ? batSelected : bowlSelected;
+  if (selected.has(playerId)) {
+    selected.delete(playerId);
+  } else {
+    if (selected.size >= 11) { showToast('Already selected 11 players!', 'error'); return; }
+    selected.add(playerId);
+  }
+  updateCount(side);
+  renderGrid(side);
+  updateNextBtn();
+}
+
+function updateCount(side) {
+  const count = side === 'bat' ? batSelected.size : bowlSelected.size;
+  const el = document.getElementById(`${side}-count`);
+  el.textContent = `${count} / 11`;
+  el.className = `selection-count ${count === 11 ? 'complete' : ''}`;
+  if (side === 'bat') {
+    document.getElementById('tabBatCount').textContent = count;
+    document.getElementById('batStatusText').textContent = `Bat: ${count}/11`;
+  } else {
+    document.getElementById('tabBowlCount').textContent = count;
+    document.getElementById('bowlStatusText').textContent = `Bowl: ${count}/11`;
+  }
+}
+
+function updateNextBtn() {
+  const ready = batSelected.size === 11 && bowlSelected.size === 11;
+  document.getElementById('nextBtn').disabled = !ready;
+}
+
+function switchTab(side) {
+  document.getElementById('panelBat').classList.toggle('hidden-mobile', side !== 'bat');
+  document.getElementById('panelBowl').classList.toggle('hidden-mobile', side !== 'bowl');
+  document.getElementById('tabBat').classList.toggle('active', side === 'bat');
+  document.getElementById('tabBowl').classList.toggle('active', side === 'bowl');
+}
+
+async function init() {
+  document.getElementById('loader').classList.add('active');
+  try {
+    allTeams = await fetchTeams();
+    const [batData, bowlData] = await Promise.all([
+      fetchPlayers(state.battingTeam),
+      fetchPlayers(state.bowlingTeam),
+    ]);
+    batPlayers  = batData;
+    bowlPlayers = bowlData;
+
+    const batTeam  = allTeams.find(t => t.team_id === state.battingTeam);
+    const bowlTeam = allTeams.find(t => t.team_id === state.bowlingTeam);
+
+    const avatarFallback = (name) =>
+      `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=0a0f1e&color=00e5ff&size=64&bold=true`;
+
+    document.getElementById('bat-logo').src  = batTeam?.logo_url  || '';
+    document.getElementById('bat-logo').onerror = function() { this.src = avatarFallback(batTeam?.short_name || 'BAT'); };
+    document.getElementById('bat-name').textContent  = batTeam?.team_name  || '';
+    document.getElementById('bowl-logo').src = bowlTeam?.logo_url || '';
+    document.getElementById('bowl-logo').onerror = function() { this.src = avatarFallback(bowlTeam?.short_name || 'BWL'); };
+    document.getElementById('bowl-name').textContent = bowlTeam?.team_name || '';
+    document.getElementById('tabBatName').textContent  = batTeam?.short_name  || 'Batting';
+    document.getElementById('tabBowlName').textContent = bowlTeam?.short_name || 'Bowling';
+
+    renderGrid('bat');
+    renderGrid('bowl');
+  } catch(e) {
+    showToast('Failed to load squads. Is the backend running?', 'error');
+  }
+  document.getElementById('loader').classList.remove('active');
+}
+
+function goNext() {
+  saveState({ ...state, battingXI: [...batSelected], bowlingXI: [...bowlSelected] });
+  window.location.href = 'conditions.html';
+}
+
+init();
+</script>
+</body>
+</html>

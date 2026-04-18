@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPL Score Predictor — AI Powered</title>
+  <meta name="description" content="Predict IPL first innings scores using hybrid XGBoost + Neural Network AI trained on 10+ years of IPL data.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Floating particles canvas -->
+<canvas id="particlesCanvas" style="position:fixed;inset:0;z-index:0;pointer-events:none;"></canvas>
+
+<nav class="navbar">
+  <a href="index.html" class="logo">🏏 <span>IPL</span> Score Predictor</a>
+  <div class="nav-steps">
+    <div class="step-dot active" title="Select Teams"></div>
+    <div class="step-dot" title="Select Players"></div>
+    <div class="step-dot" title="Match Conditions"></div>
+    <div class="step-dot" title="Prediction"></div>
+  </div>
+</nav>
+
+<section class="hero fade-in">
+  <div class="hero-badge">🏆 IPL 2026 Season — AI Analytics</div>
+  <h1>Predict the First<br>Innings Score</h1>
+  <p>Hybrid XGBoost + Neural Network ensemble<br>trained on IPL 2015–2026 match data with 53 features</p>
+</section>
+
+<div class="vs-container fade-in-delay-1">
+  <div class="team-slot" id="slot1">
+    <div class="slot-placeholder-icon">🏏</div>
+    <div class="slot-placeholder-text">Select Batting Team</div>
+    <div class="slot-placeholder-sub">Batting First</div>
+  </div>
+  <div class="vs-badge">VS</div>
+  <div class="team-slot" id="slot2">
+    <div class="slot-placeholder-icon">🎯</div>
+    <div class="slot-placeholder-text">Select Bowling Team</div>
+    <div class="slot-placeholder-sub">Bowling First</div>
+  </div>
+</div>
+
+<div class="page-header fade-in-delay-2" style="padding-top:0.25rem">
+  <p>Click a team card to assign it — first click = batting, second = bowling</p>
+</div>
+
+<div class="teams-grid fade-in-delay-3" id="teamsGrid"></div>
+
+<div class="bottom-bar">
+  <div style="color:var(--muted);font-size:0.88rem" id="selectionStatus">Select both teams to continue</div>
+  <button class="btn btn-primary" id="nextBtn" disabled onclick="goNext()">
+    Next: Select Players →
+  </button>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/api.js"></script>
+<script src="js/state.js"></script>
+<script>
+/* ── Floating Particles ── */
+(function() {
+  const canvas = document.getElementById('particlesCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let w, h, particles = [];
+  function resize() { w = canvas.width = window.innerWidth; h = canvas.height = window.innerHeight; }
+  resize();
+  window.addEventListener('resize', resize);
+
+  for (let i = 0; i < 60; i++) {
+    particles.push({
+      x: Math.random() * w, y: Math.random() * h,
+      vx: (Math.random() - 0.5) * 0.3, vy: (Math.random() - 0.5) * 0.3,
+      r: Math.random() * 1.5 + 0.5,
+      a: Math.random() * 0.4 + 0.1
+    });
+  }
+  function draw() {
+    ctx.clearRect(0, 0, w, h);
+    particles.forEach(p => {
+      p.x += p.vx; p.y += p.vy;
+      if (p.x < 0) p.x = w; if (p.x > w) p.x = 0;
+      if (p.y < 0) p.y = h; if (p.y > h) p.y = 0;
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(0,229,255,${p.a})`;
+      ctx.fill();
+    });
+    // Draw connections
+    for (let i = 0; i < particles.length; i++) {
+      for (let j = i + 1; j < particles.length; j++) {
+        const dx = particles[i].x - particles[j].x;
+        const dy = particles[i].y - particles[j].y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 120) {
+          ctx.beginPath();
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.strokeStyle = `rgba(0,229,255,${0.06 * (1 - dist / 120)})`;
+          ctx.lineWidth = 0.5;
+          ctx.stroke();
+        }
+      }
+    }
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+let teams = [];
+let selectedTeams = [null, null];
+
+async function init() {
+  teams = await fetchTeams();
+  renderTeams();
+}
+
+function renderTeams() {
+  const grid = document.getElementById("teamsGrid");
+  grid.innerHTML = teams.map(t => `
+    <div class="team-card" id="tc-${t.team_id}" onclick="selectTeam('${t.team_id}')">
+      <img src="${t.logo_url}" alt="${t.short_name}"
+           onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(t.short_name)}&background=0a0f1e&color=00e5ff&size=64&bold=true'">
+      <div class="t-name">${t.team_name}</div>
+      <div class="t-short">${t.short_name}</div>
+    </div>
+  `).join("");
+}
+
+function selectTeam(teamId) {
+  const team = teams.find(t => t.team_id === teamId);
+  if (!team) return;
+  const idx = selectedTeams.indexOf(teamId);
+  if (idx !== -1) {
+    selectedTeams[idx] = null;
+    clearSlot(idx + 1);
+    updateCards();
+    updateStatus();
+    return;
+  }
+  const slot = selectedTeams[0] === null ? 0 : selectedTeams[1] === null ? 1 : -1;
+  if (slot === -1) { showToast("Both slots filled. Click a team to deselect.", "error"); return; }
+  selectedTeams[slot] = teamId;
+  fillSlot(slot + 1, team);
+  updateCards();
+  updateStatus();
+}
+
+function fillSlot(slotNum, team) {
+  const el = document.getElementById(`slot${slotNum}`);
+  el.classList.add("filled");
+  const label = slotNum === 1
+    ? `<div class="slot-short slot-bat-label">🏏 Batting First</div>`
+    : `<div class="slot-short slot-bowl-label">🎯 Bowling First</div>`;
+  el.innerHTML = `
+    <img src="${team.logo_url}" alt="${team.short_name}"
+         onerror="this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(team.short_name)}&background=0a0f1e&color=00e5ff&size=90&bold=true'">
+    <div class="slot-name">${team.team_name}</div>
+    ${label}
+  `;
+}
+
+function clearSlot(slotNum) {
+  const el = document.getElementById(`slot${slotNum}`);
+  el.classList.remove("filled");
+  const icon = slotNum === 1 ? "🏏" : "🎯";
+  const role = slotNum === 1 ? "Batting First" : "Bowling First";
+  const label = slotNum === 1 ? "Select Batting Team" : "Select Bowling Team";
+  el.innerHTML = `
+    <div class="slot-placeholder-icon">${icon}</div>
+    <div class="slot-placeholder-text">${label}</div>
+    <div class="slot-placeholder-sub">${role}</div>
+  `;
+}
+
+function updateCards() {
+  teams.forEach(t => {
+    const card = document.getElementById(`tc-${t.team_id}`);
+    if (!card) return;
+    card.className = "team-card";
+    if (selectedTeams[0] === t.team_id) card.classList.add("selected-1");
+    else if (selectedTeams[1] === t.team_id) card.classList.add("selected-2");
+    else if (selectedTeams[0] && selectedTeams[1]) card.classList.add("disabled");
+  });
+}
+
+function updateStatus() {
+  const btn = document.getElementById("nextBtn");
+  const status = document.getElementById("selectionStatus");
+  if (selectedTeams[0] && selectedTeams[1]) {
+    btn.disabled = false;
+    const t1 = teams.find(t => t.team_id === selectedTeams[0]);
+    const t2 = teams.find(t => t.team_id === selectedTeams[1]);
+    status.innerHTML = `<span style="color:var(--accent)">${t1.short_name}</span> <span style="color:var(--muted)">vs</span> <span style="color:var(--accent2)">${t2.short_name}</span>`;
+  } else {
+    btn.disabled = true;
+    status.textContent = selectedTeams[0]
+      ? "Now select the bowling team"
+      : "Select both teams to continue";
+  }
+}
+
+function goNext() {
+  if (!selectedTeams[0] || !selectedTeams[1]) return;
+  saveState({ battingTeam: selectedTeams[0], bowlingTeam: selectedTeams[1] });
+  window.location.href = "squad.html";
+}
+
+init();
+</script>
+</body>
+</html>
