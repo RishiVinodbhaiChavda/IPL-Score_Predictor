@@ -1,0 +1,2564 @@
+season,team_id,player_id,player_name,role_in_squad,is_overseas
+2026,IPL_T20_CSK,PLY_0510,Ruturaj Gaikwad,Batter,0
+2026,IPL_T20_CSK,PLY_0168,Dewald Brevis,Batter,1
+2026,IPL_T20_CSK,PLY_0334,MS Dhoni,Wicketkeeper,0
+2026,IPL_T20_CSK,PLY_0695,Kartik Sharma,Wicketkeeper,0
+2026,IPL_T20_CSK,PLY_0534,Sarfaraz Khan,Batter,0
+2026,IPL_T20_CSK,PLY_0091,Ayush Mhatre,Batter,0
+2026,IPL_T20_CSK,PLY_0647,Urvil Patel,Wicketkeeper,0
+2026,IPL_T20_CSK,PLY_0532,Sanju Samson,Wicketkeeper,0
+2026,IPL_T20_CSK,PLY_0043,Aman Khan,Allrounder,0
+2026,IPL_T20_CSK,PLY_0565,Shivam Dube,Allrounder,0
+2026,IPL_T20_CSK,PLY_0696,Zak Foulkes,Allrounder,1
+2026,IPL_T20_CSK,PLY_0697,Ramakrishna Ghosh,Allrounder,0
+2026,IPL_T20_CSK,PLY_0067,Anshul Kamboj,Allrounder,0
+2026,IPL_T20_CSK,PLY_0251,Jamie Overton,Allrounder,1
+2026,IPL_T20_CSK,PLY_0360,Matthew Short,Allrounder,1
+2026,IPL_T20_CSK,PLY_0698,Prashant Veer,Allrounder,0
+2026,IPL_T20_CSK,PLY_0301,Khaleel Ahmed,Bowler,0
+2026,IPL_T20_CSK,PLY_0462,Rahul Chahar,Bowler,0
+2026,IPL_T20_CSK,PLY_0576,Shreyas Gopal,Bowler,0
+2026,IPL_T20_CSK,PLY_0699,Gurjapneet Singh,Bowler,0
+2026,IPL_T20_CSK,PLY_0700,Matt Henry,Bowler,1
+2026,IPL_T20_CSK,PLY_0033,Akeal Hosein,Bowler,1
+2026,IPL_T20_CSK,PLY_0591,Spencer Johnson,Bowler,1
+2026,IPL_T20_CSK,PLY_0392,Mukesh Choudhary,Bowler,0
+2026,IPL_T20_CSK,PLY_0419,Noor Ahmad,Bowler,1
+2026,IPL_T20_DC,PLY_0015,Abishek Porel,Wicketkeeper,0
+2026,IPL_T20_DC,PLY_0156,David Miller,Batter,1
+2026,IPL_T20_DC,PLY_0294,Karun Nair,Batter,0
+2026,IPL_T20_DC,PLY_0701,Pathum Nissanka,Batter,1
+2026,IPL_T20_DC,PLY_0702,Sahil Parekh,Batter,0
+2026,IPL_T20_DC,PLY_0280,KL Rahul,Wicketkeeper,0
+2026,IPL_T20_DC,PLY_0418,Nitish Rana,Batter,0
+2026,IPL_T20_DC,PLY_0454,Prithvi Shaw,Batter,0
+2026,IPL_T20_DC,PLY_0638,Tristan Stubbs,Wicketkeeper,1
+2026,IPL_T20_DC,PLY_0089,Axar Patel,Allrounder,0
+2026,IPL_T20_DC,PLY_0703,Ajay Mandal,Allrounder,0
+2026,IPL_T20_DC,PLY_0525,Sameer Rizvi,Allrounder,0
+2026,IPL_T20_DC,PLY_0086,Ashutosh Sharma,Allrounder,0
+2026,IPL_T20_DC,PLY_0335,Madhav Tiwari,Allrounder,0
+2026,IPL_T20_DC,PLY_0704,Auqib Nabi,Bowler,0
+2026,IPL_T20_DC,PLY_0186,Dushmantha Chameera,Bowler,1
+2026,IPL_T20_DC,PLY_0315,Kyle Jamieson,Bowler,1
+2026,IPL_T20_DC,PLY_0306,Kuldeep Yadav,Bowler,0
+2026,IPL_T20_DC,PLY_0393,Mukesh Kumar,Bowler,0
+2026,IPL_T20_DC,PLY_0616,T Natarajan,Bowler,0
+2026,IPL_T20_DC,PLY_0705,Lungi Ngidi,Bowler,1
+2026,IPL_T20_DC,PLY_0665,Vipraj Nigam,Bowler,0
+2026,IPL_T20_DC,PLY_0706,,Bowler,0
+2026,IPL_T20_DC,PLY_0374,Mitchell Starc,Bowler,1
+2026,IPL_T20_DC,PLY_0707,Tripurana Vijay,Bowler,0
+2026,IPL_T20_GT,PLY_0580,Shubman Gill,Batter,0
+2026,IPL_T20_GT,PLY_0068,Anuj Rawat,Wicketkeeper,0
+2026,IPL_T20_GT,PLY_0632,Tom Banton,Wicketkeeper,1
+2026,IPL_T20_GT,PLY_0272,Jos Buttler,Wicketkeeper,1
+2026,IPL_T20_GT,PLY_0309,Kumar Kushagra,Wicketkeeper,0
+2026,IPL_T20_GT,PLY_0521,Sai Sudharsan,Batter,0
+2026,IPL_T20_GT,PLY_0544,Shahrukh Khan,Batter,0
+2026,IPL_T20_GT,PLY_0254,Jason Holder,Allrounder,1
+2026,IPL_T20_GT,PLY_0206,Glenn Phillips,Allrounder,1
+2026,IPL_T20_GT,PLY_0478,Rashid Khan,Allrounder,1
+2026,IPL_T20_GT,PLY_0708,Nishant Sindhu,Allrounder,0
+2026,IPL_T20_GT,PLY_0342,Manav Suthar,Allrounder,0
+2026,IPL_T20_GT,PLY_0466,Rahul Tewatia,Allrounder,0
+2026,IPL_T20_GT,PLY_0673,Washington Sundar,Allrounder,0
+2026,IPL_T20_GT,PLY_0075,Arshad Khan,Bowler,0
+2026,IPL_T20_GT,PLY_0709,Ashok Sharma,Bowler,0
+2026,IPL_T20_GT,PLY_0710,Gurnoor Brar,Bowler,0
+2026,IPL_T20_GT,PLY_0711,Kulwant Khejroliya,Bowler,0
+2026,IPL_T20_GT,PLY_0383,Mohammed Siraj,Bowler,0
+2026,IPL_T20_GT,PLY_0445,Prasidh Krishna,Bowler,0
+2026,IPL_T20_GT,PLY_0282,Kagiso Rabada,Bowler,1
+2026,IPL_T20_GT,PLY_0520,Sai Kishore,Bowler,0
+2026,IPL_T20_GT,PLY_0235,Ishant Sharma,Bowler,0
+2026,IPL_T20_GT,PLY_0331,Luke Wood,Bowler,1
+2026,IPL_T20_GT,PLY_0258,Jayant Yadav,Bowler,0
+2026,IPL_T20_KKR,PLY_0028,Ajinkya Rahane,Batter,0
+2026,IPL_T20_KKR,PLY_0493,Rinku Singh,Batter,0
+2026,IPL_T20_KKR,PLY_0712,Finn Allen,Batter,1
+2026,IPL_T20_KKR,PLY_0713,Tejasvi Dahiya,Wicketkeeper,0
+2026,IPL_T20_KKR,PLY_0344,Manish Pandey,Batter,0
+2026,IPL_T20_KKR,PLY_0509,Rovman Powell,Batter,1
+2026,IPL_T20_KKR,PLY_0055,Angkrish Raghuvanshi,Batter,0
+2026,IPL_T20_KKR,PLY_0475,Ramandeep Singh,Batter,0
+2026,IPL_T20_KKR,PLY_0714,Tejasvi Dahiya,Batter,0
+2026,IPL_T20_KKR,PLY_0629,Tim Seifert,Wicketkeeper,1
+2026,IPL_T20_KKR,PLY_0467,Rahul Tripathi,Batter,0
+2026,IPL_T20_KKR,PLY_0120,Cameron Green,Allrounder,1
+2026,IPL_T20_KKR,PLY_0715,,Allrounder,0
+2026,IPL_T20_KKR,PLY_0604,Sunil Narine,Allrounder,1
+2026,IPL_T20_KKR,PLY_0460,Rachin Ravindra,Allrounder,1
+2026,IPL_T20_KKR,PLY_0069,Anukul Roy,Allrounder,0
+2026,IPL_T20_KKR,PLY_0651,Vaibhav Arora,Bowler,0
+2026,IPL_T20_KKR,PLY_0716,Saurabh Dube,Bowler,0
+2026,IPL_T20_KKR,PLY_0293,Kartik Tyagi,Bowler,0
+2026,IPL_T20_KKR,PLY_0717,Blessing Muzarabani,Bowler,1
+2026,IPL_T20_KKR,PLY_0718,Matheesha Pathirana,Bowler,1
+2026,IPL_T20_KKR,PLY_0408,Navdeep Saini,Bowler,0
+2026,IPL_T20_KKR,PLY_0719,Prashant Solanki,Bowler,0
+2026,IPL_T20_KKR,PLY_0645,Umran Malik,Bowler,0
+2026,IPL_T20_KKR,PLY_0654,Varun Chakaravarthy,Bowler,0
+2026,IPL_T20_LSG,PLY_0495,Rishabh Pant,Wicketkeeper,0
+2026,IPL_T20_LSG,PLY_0005,Abdul Samad,Batter,0
+2026,IPL_T20_LSG,PLY_0720,Akshat Raghuwanshi,Batter,0
+2026,IPL_T20_LSG,PLY_0090,Ayush Badoni,Batter,0
+2026,IPL_T20_LSG,PLY_0358,Matthew Breetzke,Batter,1
+2026,IPL_T20_LSG,PLY_0721,Mukul Choudhary,Batter,0
+2026,IPL_T20_LSG,PLY_0722,Himmat Singh,Batter,0
+2026,IPL_T20_LSG,PLY_0274,Josh Inglis,Wicketkeeper,1
+2026,IPL_T20_LSG,PLY_0026,Aiden Markram,Batter,1
+2026,IPL_T20_LSG,PLY_0413,Nicholas Pooran,Wicketkeeper,1
+2026,IPL_T20_LSG,PLY_0672,Wanindu Hasaranga,Allrounder,1
+2026,IPL_T20_LSG,PLY_0077,Arshin Atul Kulkarni,Allrounder,0
+2026,IPL_T20_LSG,PLY_0371,Mitchell Marsh,Allrounder,1
+2026,IPL_T20_LSG,PLY_0541,Shahbaz Ahmed,Allrounder,0
+2026,IPL_T20_LSG,PLY_0723,Akash Singh,Bowler,0
+2026,IPL_T20_LSG,PLY_0088,Avesh Khan,Bowler,0
+2026,IPL_T20_LSG,PLY_0382,Mohammad Shami,Bowler,0
+2026,IPL_T20_LSG,PLY_0388,Mohsin Khan,Bowler,0
+2026,IPL_T20_LSG,PLY_0066,Anrich Nortje,Bowler,1
+2026,IPL_T20_LSG,PLY_0452,Prince Yadav,Bowler,0
+2026,IPL_T20_LSG,PLY_0724,Digvesh Rathi,Bowler,0
+2026,IPL_T20_LSG,PLY_0725,Manimaran Siddharth,Bowler,0
+2026,IPL_T20_LSG,PLY_0073,Arjun Tendulkar,Bowler,0
+2026,IPL_T20_LSG,PLY_0726,Naman Tiwari,Bowler,0
+2026,IPL_T20_LSG,PLY_0727,Mayank Yadav,Bowler,0
+2026,IPL_T20_MI,PLY_0458,Quinton de Kock,Wicketkeeper,1
+2026,IPL_T20_MI,PLY_0728,Danish Malewar,Batter,0
+2026,IPL_T20_MI,PLY_0499,Robin Minz,Wicketkeeper,0
+2026,IPL_T20_MI,PLY_0514,Ryan Rickelton,Wicketkeeper,1
+2026,IPL_T20_MI,PLY_0562,Sherfane Rutherford,Batter,1
+2026,IPL_T20_MI,PLY_0505,Rohit Sharma,Batter,0
+2026,IPL_T20_MI,PLY_0610,Suryakumar Yadav,Batter,0
+2026,IPL_T20_MI,PLY_0214,Hardik Pandya,Allrounder,0
+2026,IPL_T20_MI,PLY_0729,Atharva Ankolekar,Allrounder,0
+2026,IPL_T20_MI,PLY_0730,Raj Bawa,Allrounder,0
+2026,IPL_T20_MI,PLY_0140,Corbin Bosch,Allrounder,1
+2026,IPL_T20_MI,PLY_0678,Will Jacks,Allrounder,1
+2026,IPL_T20_MI,PLY_0731,Mayank Rawat,Allrounder,0
+2026,IPL_T20_MI,PLY_0402,Naman Dhir,Allrounder,0
+2026,IPL_T20_MI,PLY_0373,Mitchell Santner,Allrounder,1
+2026,IPL_T20_MI,PLY_0555,Shardul Thakur,Allrounder,0
+2026,IPL_T20_MI,PLY_0625,Tilak Varma,Allrounder,0
+2026,IPL_T20_MI,PLY_0732,Ashwani Kumar,Bowler,0
+2026,IPL_T20_MI,PLY_0637,Trent Boult,Bowler,1
+2026,IPL_T20_MI,PLY_0256,Jasprit Bumrah,Bowler,0
+2026,IPL_T20_MI,PLY_0163,Deepak Chahar,Bowler,0
+2026,IPL_T20_MI,PLY_0733,AM Ghazanfar,Bowler,1
+2026,IPL_T20_MI,PLY_0363,Mayank Markande,Bowler,0
+2026,IPL_T20_MI,PLY_0734,Mohd Izhar,Bowler,0
+2026,IPL_T20_MI,PLY_0464,Rahul Sharma,Bowler,0
+2026,IPL_T20_PBKS,PLY_0577,Shreyas Iyer,Batter,0
+2026,IPL_T20_PBKS,PLY_0456,Priyansh Arya,Batter,0
+2026,IPL_T20_PBKS,PLY_0735,Pyla Avinash,Batter,0
+2026,IPL_T20_PBKS,PLY_0736,Harnoor Singh,Batter,0
+2026,IPL_T20_PBKS,PLY_0440,Prabhsimran Singh,Wicketkeeper,0
+2026,IPL_T20_PBKS,PLY_0669,Vishnu Vinod,Wicketkeeper,0
+2026,IPL_T20_PBKS,PLY_0411,Nehal Wadhera,Batter,0
+2026,IPL_T20_PBKS,PLY_0094,Azmatullah Omarzai,Allrounder,1
+2026,IPL_T20_PBKS,PLY_0737,Cooper Connolly,Allrounder,1
+2026,IPL_T20_PBKS,PLY_0351,Marco Jansen,Allrounder,1
+2026,IPL_T20_PBKS,PLY_0738,Musheer Khan,Allrounder,0
+2026,IPL_T20_PBKS,PLY_0352,Marcus Stoinis,Allrounder,1
+2026,IPL_T20_PBKS,PLY_0611,Suryansh Shedge,Allrounder,0
+2026,IPL_T20_PBKS,PLY_0076,Arshdeep Singh,Bowler,0
+2026,IPL_T20_PBKS,PLY_0680,Xavier Bartlett,Bowler,1
+2026,IPL_T20_PBKS,PLY_0693,Yuzvendra Chahal,Bowler,0
+2026,IPL_T20_PBKS,PLY_0446,Praveen Dubey,Bowler,0
+2026,IPL_T20_PBKS,PLY_0739,Ben Dwarshuis,Bowler,1
+2026,IPL_T20_PBKS,PLY_0328,Lockie Ferguson,Bowler,1
+2026,IPL_T20_PBKS,PLY_0218,Harpreet Brar,Bowler,0
+2026,IPL_T20_PBKS,PLY_0740,Vishal Nishad,Bowler,0
+2026,IPL_T20_PBKS,PLY_0706,,Bowler,0
+2026,IPL_T20_PBKS,PLY_0741,Vijaykumar Vyshak,Bowler,0
+2026,IPL_T20_RR,PLY_0497,Riyan Parag,Batter,0
+2026,IPL_T20_RR,PLY_0742,Aman Rao,Batter,0
+2026,IPL_T20_RR,PLY_0579,Shubham Dubey,Batter,0
+2026,IPL_T20_RR,PLY_0564,Shimron Hetmyer,Batter,1
+2026,IPL_T20_RR,PLY_0684,Yashasvi Jaiswal,Batter,0
+2026,IPL_T20_RR,PLY_0170,Dhruv Jurel,Wicketkeeper,0
+2026,IPL_T20_RR,PLY_0743,Lhuan-dre Pretorius,Wicketkeeper,1
+2026,IPL_T20_RR,PLY_0744,Ravi Singh,Batter,0
+2026,IPL_T20_RR,PLY_0652,Vaibhav Suryavanshi,Batter,0
+2026,IPL_T20_RR,PLY_0183,Donovan Ferreira,Allrounder,1
+2026,IPL_T20_RR,PLY_0485,Ravindra Jadeja,Allrounder,0
+2026,IPL_T20_RR,PLY_0154,Dasun Shanaka,Allrounder,1
+2026,IPL_T20_RR,PLY_0267,Jofra Archer,Bowler,1
+2026,IPL_T20_RR,PLY_0745,Brijesh Sharma,Bowler,0
+2026,IPL_T20_RR,PLY_0746,Nandre Burger,Bowler,1
+2026,IPL_T20_RR,PLY_0639,Tushar Deshpande,Bowler,0
+2026,IPL_T20_RR,PLY_0313,Kwena Maphaka,Bowler,1
+2026,IPL_T20_RR,PLY_0018,Adam Milne,Bowler,1
+2026,IPL_T20_RR,PLY_0747,Sushant Mishra,Bowler,0
+2026,IPL_T20_RR,PLY_0748,Vignesh Puthur,Bowler,0
+2026,IPL_T20_RR,PLY_0481,Ravi Bishnoi,Bowler,0
+2026,IPL_T20_RR,PLY_0530,Sandeep Sharma,Bowler,0
+2026,IPL_T20_RR,PLY_0749,Kuldeep Sen,Bowler,0
+2026,IPL_T20_RR,PLY_0750,Yash Raj Punja,Bowler,0
+2026,IPL_T20_RR,PLY_0690,Yudhvir Singh,Bowler,0
+2026,IPL_T20_RCB,PLY_0473,Rajat Patidar,Batter,0
+2026,IPL_T20_RCB,PLY_0751,Jordan Cox,Wicketkeeper,1
+2026,IPL_T20_RCB,PLY_0627,Tim David,Batter,1
+2026,IPL_T20_RCB,PLY_0666,Virat Kohli,Batter,0
+2026,IPL_T20_RCB,PLY_0165,Devdutt Padikkal,Batter,0
+2026,IPL_T20_RCB,PLY_0437,Phil Salt,Wicketkeeper,1
+2026,IPL_T20_RCB,PLY_0264,Jitesh Sharma,Wicketkeeper,0
+2026,IPL_T20_RCB,PLY_0239,Jacob Bethell,Allrounder,1
+2026,IPL_T20_RCB,PLY_0752,Kanishk Chouhan,Allrounder,0
+2026,IPL_T20_RCB,PLY_0655,Venkatesh Iyer,Allrounder,0
+2026,IPL_T20_RCB,PLY_0233,Vihan Malhotra,Allrounder,0
+2026,IPL_T20_RCB,PLY_0753,Mangesh Yadav,Allrounder,0
+2026,IPL_T20_RCB,PLY_0305,Krunal Pandya,Allrounder,0
+2026,IPL_T20_RCB,PLY_0506,Romario Shepherd,Allrounder,1
+2026,IPL_T20_RCB,PLY_0754,Abhinandan Singh,Bowler,0
+2026,IPL_T20_RCB,PLY_0755,Satvik Deswal,Bowler,0
+2026,IPL_T20_RCB,PLY_0756,Jacob Duffy,Bowler,1
+2026,IPL_T20_RCB,PLY_0273,Josh Hazlewood,Bowler,1
+2026,IPL_T20_RCB,PLY_0109,Bhuvneshwar Kumar,Bowler,0
+2026,IPL_T20_RCB,PLY_0757,Vicky Ostwal,Bowler,0
+2026,IPL_T20_RCB,PLY_0479,Rasikh Salam,Bowler,0
+2026,IPL_T20_RCB,PLY_0758,Vicky Ostwal,Bowler,0
+2026,IPL_T20_RCB,PLY_0614,Swapnil Singh,Bowler,0
+2026,IPL_T20_RCB,PLY_0759,Nuwan Thushara,Bowler,1
+2026,IPL_T20_SRH,PLY_0232,Ishan Kishan,Wicketkeeper,0
+2026,IPL_T20_SRH,PLY_0760,Salil Arora,Wicketkeeper,0
+2026,IPL_T20_SRH,PLY_0636,Travis Head,Batter,1
+2026,IPL_T20_SRH,PLY_0225,Heinrich Klaasen,Wicketkeeper,1
+2026,IPL_T20_SRH,PLY_0761,Ravichandran Smaran,Batter,0
+2026,IPL_T20_SRH,PLY_0057,Aniket Verma,Batter,0
+2026,IPL_T20_SRH,PLY_0014,Abhishek Sharma,Allrounder,0
+2026,IPL_T20_SRH,PLY_0762,Brydon Carse,Allrounder,1
+2026,IPL_T20_SRH,PLY_0763,Harsh Dubey,Allrounder,0
+2026,IPL_T20_SRH,PLY_0764,Krains Fuletra,Allrounder,0
+2026,IPL_T20_SRH,PLY_0324,Liam Livingstone,Allrounder,1
+2026,IPL_T20_SRH,PLY_0283,Kamindu Mendis,Allrounder,1
+2026,IPL_T20_SRH,PLY_0417,Nitish Kumar Reddy,Allrounder,0
+2026,IPL_T20_SRH,PLY_0222,Harshal Patel,Allrounder,0
+2026,IPL_T20_SRH,PLY_0566,Shivam Mavi,Allrounder,0
+2026,IPL_T20_SRH,PLY_0765,Shivang Kumar,Allrounder,0
+2026,IPL_T20_SRH,PLY_0601,Sumit Kumar,Bowler,0
+2026,IPL_T20_SRH,PLY_0432,Pat Cummins,Bowler,1
+2026,IPL_T20_SRH,PLY_0766,Praful Hinge,Bowler,0
+2026,IPL_T20_SRH,PLY_0767,Eshan Malinga,Bowler,1
+2026,IPL_T20_SRH,PLY_0768,David Payne,Bowler,1
+2026,IPL_T20_SRH,PLY_0769,Sakib Hussain,Bowler,0
+2026,IPL_T20_SRH,PLY_0770,Onkar Tarmale,Bowler,0
+2026,IPL_T20_SRH,PLY_0259,Jaydev Unadkat,Bowler,0
+2026,IPL_T20_SRH,PLY_0771,Zeeshan Ansari,Bowler,0
+2025,IPL_T20_CSK,PLY_0334,MS Dhoni,Wicketkeeper Batter,0
+2025,IPL_T20_CSK,PLY_0695,Kartik Sharma,Batter,0
+2025,IPL_T20_CSK,PLY_0168,Dewald Brevis,Middle order Batter,1
+2025,IPL_T20_CSK,PLY_0166,Devon Conway,Wicketkeeper Batter,1
+2025,IPL_T20_CSK,PLY_0091,Ayush Mhatre,Top order Batter,0
+2025,IPL_T20_CSK,PLY_0647,Urvil Patel,Wicketkeeper Batter,0
+2025,IPL_T20_CSK,PLY_0546,Shaik Rasheed,Batter,0
+2025,IPL_T20_CSK,PLY_0467,Rahul Tripathi,Top order Batter,0
+2025,IPL_T20_CSK,PLY_0565,Shivam Dube,Allrounder,0
+2025,IPL_T20_CSK,PLY_0696,Zak Foulkes,Bowling Allrounder,0
+2025,IPL_T20_CSK,PLY_0164,Deepak Hooda,Allrounder,0
+2025,IPL_T20_CSK,PLY_0485,Ravindra Jadeja,Allrounder,0
+2025,IPL_T20_CSK,PLY_0067,Anshul Kamboj,Bowling Allrounder,0
+2025,IPL_T20_CSK,PLY_0658,Vijay Shankar,Allrounder,0
+2025,IPL_T20_CSK,PLY_0301,Khaleel Ahmed,Bowler,0
+2025,IPL_T20_CSK,PLY_0392,Mukesh Choudhary,Bowler,0
+2025,IPL_T20_CSK,PLY_0639,Tushar Deshpande,Bowler,0
+2025,IPL_T20_CSK,PLY_0484,Ravichandran Ashwin,Bowler,0
+2025,IPL_T20_CSK,PLY_0419,Noor Ahmad,Bowler,1
+2025,IPL_T20_CSK,PLY_0697,Ramakrishna Ghosh,Bowler,1
+2025,IPL_T20_DC,PLY_0196,Faf du Plessis,Middle order Batter,1
+2025,IPL_T20_DC,PLY_0015,Abishek Porel,Wicketkeeper Batter,0
+2025,IPL_T20_DC,PLY_0280,KL Rahul,Batter,0
+2025,IPL_T20_DC,PLY_0294,Karun Nair,Batter,0
+2025,IPL_T20_DC,PLY_0539,Sediqullah Atal,Batter,1
+2025,IPL_T20_DC,PLY_0638,Tristan Stubbs,Batter,1
+2025,IPL_T20_DC,PLY_0089,Axar Patel,Allrounder,0
+2025,IPL_T20_DC,PLY_0698,Prashant Veer,Allrounder,0
+2025,IPL_T20_DC,PLY_0699,Gurjapneet Singh,Allrounder,0
+2025,IPL_T20_DC,PLY_0525,Sameer Rizvi,Allrounder,0
+2025,IPL_T20_DC,PLY_0086,Ashutosh Sharma,Allrounder,0
+2025,IPL_T20_DC,PLY_0335,Madhav Tiwari,Allrounder,0
+2025,IPL_T20_DC,PLY_0186,Dushmantha Chameera,Bowler,1
+2025,IPL_T20_DC,PLY_0306,Kuldeep Yadav,Bowler,0
+2025,IPL_T20_DC,PLY_0393,Mukesh Kumar,Bowler,0
+2025,IPL_T20_DC,PLY_0399,Mustafizur Rahman,Bowler,1
+2025,IPL_T20_DC,PLY_0152,Darshan Nalkande,Bowler,0
+2025,IPL_T20_DC,PLY_0616,T Natarajan,Bowler,0
+2025,IPL_T20_DC,PLY_0665,Vipraj Nigam,Bowler,0
+2025,IPL_T20_DC,PLY_0386,Mohit Sharma,Bowler,0
+2025,IPL_T20_DC,PLY_0700,Matt Henry,Bowler,0
+2025,IPL_T20_GT,PLY_0580,Shubman Gill,Top order Batter,0
+2025,IPL_T20_GT,PLY_0068,Anuj Rawat,Wicketkeeper Batter,0
+2025,IPL_T20_GT,PLY_0309,Kumar Kushagra,Wicketkeeper Batter,0
+2025,IPL_T20_GT,PLY_0311,Kusal Mendis,Wicketkeeper Batter,1
+2025,IPL_T20_GT,PLY_0562,Sherfane Rutherford,Middle order Batter,1
+2025,IPL_T20_GT,PLY_0521,Sai Sudharsan,Top order Batter,0
+2025,IPL_T20_GT,PLY_0544,Shahrukh Khan,Batter,0
+2025,IPL_T20_GT,PLY_0478,Rashid Khan,Bowling Allrounder,1
+2025,IPL_T20_GT,PLY_0701,Pathum Nissanka,Batting Allrounder,1
+2025,IPL_T20_GT,PLY_0339,Mahipal Lomror,Allrounder,0
+2025,IPL_T20_GT,PLY_0154,Dasun Shanaka,Allrounder,1
+2025,IPL_T20_GT,PLY_0702,Sahil Parekh,Allrounder,0
+2025,IPL_T20_GT,PLY_0342,Manav Suthar,Allrounder,0
+2025,IPL_T20_GT,PLY_0466,Rahul Tewatia,Allrounder,0
+2025,IPL_T20_GT,PLY_0673,Washington Sundar,Allrounder,0
+2025,IPL_T20_GT,PLY_0075,Arshad Khan,Bowler,0
+2025,IPL_T20_GT,PLY_0203,Gerald Coetzee,Bowler,1
+2025,IPL_T20_GT,PLY_0703,Ajay Mandal,Bowler,0
+2025,IPL_T20_GT,PLY_0704,Auqib Nabi,Bowler,0
+2025,IPL_T20_GT,PLY_0383,Mohammed Siraj,Bowler,0
+2025,IPL_T20_GT,PLY_0445,Prasidh Krishna,Bowler,0
+2025,IPL_T20_GT,PLY_0282,Kagiso Rabada,Bowler,1
+2025,IPL_T20_GT,PLY_0520,Sai Kishore,Bowler,0
+2025,IPL_T20_GT,PLY_0235,Ishant Sharma,Bowler,0
+2025,IPL_T20_GT,PLY_0258,Jayant Yadav,Bowler,0
+2025,IPL_T20_KKR,PLY_0028,Ajinkya Rahane,Top order Batter,0
+2025,IPL_T20_KKR,PLY_0458,Quinton de Kock,Wicketkeeper Batter,1
+2025,IPL_T20_KKR,PLY_0344,Manish Pandey,Top order Batter,0
+2025,IPL_T20_KKR,PLY_0055,Angkrish Raghuvanshi,Top order Batter,0
+2025,IPL_T20_KKR,PLY_0461,Rahmanullah Gurbaz,Wicketkeeper Batter,1
+2025,IPL_T20_KKR,PLY_0475,Ramandeep Singh,Middle order Batter,0
+2025,IPL_T20_KKR,PLY_0493,Rinku Singh,Middle order Batter,0
+2025,IPL_T20_KKR,PLY_0705,Lungi Ngidi,Wicketkeeper Batter,0
+2025,IPL_T20_KKR,PLY_0655,Venkatesh Iyer,Allrounder,0
+2025,IPL_T20_KKR,PLY_0604,Sunil Narine,Bowling Allrounder,1
+2025,IPL_T20_KKR,PLY_0069,Anukul Roy,Allrounder,0
+2025,IPL_T20_KKR,PLY_0049,Andre Russell,Allrounder,1
+2025,IPL_T20_KKR,PLY_0651,Vaibhav Arora,Bowler,0
+2025,IPL_T20_KKR,PLY_0223,Harshit Rana,Bowler,0
+2025,IPL_T20_KKR,PLY_0591,Spencer Johnson,Bowler,1
+2025,IPL_T20_KKR,PLY_0363,Mayank Markande,Bowler,0
+2025,IPL_T20_KKR,PLY_0066,Anrich Nortje,Bowler,1
+2025,IPL_T20_KKR,PLY_0127,Chetan Sakariya,Bowler,0
+2025,IPL_T20_KKR,PLY_0654,Varun Chakaravarthy,Bowler,0
+2025,IPL_T20_LSG,PLY_0495,Rishabh Pant,Wicketkeeper Batter,0
+2025,IPL_T20_LSG,PLY_0005,Abdul Samad,Batter,0
+2025,IPL_T20_LSG,PLY_0090,Ayush Badoni,Batter,0
+2025,IPL_T20_LSG,PLY_0358,Matthew Breetzke,Batter,1
+2025,IPL_T20_LSG,PLY_0706,,Batter,0
+2025,IPL_T20_LSG,PLY_0707,Tripurana Vijay,Wicketkeeper Batter,0
+2025,IPL_T20_LSG,PLY_0026,Aiden Markram,Middle order Batter,1
+2025,IPL_T20_LSG,PLY_0156,David Miller,Middle order Batter,1
+2025,IPL_T20_LSG,PLY_0413,Nicholas Pooran,Wicketkeeper Batter,1
+2025,IPL_T20_LSG,PLY_0708,Nishant Sindhu,Allrounder,0
+2025,IPL_T20_LSG,PLY_0709,Ashok Sharma,Allrounder,0
+2025,IPL_T20_LSG,PLY_0077,Arshin Atul Kulkarni,Allrounder,0
+2025,IPL_T20_LSG,PLY_0371,Mitchell Marsh,Allrounder,1
+2025,IPL_T20_LSG,PLY_0541,Shahbaz Ahmed,Allrounder,0
+2025,IPL_T20_LSG,PLY_0555,Shardul Thakur,Allrounder,0
+2025,IPL_T20_LSG,PLY_0031,Akash Deep,Bowler,0
+2025,IPL_T20_LSG,PLY_0710,Gurnoor Brar,Bowler,0
+2025,IPL_T20_LSG,PLY_0088,Avesh Khan,Bowler,0
+2025,IPL_T20_LSG,PLY_0711,Kulwant Khejroliya,Bowler,1
+2025,IPL_T20_LSG,PLY_0452,Prince Yadav,Bowler,0
+2025,IPL_T20_LSG,PLY_0712,Finn Allen,Bowler,0
+2025,IPL_T20_LSG,PLY_0481,Ravi Bishnoi,Bowler,0
+2025,IPL_T20_LSG,PLY_0713,Tejasvi Dahiya,Bowler,0
+2025,IPL_T20_MI,PLY_0271,Jonny Bairstow,Wicketkeeper Batter,1
+2025,IPL_T20_MI,PLY_0714,Tejasvi Dahiya,Middle order Batter,1
+2025,IPL_T20_MI,PLY_0499,Robin Minz,Wicketkeeper Batter,0
+2025,IPL_T20_MI,PLY_0505,Rohit Sharma,Batter,0
+2025,IPL_T20_MI,PLY_0715,,Wicketkeeper Batter,0
+2025,IPL_T20_MI,PLY_0610,Suryakumar Yadav,Batter,0
+2025,IPL_T20_MI,PLY_0214,Hardik Pandya,Allrounder,0
+2025,IPL_T20_MI,PLY_0716,Saurabh Dube,Allrounder,1
+2025,IPL_T20_MI,PLY_0717,Blessing Muzarabani,Allrounder,0
+2025,IPL_T20_MI,PLY_0402,Naman Dhir,Allrounder,0
+2025,IPL_T20_MI,PLY_0373,Mitchell Santner,Allrounder,1
+2025,IPL_T20_MI,PLY_0625,Tilak Varma,Allrounder,0
+2025,IPL_T20_MI,PLY_0718,Matheesha Pathirana,Bowler,0
+2025,IPL_T20_MI,PLY_0637,Trent Boult,Bowler,1
+2025,IPL_T20_MI,PLY_0256,Jasprit Bumrah,Bowler,0
+2025,IPL_T20_MI,PLY_0163,Deepak Chahar,Bowler,0
+2025,IPL_T20_MI,PLY_0488,Richard Gleeson,Bowler,1
+2025,IPL_T20_MI,PLY_0391,Mujeeb Ur Rahman,Bowler,1
+2025,IPL_T20_MI,PLY_0719,Prashant Solanki,Bowler,0
+2025,IPL_T20_MI,PLY_0292,Karn Sharma,Bowler,0
+2025,IPL_T20_MI,PLY_0464,Rahul Sharma,Bowler,0
+2025,IPL_T20_MI,PLY_0073,Arjun Tendulkar,Bowler,0
+2025,IPL_T20_MI,PLY_0486,Reece Topley,Bowler,1
+2025,IPL_T20_PBKS,PLY_0577,Shreyas Iyer,Top order Batter,0
+2025,IPL_T20_PBKS,PLY_0456,Priyansh Arya,Opening Batter,0
+2025,IPL_T20_PBKS,PLY_0720,Akshat Raghuwanshi,Batter,0
+2025,IPL_T20_PBKS,PLY_0721,Mukul Choudhary,Batter,0
+2025,IPL_T20_PBKS,PLY_0274,Josh Inglis,Wicketkeeper Batter,1
+2025,IPL_T20_PBKS,PLY_0440,Prabhsimran Singh,Wicketkeeper Batter,0
+2025,IPL_T20_PBKS,PLY_0669,Vishnu Vinod,Wicketkeeper Batter,0
+2025,IPL_T20_PBKS,PLY_0411,Nehal Wadhera,Top order Batter,0
+2025,IPL_T20_PBKS,PLY_0094,Azmatullah Omarzai,Allrounder,1
+2025,IPL_T20_PBKS,PLY_0722,Himmat Singh,Allrounder,1
+2025,IPL_T20_PBKS,PLY_0351,Marco Jansen,Bowling Allrounder,1
+2025,IPL_T20_PBKS,PLY_0723,Akash Singh,Allrounder,0
+2025,IPL_T20_PBKS,PLY_0724,Digvesh Rathi,Allrounder,1
+2025,IPL_T20_PBKS,PLY_0556,Shashank Singh,Allrounder,0
+2025,IPL_T20_PBKS,PLY_0352,Marcus Stoinis,Allrounder,1
+2025,IPL_T20_PBKS,PLY_0611,Suryansh Shedge,Allrounder,0
+2025,IPL_T20_PBKS,PLY_0076,Arshdeep Singh,Bowler,0
+2025,IPL_T20_PBKS,PLY_0680,Xavier Bartlett,Bowler,1
+2025,IPL_T20_PBKS,PLY_0693,Yuzvendra Chahal,Bowler,0
+2025,IPL_T20_PBKS,PLY_0446,Praveen Dubey,Bowler,0
+2025,IPL_T20_PBKS,PLY_0218,Harpreet Brar,Bowler,0
+2025,IPL_T20_PBKS,PLY_0315,Kyle Jamieson,Bowler,1
+2025,IPL_T20_PBKS,PLY_0725,Manimaran Siddharth,Bowler,0
+2025,IPL_T20_PBKS,PLY_0726,Naman Tiwari,Bowler,0
+2025,IPL_T20_PBKS,PLY_0727,Mayank Yadav,Bowler,0
+2025,IPL_T20_RR,PLY_0532,Sanju Samson,Wicketkeeper Batter,0
+2025,IPL_T20_RR,PLY_0579,Shubham Dubey,Middle order Batter,0
+2025,IPL_T20_RR,PLY_0564,Shimron Hetmyer,Middle order Batter,1
+2025,IPL_T20_RR,PLY_0684,Yashasvi Jaiswal,Opening Batter,0
+2025,IPL_T20_RR,PLY_0170,Dhruv Jurel,Wicketkeeper Batter,0
+2025,IPL_T20_RR,PLY_0497,Riyan Parag,Top order Batter,0
+2025,IPL_T20_RR,PLY_0728,Danish Malewar,Wicketkeeper Batter,1
+2025,IPL_T20_RR,PLY_0729,Atharva Ankolekar,Wicketkeeper Batter,0
+2025,IPL_T20_RR,PLY_0652,Vaibhav Suryavanshi,Top order Batter,0
+2025,IPL_T20_RR,PLY_0672,Wanindu Hasaranga,Allrounder,1
+2025,IPL_T20_RR,PLY_0730,Raj Bawa,Bowler,0
+2025,IPL_T20_RR,PLY_0639,Tushar Deshpande,Bowler,0
+2025,IPL_T20_RR,PLY_0199,Fazalhaq Farooqi,Bowler,1
+2025,IPL_T20_RR,PLY_0731,Mayank Rawat,Bowler,0
+2025,IPL_T20_RR,PLY_0032,Akash Madhwal,Bowler,0
+2025,IPL_T20_RR,PLY_0313,Kwena Maphaka,Bowler,1
+2025,IPL_T20_RR,PLY_0336,Maheesh Theekshana,Bowler,1
+2025,IPL_T20_RR,PLY_0690,Yudhvir Singh,Bowler,0
+2025,IPL_T20_RCB,PLY_0473,Rajat Patidar,Top order Batter,0
+2025,IPL_T20_RCB,PLY_0362,Mayank Agarwal,Batter,0
+2025,IPL_T20_RCB,PLY_0732,Ashwani Kumar,Batter,0
+2025,IPL_T20_RCB,PLY_0627,Tim David,Middle order Batter,1
+2025,IPL_T20_RCB,PLY_0666,Virat Kohli,Top order Batter,0
+2025,IPL_T20_RCB,PLY_0437,Phil Salt,Wicketkeeper Batter,1
+2025,IPL_T20_RCB,PLY_0629,Tim Seifert,Wicketkeeper Batter,1
+2025,IPL_T20_RCB,PLY_0264,Jitesh Sharma,Wicketkeeper Batter,0
+2025,IPL_T20_RCB,PLY_0345,Manoj Bhandage,Allrounder,0
+2025,IPL_T20_RCB,PLY_0324,Liam Livingstone,Batting Allrounder,1
+2025,IPL_T20_RCB,PLY_0305,Krunal Pandya,Allrounder,0
+2025,IPL_T20_RCB,PLY_0385,Mohit Rathee,Allrounder,0
+2025,IPL_T20_RCB,PLY_0506,Romario Shepherd,Bowling Allrounder,1
+2025,IPL_T20_RCB,PLY_0733,AM Ghazanfar,Bowler,0
+2025,IPL_T20_RCB,PLY_0273,Josh Hazlewood,Bowler,1
+2025,IPL_T20_RCB,PLY_0109,Bhuvneshwar Kumar,Bowler,0
+2025,IPL_T20_RCB,PLY_0734,Mohd Izhar,Bowler,1
+2025,IPL_T20_RCB,PLY_0479,Rasikh Salam,Bowler,0
+2025,IPL_T20_RCB,PLY_0735,Pyla Avinash,Bowler,0
+2025,IPL_T20_RCB,PLY_0614,Swapnil Singh,Bowler,0
+2025,IPL_T20_RCB,PLY_0736,Harnoor Singh,Bowler,1
+2025,IPL_T20_SRH,PLY_0636,Travis Head,Middle order Batter,1
+2025,IPL_T20_SRH,PLY_0232,Ishan Kishan,Wicketkeeper Batter,0
+2025,IPL_T20_SRH,PLY_0225,Heinrich Klaasen,Wicketkeeper Batter,1
+2025,IPL_T20_SRH,PLY_0516,Sachin Baby,Batter,0
+2025,IPL_T20_SRH,PLY_0057,Aniket Verma,Batter,0
+2025,IPL_T20_SRH,PLY_0014,Abhishek Sharma,Allrounder,0
+2025,IPL_T20_SRH,PLY_0737,Cooper Connolly,Allrounder,0
+2025,IPL_T20_SRH,PLY_0009,Abhinav Manohar,Allrounder,0
+2025,IPL_T20_SRH,PLY_0283,Kamindu Mendis,Allrounder,1
+2025,IPL_T20_SRH,PLY_0417,Nitish Kumar Reddy,Allrounder,0
+2025,IPL_T20_SRH,PLY_0087,Atharva Taide,Allrounder,0
+2025,IPL_T20_SRH,PLY_0432,Pat Cummins,Bowler,1
+2025,IPL_T20_SRH,PLY_0462,Rahul Chahar,Bowler,0
+2025,IPL_T20_SRH,PLY_0738,Musheer Khan,Bowler,1
+2025,IPL_T20_SRH,PLY_0382,Mohammad Shami,Bowler,0
+2025,IPL_T20_SRH,PLY_0586,Simarjeet Singh,Bowler,0
+2025,IPL_T20_SRH,PLY_0259,Jaydev Unadkat,Bowler,0
+2025,IPL_T20_SRH,PLY_0739,Ben Dwarshuis,Bowler,0
+2025,IPL_T20_SRH,PLY_0740,Vishal Nishad,e.g. Batter,0
+2024,IPL_T20_CSK,PLY_0510,Ruturaj Gaikwad,Batter,0
+2024,IPL_T20_CSK,PLY_0028,Ajinkya Rahane,Batter,0
+2024,IPL_T20_CSK,PLY_0546,Shaik Rasheed,Batter,0
+2024,IPL_T20_CSK,PLY_0525,Sameer Rizvi,Batter,0
+2024,IPL_T20_CSK,PLY_0334,MS Dhoni,Wicketkeeper,0
+2024,IPL_T20_CSK,PLY_0772,,Wicketkeeper,0
+2024,IPL_T20_CSK,PLY_0773,,Wicketkeeper,0
+2024,IPL_T20_CSK,PLY_0376,Moeen Ali,Allrounder,1
+2024,IPL_T20_CSK,PLY_0565,Shivam Dube,Allrounder,0
+2024,IPL_T20_CSK,PLY_0485,Ravindra Jadeja,Allrounder,0
+2024,IPL_T20_CSK,PLY_0153,Daryl Mitchell,Allrounder,1
+2024,IPL_T20_CSK,PLY_0460,Rachin Ravindra,Allrounder,1
+2024,IPL_T20_CSK,PLY_0373,Mitchell Santner,Allrounder,1
+2024,IPL_T20_CSK,PLY_0708,Nishant Sindhu,Allrounder,0
+2024,IPL_T20_CSK,PLY_0703,Ajay Mandal,Allrounder,0
+2024,IPL_T20_CSK,PLY_0774,,Allrounder,0
+2024,IPL_T20_CSK,PLY_0163,Deepak Chahar,Bowler,0
+2024,IPL_T20_CSK,PLY_0336,Maheesh Theekshana,Bowler,1
+2024,IPL_T20_CSK,PLY_0392,Mukesh Choudhary,Bowler,0
+2024,IPL_T20_CSK,PLY_0399,Mustafizur Rahman,Bowler,1
+2024,IPL_T20_CSK,PLY_0639,Tushar Deshpande,Bowler,0
+2024,IPL_T20_CSK,PLY_0719,Prashant Solanki,Bowler,0
+2024,IPL_T20_CSK,PLY_0586,Simarjeet Singh,Bowler,0
+2024,IPL_T20_CSK,PLY_0488,Richard Gleeson,Bowler,1
+2024,IPL_T20_CSK,PLY_0555,Shardul Thakur,Bowler,0
+2024,IPL_T20_DC,PLY_0454,Prithvi Shaw,Batter,0
+2024,IPL_T20_DC,PLY_0683,Yash Dhull,Batter,0
+2024,IPL_T20_DC,PLY_0775,,Batter,0
+2024,IPL_T20_DC,PLY_0157,David Warner,Batter,1
+2024,IPL_T20_DC,PLY_0245,Jake Fraser - McGurk,Batter,1
+2024,IPL_T20_DC,PLY_0773,,Batter,0
+2024,IPL_T20_DC,PLY_0495,Rishabh Pant,Wicketkeeper,0
+2024,IPL_T20_DC,PLY_0015,Abishek Porel,Wicketkeeper,0
+2024,IPL_T20_DC,PLY_0309,Kumar Kushagra,Wicketkeeper,0
+2024,IPL_T20_DC,PLY_0490,Ricky Bhui,Wicketkeeper,0
+2024,IPL_T20_DC,PLY_0545,Shai Hope,Wicketkeeper,1
+2024,IPL_T20_DC,PLY_0638,Tristan Stubbs,Wicketkeeper,1
+2024,IPL_T20_DC,PLY_0089,Axar Patel,Allrounder,0
+2024,IPL_T20_DC,PLY_0319,Lalit Yadav,Allrounder,0
+2024,IPL_T20_DC,PLY_0371,Mitchell Marsh,Allrounder,1
+2024,IPL_T20_DC,PLY_0601,Sumit Kumar,Allrounder,0
+2024,IPL_T20_DC,PLY_0301,Khaleel Ahmed,Bowler,0
+2024,IPL_T20_DC,PLY_0235,Ishant Sharma,Bowler,0
+2024,IPL_T20_DC,PLY_0393,Mukesh Kumar,Bowler,0
+2024,IPL_T20_DC,PLY_0306,Kuldeep Yadav,Bowler,0
+2024,IPL_T20_DC,PLY_0066,Anrich Nortje,Bowler,1
+2024,IPL_T20_DC,PLY_0448,Pravin Dubey,Bowler,0
+2024,IPL_T20_DC,PLY_0757,Vicky Ostwal,Bowler,0
+2024,IPL_T20_DC,PLY_0262,Jhye Richardson,Bowler,1
+2024,IPL_T20_DC,PLY_0479,Rasikh Salam,Bowler,0
+2024,IPL_T20_DC,PLY_0327,Lizaad Williams,Bowler,1
+2024,IPL_T20_GT,PLY_0580,Shubman Gill,Batter,0
+2024,IPL_T20_GT,PLY_0156,David Miller,Batter,1
+2024,IPL_T20_GT,PLY_0521,Sai Sudharsan,Batter,0
+2024,IPL_T20_GT,PLY_0288,Kane Williamson,Batter,1
+2024,IPL_T20_GT,PLY_0009,Abhinav Manohar,Batter,0
+2024,IPL_T20_GT,PLY_0679,Wriddhiman Saha,Wicketkeeper,0
+2024,IPL_T20_GT,PLY_0361,Matthew Wade,Wicketkeeper,1
+2024,IPL_T20_GT,PLY_0096,B R Sharath,Wicketkeeper,0
+2024,IPL_T20_GT,PLY_0773,,Wicketkeeper,0
+2024,IPL_T20_GT,PLY_0658,Vijay Shankar,Allrounder,0
+2024,IPL_T20_GT,PLY_0094,Azmatullah Omarzai,Allrounder,1
+2024,IPL_T20_GT,PLY_0478,Rashid Khan,Allrounder,1
+2024,IPL_T20_GT,PLY_0544,Shahrukh Khan,Allrounder,0
+2024,IPL_T20_GT,PLY_0466,Rahul Tewatia,Allrounder,0
+2024,IPL_T20_GT,PLY_0386,Mohit Sharma,Bowler,0
+2024,IPL_T20_GT,PLY_0644,Umesh Yadav,Bowler,0
+2024,IPL_T20_GT,PLY_0776,,Bowler,1
+2024,IPL_T20_GT,PLY_0419,Noor Ahmad,Bowler,1
+2024,IPL_T20_GT,PLY_0520,Sai Kishore,Bowler,0
+2024,IPL_T20_GT,PLY_0777,,Bowler,0
+2024,IPL_T20_GT,PLY_0293,Kartik Tyagi,Bowler,0
+2024,IPL_T20_GT,PLY_0591,Spencer Johnson,Bowler,1
+2024,IPL_T20_GT,PLY_0152,Darshan Nalkande,Bowler,0
+2024,IPL_T20_GT,PLY_0258,Jayant Yadav,Bowler,0
+2024,IPL_T20_GT,PLY_0747,Sushant Mishra,Bowler,0
+2024,IPL_T20_GT,PLY_0342,Manav Suthar,Bowler,0
+2024,IPL_T20_GT,PLY_0710,Gurnoor Brar,Bowler,0
+2024,IPL_T20_KKR,PLY_0577,Shreyas Iyer,Batter,0
+2024,IPL_T20_KKR,PLY_0418,Nitish Rana,Batter,0
+2024,IPL_T20_KKR,PLY_0493,Rinku Singh,Batter,0
+2024,IPL_T20_KKR,PLY_0562,Sherfane Rutherford,Batter,1
+2024,IPL_T20_KKR,PLY_0344,Manish Pandey,Batter,0
+2024,IPL_T20_KKR,PLY_0055,Angkrish Raghuvanshi,Batter,0
+2024,IPL_T20_KKR,PLY_0773,,Batter,0
+2024,IPL_T20_KKR,PLY_0461,Rahmanullah Gurbaz,Wicketkeeper,1
+2024,IPL_T20_KKR,PLY_0437,Phil Salt,Wicketkeeper,1
+2024,IPL_T20_KKR,PLY_0594,Srikar Bharat,Wicketkeeper,0
+2024,IPL_T20_KKR,PLY_0049,Andre Russell,Allrounder,1
+2024,IPL_T20_KKR,PLY_0604,Sunil Narine,Allrounder,1
+2024,IPL_T20_KKR,PLY_0655,Venkatesh Iyer,Allrounder,0
+2024,IPL_T20_KKR,PLY_0475,Ramandeep Singh,Allrounder,0
+2024,IPL_T20_KKR,PLY_0069,Anukul Roy,Allrounder,0
+2024,IPL_T20_KKR,PLY_0374,Mitchell Starc,Bowler,1
+2024,IPL_T20_KKR,PLY_0654,Varun Chakaravarthy,Bowler,0
+2024,IPL_T20_KKR,PLY_0758,Vicky Ostwal,Bowler,0
+2024,IPL_T20_KKR,PLY_0186,Dushmantha Chameera,Bowler,1
+2024,IPL_T20_KKR,PLY_0223,Harshit Rana,Bowler,0
+2024,IPL_T20_KKR,PLY_0651,Vaibhav Arora,Bowler,0
+2024,IPL_T20_KKR,PLY_0127,Chetan Sakariya,Bowler,0
+2024,IPL_T20_KKR,PLY_0769,Sakib Hussain,Bowler,0
+2024,IPL_T20_KKR,PLY_0778,,Bowler,1
+2024,IPL_T20_LSG,PLY_0090,Ayush Badoni,Batter,0
+2024,IPL_T20_LSG,PLY_0165,Devdutt Padikkal,Batter,0
+2024,IPL_T20_LSG,PLY_0085,Ashton Turner,Batter,1
+2024,IPL_T20_LSG,PLY_0773,,Batter,0
+2024,IPL_T20_LSG,PLY_0280,KL Rahul,Wicketkeeper,0
+2024,IPL_T20_LSG,PLY_0458,Quinton de Kock,Wicketkeeper,1
+2024,IPL_T20_LSG,PLY_0413,Nicholas Pooran,Wicketkeeper,1
+2024,IPL_T20_LSG,PLY_0305,Krunal Pandya,Allrounder,0
+2024,IPL_T20_LSG,PLY_0352,Marcus Stoinis,Allrounder,1
+2024,IPL_T20_LSG,PLY_0164,Deepak Hooda,Allrounder,0
+2024,IPL_T20_LSG,PLY_0316,Kyle Mayers,Allrounder,1
+2024,IPL_T20_LSG,PLY_0304,Krishnappa Gowtham,Allrounder,0
+2024,IPL_T20_LSG,PLY_0451,Prerak Mankad,Allrounder,0
+2024,IPL_T20_LSG,PLY_0077,Arshin Atul Kulkarni,Allrounder,0
+2024,IPL_T20_LSG,PLY_0386,Mohit Sharma,Bowler,0
+2024,IPL_T20_LSG,PLY_0481,Ravi Bishnoi,Bowler,0
+2024,IPL_T20_LSG,PLY_0409,Naveen-Ul-Haq,Bowler,1
+2024,IPL_T20_LSG,PLY_0741,Vijaykumar Vyshak,Bowler,0
+2024,IPL_T20_LSG,PLY_0045,Amit Mishra,Bowler,0
+2024,IPL_T20_LSG,PLY_0779,,Bowler,1
+2024,IPL_T20_LSG,PLY_0727,Mayank Yadav,Bowler,0
+2024,IPL_T20_LSG,PLY_0388,Mohsin Khan,Bowler,0
+2024,IPL_T20_LSG,PLY_0075,Arshad Khan,Bowler,0
+2024,IPL_T20_LSG,PLY_0690,Yudhvir Singh,Bowler,0
+2024,IPL_T20_LSG,PLY_0700,Matt Henry,Bowler,1
+2024,IPL_T20_MI,PLY_0505,Rohit Sharma,Batter,0
+2024,IPL_T20_MI,PLY_0610,Suryakumar Yadav,Batter,0
+2024,IPL_T20_MI,PLY_0625,Tilak Varma,Batter,0
+2024,IPL_T20_MI,PLY_0627,Tim David,Batter,1
+2024,IPL_T20_MI,PLY_0411,Nehal Wadhera,Batter,0
+2024,IPL_T20_MI,PLY_0168,Dewald Brevis,Batter,1
+2024,IPL_T20_MI,PLY_0567,Shivam Sharma,Batter,0
+2024,IPL_T20_MI,PLY_0232,Ishan Kishan,Wicketkeeper,0
+2024,IPL_T20_MI,PLY_0780,,Wicketkeeper,0
+2024,IPL_T20_MI,PLY_0773,,Wicketkeeper,0
+2024,IPL_T20_MI,PLY_0214,Hardik Pandya,Allrounder,0
+2024,IPL_T20_MI,PLY_0506,Romario Shepherd,Allrounder,1
+2024,IPL_T20_MI,PLY_0381,Mohammad Nabi,Allrounder,1
+2024,IPL_T20_MI,PLY_0549,Shams Mulani,Allrounder,0
+2024,IPL_T20_MI,PLY_0402,Naman Dhir,Allrounder,0
+2024,IPL_T20_MI,PLY_0203,Gerald Coetzee,Allrounder,1
+2024,IPL_T20_MI,PLY_0067,Anshul Kamboj,Allrounder,0
+2024,IPL_T20_MI,PLY_0256,Jasprit Bumrah,Bowler,0
+2024,IPL_T20_MI,PLY_0439,Piyush Chawla,Bowler,0
+2024,IPL_T20_MI,PLY_0032,Akash Madhwal,Bowler,0
+2024,IPL_T20_MI,PLY_0781,,Bowler,0
+2024,IPL_T20_MI,PLY_0576,Shreyas Gopal,Bowler,0
+2024,IPL_T20_MI,PLY_0073,Arjun Tendulkar,Bowler,0
+2024,IPL_T20_MI,PLY_0759,Nuwan Thushara,Bowler,1
+2024,IPL_T20_MI,PLY_0313,Kwena Maphaka,Bowler,1
+2024,IPL_T20_MI,PLY_0331,Luke Wood,Bowler,1
+2024,IPL_T20_PBKS,PLY_0563,Shikhar Dhawan,Batter,0
+2024,IPL_T20_PBKS,PLY_0492,Rilee Rossouw,Batter,1
+2024,IPL_T20_PBKS,PLY_0087,Atharva Taide,Batter,0
+2024,IPL_T20_PBKS,PLY_0219,Harpreet Singh,Batter,0
+2024,IPL_T20_PBKS,PLY_0782,,Batter,0
+2024,IPL_T20_PBKS,PLY_0086,Ashutosh Sharma,Batter,0
+2024,IPL_T20_PBKS,PLY_0556,Shashank Singh,Batter,0
+2024,IPL_T20_PBKS,PLY_0271,Jonny Bairstow,Wicketkeeper,1
+2024,IPL_T20_PBKS,PLY_0264,Jitesh Sharma,Wicketkeeper,0
+2024,IPL_T20_PBKS,PLY_0440,Prabhsimran Singh,Wicketkeeper,0
+2024,IPL_T20_PBKS,PLY_0524,Sam Curran,Allrounder,1
+2024,IPL_T20_PBKS,PLY_0324,Liam Livingstone,Allrounder,1
+2024,IPL_T20_PBKS,PLY_0585,Sikandar Raza,Allrounder,1
+2024,IPL_T20_PBKS,PLY_0135,Chris Woakes,Allrounder,1
+2024,IPL_T20_PBKS,PLY_0496,Rishi Dhawan,Allrounder,0
+2024,IPL_T20_PBKS,PLY_0568,Shivam Singh,Allrounder,0
+2024,IPL_T20_PBKS,PLY_0282,Kagiso Rabada,Bowler,1
+2024,IPL_T20_PBKS,PLY_0076,Arshdeep Singh,Bowler,0
+2024,IPL_T20_PBKS,PLY_0222,Harshal Patel,Bowler,0
+2024,IPL_T20_PBKS,PLY_0462,Rahul Chahar,Bowler,0
+2024,IPL_T20_PBKS,PLY_0218,Harpreet Brar,Bowler,0
+2024,IPL_T20_PBKS,PLY_0406,Nathan Ellis,Bowler,1
+2024,IPL_T20_PBKS,PLY_0783,,Bowler,0
+2024,IPL_T20_PBKS,PLY_0784,,Bowler,0
+2024,IPL_T20_PBKS,PLY_0785,,Bowler,0
+2024,IPL_T20_RR,PLY_0684,Yashasvi Jaiswal,Batter,0
+2024,IPL_T20_RR,PLY_0564,Shimron Hetmyer,Batter,1
+2024,IPL_T20_RR,PLY_0509,Rovman Powell,Batter,1
+2024,IPL_T20_RR,PLY_0579,Shubham Dubey,Batter,0
+2024,IPL_T20_RR,PLY_0786,,Batter,0
+2024,IPL_T20_RR,PLY_0532,Sanju Samson,Wicketkeeper,0
+2024,IPL_T20_RR,PLY_0272,Jos Buttler,Wicketkeeper,1
+2024,IPL_T20_RR,PLY_0170,Dhruv Jurel,Wicketkeeper,0
+2024,IPL_T20_RR,PLY_0634,Tom Kohler- Cadmore,Wicketkeeper,1
+2024,IPL_T20_RR,PLY_0773,,Wicketkeeper,0
+2024,IPL_T20_RR,PLY_0484,Ravichandran Ashwin,Allrounder,0
+2024,IPL_T20_RR,PLY_0497,Riyan Parag,Allrounder,0
+2024,IPL_T20_RR,PLY_0183,Donovan Ferreira,Allrounder,1
+2024,IPL_T20_RR,PLY_0787,,Allrounder,0
+2024,IPL_T20_RR,PLY_0619,Tanush Kotian,Allrounder,0
+2024,IPL_T20_RR,PLY_0693,Yuzvendra Chahal,Bowler,0
+2024,IPL_T20_RR,PLY_0637,Trent Boult,Bowler,1
+2024,IPL_T20_RR,PLY_0088,Avesh Khan,Bowler,0
+2024,IPL_T20_RR,PLY_0530,Sandeep Sharma,Bowler,0
+2024,IPL_T20_RR,PLY_0408,Navdeep Saini,Bowler,0
+2024,IPL_T20_RR,PLY_0749,Kuldeep Sen,Bowler,0
+2024,IPL_T20_RR,PLY_0746,Nandre Burger,Bowler,1
+2024,IPL_T20_RR,PLY_0298,Keshav Maharaj,Bowler,1
+2024,IPL_T20_RCB,PLY_0196,Faf du Plessis,Batter,1
+2024,IPL_T20_RCB,PLY_0473,Rajat Patidar,Batter,0
+2024,IPL_T20_RCB,PLY_0536,Saurav Chauhan,Batter,0
+2024,IPL_T20_RCB,PLY_0612,Suyash S Prabhudessai,Batter,0
+2024,IPL_T20_RCB,PLY_0176,Dinesh Karthik,Wicketkeeper,0
+2024,IPL_T20_RCB,PLY_0068,Anuj Rawat,Wicketkeeper,0
+2024,IPL_T20_RCB,PLY_0204,Glenn Maxwell,Allrounder,1
+2024,IPL_T20_RCB,PLY_0678,Will Jacks,Allrounder,1
+2024,IPL_T20_RCB,PLY_0120,Cameron Green,Allrounder,1
+2024,IPL_T20_RCB,PLY_0339,Mahipal Lomror,Allrounder,0
+2024,IPL_T20_RCB,PLY_0345,Manoj Bhandage,Allrounder,0
+2024,IPL_T20_RCB,PLY_0614,Swapnil Singh,Allrounder,0
+2024,IPL_T20_RCB,PLY_0633,Tom Curran,Allrounder,1
+2024,IPL_T20_RCB,PLY_0773,,Allrounder,0
+2024,IPL_T20_RCB,PLY_0383,Mohammed Siraj,Bowler,0
+2024,IPL_T20_RCB,PLY_0042,Alzarri Joseph,Bowler,1
+2024,IPL_T20_RCB,PLY_0328,Lockie Ferguson,Bowler,1
+2024,IPL_T20_RCB,PLY_0682,Yash Dayal,Bowler,0
+2024,IPL_T20_RCB,PLY_0486,Reece Topley,Bowler,1
+2024,IPL_T20_RCB,PLY_0292,Karn Sharma,Bowler,0
+2024,IPL_T20_RCB,PLY_0788,,Bowler,0
+2024,IPL_T20_RCB,PLY_0671,Vyshak Vijaykumar,Bowler,0
+2024,IPL_T20_RCB,PLY_0031,Akash Deep,Bowler,0
+2024,IPL_T20_RCB,PLY_0789,,Bowler,0
+2024,IPL_T20_RCB,PLY_0790,,Bowler,0
+2024,IPL_T20_SRH,PLY_0636,Travis Head,Batter,1
+2024,IPL_T20_SRH,PLY_0362,Mayank Agarwal,Batter,0
+2024,IPL_T20_SRH,PLY_0467,Rahul Tripathi,Batter,0
+2024,IPL_T20_SRH,PLY_0065,Anmolpreet Singh,Batter,0
+2024,IPL_T20_SRH,PLY_0005,Abdul Samad,Batter,0
+2024,IPL_T20_SRH,PLY_0225,Heinrich Klaasen,Wicketkeeper,1
+2024,IPL_T20_SRH,PLY_0791,,Wicketkeeper,0
+2024,IPL_T20_SRH,PLY_0432,Pat Cummins,Allrounder,1
+2024,IPL_T20_SRH,PLY_0026,Aiden Markram,Allrounder,1
+2024,IPL_T20_SRH,PLY_0014,Abhishek Sharma,Allrounder,0
+2024,IPL_T20_SRH,PLY_0351,Marco Jansen,Allrounder,1
+2024,IPL_T20_SRH,PLY_0673,Washington Sundar,Allrounder,0
+2024,IPL_T20_SRH,PLY_0206,Glenn Phillips,Allrounder,1
+2024,IPL_T20_SRH,PLY_0541,Shahbaz Ahmed,Allrounder,0
+2024,IPL_T20_SRH,PLY_0533,Sanvir Singh,Allrounder,0
+2024,IPL_T20_SRH,PLY_0417,Nitish Kumar Reddy,Allrounder,0
+2024,IPL_T20_SRH,PLY_0109,Bhuvneshwar Kumar,Bowler,0
+2024,IPL_T20_SRH,PLY_0616,T Natarajan,Bowler,0
+2024,IPL_T20_SRH,PLY_0363,Mayank Markande,Bowler,0
+2024,IPL_T20_SRH,PLY_0645,Umran Malik,Bowler,0
+2024,IPL_T20_SRH,PLY_0259,Jaydev Unadkat,Bowler,0
+2024,IPL_T20_SRH,PLY_0199,Fazalhaq Farooqi,Bowler,1
+2024,IPL_T20_SRH,PLY_0723,Akash Singh,Bowler,0
+2024,IPL_T20_SRH,PLY_0792,,Bowler,0
+2024,IPL_T20_SRH,PLY_0660,Vijayakanth Viyaskanth,Bowler,1
+2024,IPL_T20_SRH,PLY_0773,,Bowler,0
+2023,IPL_T20_CSK,PLY_0334,MS Dhoni,Wicketkeeper,0
+2023,IPL_T20_CSK,PLY_0166,Devon Conway,Batter,1
+2023,IPL_T20_CSK,PLY_0510,Ruturaj Gaikwad,Batter,0
+2023,IPL_T20_CSK,PLY_0044,Ambati Rayudu,Batter,0
+2023,IPL_T20_CSK,PLY_0793,,Batter,0
+2023,IPL_T20_CSK,PLY_0028,Ajinkya Rahane,Batter,0
+2023,IPL_T20_CSK,PLY_0546,Shaik Rasheed,Batter,0
+2023,IPL_T20_CSK,PLY_0376,Moeen Ali,Allrounder,1
+2023,IPL_T20_CSK,PLY_0565,Shivam Dube,Allrounder,0
+2023,IPL_T20_CSK,PLY_0774,,Allrounder,0
+2023,IPL_T20_CSK,PLY_0485,Ravindra Jadeja,Allrounder,0
+2023,IPL_T20_CSK,PLY_0187,Dwaine Pretorius,Allrounder,1
+2023,IPL_T20_CSK,PLY_0373,Mitchell Santner,Allrounder,1
+2023,IPL_T20_CSK,PLY_0104,Ben Stokes,Allrounder,1
+2023,IPL_T20_CSK,PLY_0703,Ajay Mandal,Allrounder,0
+2023,IPL_T20_CSK,PLY_0794,,Allrounder,0
+2023,IPL_T20_CSK,PLY_0708,Nishant Sindhu,Allrounder,0
+2023,IPL_T20_CSK,PLY_0163,Deepak Chahar,Bowler,0
+2023,IPL_T20_CSK,PLY_0639,Tushar Deshpande,Bowler,0
+2023,IPL_T20_CSK,PLY_0718,Matheesha Pathirana,Bowler,1
+2023,IPL_T20_CSK,PLY_0586,Simarjeet Singh,Bowler,0
+2023,IPL_T20_CSK,PLY_0719,Prashant Solanki,Bowler,0
+2023,IPL_T20_CSK,PLY_0336,Maheesh Theekshana,Bowler,1
+2023,IPL_T20_CSK,PLY_0795,,Bowler,1
+2023,IPL_T20_CSK,PLY_0723,Akash Singh,Bowler,0
+2023,IPL_T20_DC,PLY_0157,David Warner,Batter,1
+2023,IPL_T20_DC,PLY_0683,Yash Dhull,Batter,0
+2023,IPL_T20_DC,PLY_0534,Sarfaraz Khan,Batter,0
+2023,IPL_T20_DC,PLY_0344,Manish Pandey,Batter,0
+2023,IPL_T20_DC,PLY_0509,Rovman Powell,Batter,1
+2023,IPL_T20_DC,PLY_0454,Prithvi Shaw,Batter,0
+2023,IPL_T20_DC,PLY_0492,Rilee Rossouw,Batter,1
+2023,IPL_T20_DC,PLY_0437,Phil Salt,Wicketkeeper,1
+2023,IPL_T20_DC,PLY_0371,Mitchell Marsh,Allrounder,1
+2023,IPL_T20_DC,PLY_0089,Axar Patel,Allrounder,0
+2023,IPL_T20_DC,PLY_0796,,Allrounder,0
+2023,IPL_T20_DC,PLY_0319,Lalit Yadav,Allrounder,0
+2023,IPL_T20_DC,PLY_0494,Ripal Patel,Allrounder,0
+2023,IPL_T20_DC,PLY_0066,Anrich Nortje,Bowler,1
+2023,IPL_T20_DC,PLY_0301,Khaleel Ahmed,Bowler,0
+2023,IPL_T20_DC,PLY_0705,Lungi Ngidi,Bowler,1
+2023,IPL_T20_DC,PLY_0399,Mustafizur Rahman,Bowler,1
+2023,IPL_T20_DC,PLY_0393,Mukesh Kumar,Bowler,0
+2023,IPL_T20_DC,PLY_0448,Pravin Dubey,Bowler,0
+2023,IPL_T20_DC,PLY_0306,Kuldeep Yadav,Bowler,0
+2023,IPL_T20_DC,PLY_0235,Ishant Sharma,Bowler,0
+2023,IPL_T20_DC,PLY_0127,Chetan Sakariya,Bowler,0
+2023,IPL_T20_DC,PLY_0757,Vicky Ostwal,Bowler,0
+2023,IPL_T20_DC,PLY_0455,Priyam Garg,Batter,0
+2023,IPL_T20_DC,PLY_0015,Abishek Porel,Wicketkeeper,0
+2023,IPL_T20_GT,PLY_0214,Hardik Pandya,Allrounder,0
+2023,IPL_T20_GT,PLY_0580,Shubman Gill,Batter,0
+2023,IPL_T20_GT,PLY_0156,David Miller,Batter,1
+2023,IPL_T20_GT,PLY_0009,Abhinav Manohar,Batter,0
+2023,IPL_T20_GT,PLY_0521,Sai Sudharsan,Batter,0
+2023,IPL_T20_GT,PLY_0679,Wriddhiman Saha,Wicketkeeper,0
+2023,IPL_T20_GT,PLY_0361,Matthew Wade,Wicketkeeper,1
+2023,IPL_T20_GT,PLY_0594,Srikar Bharat,Wicketkeeper,0
+2023,IPL_T20_GT,PLY_0647,Urvil Patel,Wicketkeeper,0
+2023,IPL_T20_GT,PLY_0478,Rashid Khan,Allrounder,1
+2023,IPL_T20_GT,PLY_0658,Vijay Shankar,Allrounder,0
+2023,IPL_T20_GT,PLY_0466,Rahul Tewatia,Allrounder,0
+2023,IPL_T20_GT,PLY_0423,Odean Smith,Allrounder,1
+2023,IPL_T20_GT,PLY_0042,Alzarri Joseph,Bowler,1
+2023,IPL_T20_GT,PLY_0382,Mohammad Shami,Bowler,0
+2023,IPL_T20_GT,PLY_0152,Darshan Nalkande,Bowler,0
+2023,IPL_T20_GT,PLY_0419,Noor Ahmad,Bowler,1
+2023,IPL_T20_GT,PLY_0520,Sai Kishore,Bowler,0
+2023,IPL_T20_GT,PLY_0442,Pradeep Sangwan,Bowler,0
+2023,IPL_T20_GT,PLY_0386,Mohit Sharma,Bowler,0
+2023,IPL_T20_GT,PLY_0682,Yash Dayal,Bowler,0
+2023,IPL_T20_GT,PLY_0258,Jayant Yadav,Bowler,0
+2023,IPL_T20_GT,PLY_0566,Shivam Mavi,Bowler,0
+2023,IPL_T20_GT,PLY_0776,,Bowler,1
+2023,IPL_T20_GT,PLY_0154,Dasun Shanaka,Allrounder,1
+2023,IPL_T20_KKR,PLY_0418,Nitish Rana,Batter,0
+2023,IPL_T20_KKR,PLY_0654,Varun Chakaravarthy,Bowler,0
+2023,IPL_T20_KKR,PLY_0655,Venkatesh Iyer,Allrounder,0
+2023,IPL_T20_KKR,PLY_0604,Sunil Narine,Allrounder,1
+2023,IPL_T20_KKR,PLY_0049,Andre Russell,Allrounder,1
+2023,IPL_T20_KKR,PLY_0555,Shardul Thakur,Allrounder,0
+2023,IPL_T20_KKR,PLY_0328,Lockie Ferguson,Bowler,1
+2023,IPL_T20_KKR,PLY_0644,Umesh Yadav,Bowler,0
+2023,IPL_T20_KKR,PLY_0630,Tim Southee,Bowler,1
+2023,IPL_T20_KKR,PLY_0223,Harshit Rana,Bowler,0
+2023,IPL_T20_KKR,PLY_0069,Anukul Roy,Allrounder,0
+2023,IPL_T20_KKR,PLY_0493,Rinku Singh,Batter,0
+2023,IPL_T20_KKR,PLY_0461,Rahmanullah Gurbaz,Wicketkeeper,1
+2023,IPL_T20_KKR,PLY_0404,Narayan Jagadeesan,Wicketkeeper,0
+2023,IPL_T20_KKR,PLY_0255,Jason Roy,Batter,1
+2023,IPL_T20_KKR,PLY_0343,Mandeep Singh,Allrounder,0
+2023,IPL_T20_KKR,PLY_0651,Vaibhav Arora,Bowler,0
+2023,IPL_T20_KKR,PLY_0758,Vicky Ostwal,Bowler,0
+2023,IPL_T20_KKR,PLY_0711,Kulwant Khejroliya,Bowler,0
+2023,IPL_T20_KKR,PLY_0158,David Wiese,Allrounder,1
+2023,IPL_T20_KKR,PLY_0797,,Wicketkeeper,1
+2023,IPL_T20_KKR,PLY_0798,,Batter,0
+2023,IPL_T20_LSG,PLY_0305,Krunal Pandya,Allrounder,0
+2023,IPL_T20_LSG,PLY_0458,Quinton de Kock,Wicketkeeper,1
+2023,IPL_T20_LSG,PLY_0413,Nicholas Pooran,Wicketkeeper,1
+2023,IPL_T20_LSG,PLY_0090,Ayush Badoni,Batter,0
+2023,IPL_T20_LSG,PLY_0341,Manan Vohra,Batter,0
+2023,IPL_T20_LSG,PLY_0164,Deepak Hooda,Allrounder,0
+2023,IPL_T20_LSG,PLY_0316,Kyle Mayers,Allrounder,1
+2023,IPL_T20_LSG,PLY_0352,Marcus Stoinis,Allrounder,1
+2023,IPL_T20_LSG,PLY_0304,Krishnappa Gowtham,Allrounder,0
+2023,IPL_T20_LSG,PLY_0290,Karan Sharma,Allrounder,0
+2023,IPL_T20_LSG,PLY_0451,Prerak Mankad,Allrounder,0
+2023,IPL_T20_LSG,PLY_0147,Daniel Sams,Allrounder,1
+2023,IPL_T20_LSG,PLY_0506,Romario Shepherd,Allrounder,1
+2023,IPL_T20_LSG,PLY_0045,Amit Mishra,Bowler,0
+2023,IPL_T20_LSG,PLY_0088,Avesh Khan,Bowler,0
+2023,IPL_T20_LSG,PLY_0354,Mark Wood,Bowler,1
+2023,IPL_T20_LSG,PLY_0481,Ravi Bishnoi,Bowler,0
+2023,IPL_T20_LSG,PLY_0259,Jaydev Unadkat,Bowler,0
+2023,IPL_T20_LSG,PLY_0388,Mohsin Khan,Bowler,0
+2023,IPL_T20_LSG,PLY_0409,Naveen-Ul-Haq,Bowler,1
+2023,IPL_T20_LSG,PLY_0741,Vijaykumar Vyshak,Bowler,0
+2023,IPL_T20_LSG,PLY_0614,Swapnil Singh,Bowler,0
+2023,IPL_T20_LSG,PLY_0799,,Bowler,0
+2023,IPL_T20_MI,PLY_0505,Rohit Sharma,Batter,0
+2023,IPL_T20_MI,PLY_0232,Ishan Kishan,Wicketkeeper,0
+2023,IPL_T20_MI,PLY_0610,Suryakumar Yadav,Batter,0
+2023,IPL_T20_MI,PLY_0627,Tim David,Batter,1
+2023,IPL_T20_MI,PLY_0168,Dewald Brevis,Batter,1
+2023,IPL_T20_MI,PLY_0625,Tilak Varma,Allrounder,0
+2023,IPL_T20_MI,PLY_0638,Tristan Stubbs,Wicketkeeper,1
+2023,IPL_T20_MI,PLY_0669,Vishnu Vinod,Wicketkeeper,0
+2023,IPL_T20_MI,PLY_0411,Nehal Wadhera,Batter,0
+2023,IPL_T20_MI,PLY_0475,Ramandeep Singh,Batter,0
+2023,IPL_T20_MI,PLY_0120,Cameron Green,Allrounder,1
+2023,IPL_T20_MI,PLY_0439,Piyush Chawla,Allrounder,0
+2023,IPL_T20_MI,PLY_0549,Shams Mulani,Allrounder,0
+2023,IPL_T20_MI,PLY_0253,Jason Behrendorff,Bowler,1
+2023,IPL_T20_MI,PLY_0800,,Bowler,1
+2023,IPL_T20_MI,PLY_0132,Chris Jordan,Bowler,1
+2023,IPL_T20_MI,PLY_0777,,Bowler,0
+2023,IPL_T20_MI,PLY_0032,Akash Madhwal,Bowler,0
+2023,IPL_T20_MI,PLY_0781,,Bowler,0
+2023,IPL_T20_MI,PLY_0073,Arjun Tendulkar,Bowler,0
+2023,IPL_T20_MI,PLY_0227,Hrithik Shokeen,Bowler,0
+2023,IPL_T20_MI,PLY_0801,,Bowler,1
+2023,IPL_T20_MI,PLY_0802,,Bowler,0
+2023,IPL_T20_MI,PLY_0075,Arshad Khan,Bowler,0
+2023,IPL_T20_PBKS,PLY_0563,Shikhar Dhawan,Batter,0
+2023,IPL_T20_PBKS,PLY_0106,Bhanuka Rajapaksa,Batter,1
+2023,IPL_T20_PBKS,PLY_0264,Jitesh Sharma,Wicketkeeper,0
+2023,IPL_T20_PBKS,PLY_0440,Prabhsimran Singh,Wicketkeeper,0
+2023,IPL_T20_PBKS,PLY_0544,Shahrukh Khan,Batter,0
+2023,IPL_T20_PBKS,PLY_0219,Harpreet Singh,Batter,0
+2023,IPL_T20_PBKS,PLY_0087,Atharva Taide,Allrounder,0
+2023,IPL_T20_PBKS,PLY_0524,Sam Curran,Allrounder,1
+2023,IPL_T20_PBKS,PLY_0324,Liam Livingstone,Allrounder,1
+2023,IPL_T20_PBKS,PLY_0496,Rishi Dhawan,Allrounder,0
+2023,IPL_T20_PBKS,PLY_0585,Sikandar Raza,Allrounder,1
+2023,IPL_T20_PBKS,PLY_0360,Matthew Short,Allrounder,1
+2023,IPL_T20_PBKS,PLY_0385,Mohit Rathee,Allrounder,0
+2023,IPL_T20_PBKS,PLY_0076,Arshdeep Singh,Bowler,0
+2023,IPL_T20_PBKS,PLY_0282,Kagiso Rabada,Bowler,1
+2023,IPL_T20_PBKS,PLY_0406,Nathan Ellis,Bowler,1
+2023,IPL_T20_PBKS,PLY_0462,Rahul Chahar,Bowler,0
+2023,IPL_T20_PBKS,PLY_0218,Harpreet Brar,Bowler,0
+2023,IPL_T20_PBKS,PLY_0783,,Bowler,0
+2023,IPL_T20_PBKS,PLY_0803,,Bowler,0
+2023,IPL_T20_PBKS,PLY_0710,Gurnoor Brar,Bowler,0
+2023,IPL_T20_PBKS,PLY_0804,,Batter,1
+2023,IPL_T20_RR,PLY_0532,Sanju Samson,Wicketkeeper,0
+2023,IPL_T20_RR,PLY_0272,Jos Buttler,Wicketkeeper,1
+2023,IPL_T20_RR,PLY_0684,Yashasvi Jaiswal,Batter,0
+2023,IPL_T20_RR,PLY_0564,Shimron Hetmyer,Batter,1
+2023,IPL_T20_RR,PLY_0165,Devdutt Padikkal,Batter,0
+2023,IPL_T20_RR,PLY_0497,Riyan Parag,Batter,0
+2023,IPL_T20_RR,PLY_0266,Joe Root,Batter,1
+2023,IPL_T20_RR,PLY_0170,Dhruv Jurel,Wicketkeeper,0
+2023,IPL_T20_RR,PLY_0805,,Wicketkeeper,0
+2023,IPL_T20_RR,PLY_0484,Ravichandran Ashwin,Allrounder,0
+2023,IPL_T20_RR,PLY_0254,Jason Holder,Allrounder,1
+2023,IPL_T20_RR,PLY_0183,Donovan Ferreira,Allrounder,1
+2023,IPL_T20_RR,PLY_0004,Abdul Basith,Allrounder,0
+2023,IPL_T20_RR,PLY_0806,,Allrounder,0
+2023,IPL_T20_RR,PLY_0637,Trent Boult,Bowler,1
+2023,IPL_T20_RR,PLY_0693,Yuzvendra Chahal,Bowler,0
+2023,IPL_T20_RR,PLY_0408,Navdeep Saini,Bowler,0
+2023,IPL_T20_RR,PLY_0749,Kuldeep Sen,Bowler,0
+2023,IPL_T20_RR,PLY_0397,Murugan Ashwin,Bowler,0
+2023,IPL_T20_RR,PLY_0807,,Bowler,0
+2023,IPL_T20_RR,PLY_0530,Sandeep Sharma,Bowler,0
+2023,IPL_T20_RR,PLY_0020,Adam Zampa,Bowler,1
+2023,IPL_T20_RR,PLY_0422,Obed McCoy,Bowler,1
+2023,IPL_T20_RR,PLY_0279,KC Cariappa,Bowler,0
+2023,IPL_T20_RR,PLY_0307,Kuldip Yadav,Bowler,0
+2023,IPL_T20_RCB,PLY_0196,Faf du Plessis,Batter,1
+2023,IPL_T20_RCB,PLY_0666,Virat Kohli,Batter,0
+2023,IPL_T20_RCB,PLY_0176,Dinesh Karthik,Wicketkeeper,0
+2023,IPL_T20_RCB,PLY_0204,Glenn Maxwell,Allrounder,1
+2023,IPL_T20_RCB,PLY_0364,Michael Bracewell,Allrounder,1
+2023,IPL_T20_RCB,PLY_0222,Harshal Patel,Allrounder,0
+2023,IPL_T20_RCB,PLY_0383,Mohammed Siraj,Bowler,0
+2023,IPL_T20_RCB,PLY_0273,Josh Hazlewood,Bowler,1
+2023,IPL_T20_RCB,PLY_0672,Wanindu Hasaranga,Allrounder,1
+2023,IPL_T20_RCB,PLY_0712,Finn Allen,Batter,1
+2023,IPL_T20_RCB,PLY_0068,Anuj Rawat,Wicketkeeper,0
+2023,IPL_T20_RCB,PLY_0339,Mahipal Lomror,Allrounder,0
+2023,IPL_T20_RCB,PLY_0541,Shahbaz Ahmed,Allrounder,0
+2023,IPL_T20_RCB,PLY_0612,Suyash S Prabhudessai,Allrounder,0
+2023,IPL_T20_RCB,PLY_0031,Akash Deep,Bowler,0
+2023,IPL_T20_RCB,PLY_0675,Wayne Parnell,Bowler,1
+2023,IPL_T20_RCB,PLY_0292,Karn Sharma,Bowler,0
+2023,IPL_T20_RCB,PLY_0581,Siddarth Kaul,Bowler,0
+2023,IPL_T20_RCB,PLY_0706,,Bowler,0
+2023,IPL_T20_RCB,PLY_0789,,Bowler,0
+2023,IPL_T20_RCB,PLY_0790,,Bowler,0
+2023,IPL_T20_RCB,PLY_0808,,Bowler,0
+2023,IPL_T20_RCB,PLY_0809,,Allrounder,0
+2023,IPL_T20_RCB,PLY_0345,Manoj Bhandage,Allrounder,0
+2023,IPL_T20_RCB,PLY_0295,Kedar Jadhav,Allrounder,0
+2023,IPL_T20_SRH,PLY_0026,Aiden Markram,Batter,1
+2023,IPL_T20_SRH,PLY_0467,Rahul Tripathi,Batter,0
+2023,IPL_T20_SRH,PLY_0220,Harry Brook,Batter,1
+2023,IPL_T20_SRH,PLY_0362,Mayank Agarwal,Batter,0
+2023,IPL_T20_SRH,PLY_0225,Heinrich Klaasen,Wicketkeeper,1
+2023,IPL_T20_SRH,PLY_0014,Abhishek Sharma,Allrounder,0
+2023,IPL_T20_SRH,PLY_0351,Marco Jansen,Allrounder,1
+2023,IPL_T20_SRH,PLY_0109,Bhuvneshwar Kumar,Bowler,0
+2023,IPL_T20_SRH,PLY_0645,Umran Malik,Bowler,0
+2023,IPL_T20_SRH,PLY_0616,T Natarajan,Bowler,0
+2023,IPL_T20_SRH,PLY_0293,Kartik Tyagi,Bowler,0
+2023,IPL_T20_SRH,PLY_0199,Fazalhaq Farooqi,Bowler,1
+2023,IPL_T20_SRH,PLY_0021,Adil Rashid,Bowler,1
+2023,IPL_T20_SRH,PLY_0033,Akeal Hosein,Bowler,1
+2023,IPL_T20_SRH,PLY_0363,Mayank Markande,Bowler,0
+2023,IPL_T20_SRH,PLY_0206,Glenn Phillips,Allrounder,1
+2023,IPL_T20_SRH,PLY_0005,Abdul Samad,Batter,0
+2023,IPL_T20_SRH,PLY_0065,Anmolpreet Singh,Batter,0
+2023,IPL_T20_SRH,PLY_0791,,Wicketkeeper,0
+2023,IPL_T20_SRH,PLY_0417,Nitish Kumar Reddy,Allrounder,0
+2023,IPL_T20_SRH,PLY_0533,Sanvir Singh,Allrounder,0
+2023,IPL_T20_SRH,PLY_0670,Vivrant Sharma,Allrounder,0
+2023,IPL_T20_SRH,PLY_0810,,Allrounder,0
+2023,IPL_T20_SRH,PLY_0788,,Bowler,0
+2022,IPL_T20_CSK,PLY_0334,MS Dhoni,Wicketkeeper,0
+2022,IPL_T20_CSK,PLY_0166,Devon Conway,Wicketkeeper,1
+2022,IPL_T20_CSK,PLY_0510,Ruturaj Gaikwad,Batter,0
+2022,IPL_T20_CSK,PLY_0811,,Batter,0
+2022,IPL_T20_CSK,PLY_0812,,Wicketkeeper,0
+2022,IPL_T20_CSK,PLY_0044,Ambati Rayudu,Batter,0
+2022,IPL_T20_CSK,PLY_0793,,Batter,0
+2022,IPL_T20_CSK,PLY_0501,Robin Uthappa,Batter,0
+2022,IPL_T20_CSK,PLY_0376,Moeen Ali,Allrounder,1
+2022,IPL_T20_CSK,PLY_0794,,Allrounder,0
+2022,IPL_T20_CSK,PLY_0189,Dwayne Bravo,Allrounder,1
+2022,IPL_T20_CSK,PLY_0565,Shivam Dube,Allrounder,0
+2022,IPL_T20_CSK,PLY_0774,,Allrounder,0
+2022,IPL_T20_CSK,PLY_0187,Dwaine Pretorius,Allrounder,1
+2022,IPL_T20_CSK,PLY_0373,Mitchell Santner,Allrounder,1
+2022,IPL_T20_CSK,PLY_0485,Ravindra Jadeja,Allrounder,0
+2022,IPL_T20_CSK,PLY_0807,,Bowler,0
+2022,IPL_T20_CSK,PLY_0639,Tushar Deshpande,Bowler,0
+2022,IPL_T20_CSK,PLY_0132,Chris Jordan,Bowler,1
+2022,IPL_T20_CSK,PLY_0392,Mukesh Choudhary,Bowler,0
+2022,IPL_T20_CSK,PLY_0718,Matheesha Pathirana,Bowler,1
+2022,IPL_T20_CSK,PLY_0586,Simarjeet Singh,Bowler,0
+2022,IPL_T20_CSK,PLY_0719,Prashant Solanki,Bowler,0
+2022,IPL_T20_CSK,PLY_0336,Maheesh Theekshana,Bowler,1
+2022,IPL_T20_DC,PLY_0495,Rishabh Pant,Wicketkeeper,0
+2022,IPL_T20_DC,PLY_0813,,Batter,0
+2022,IPL_T20_DC,PLY_0278,K.S Bharat,Wicketkeeper,0
+2022,IPL_T20_DC,PLY_0683,Yash Dhull,Batter,0
+2022,IPL_T20_DC,PLY_0534,Sarfaraz Khan,Batter,0
+2022,IPL_T20_DC,PLY_0494,Ripal Patel,Batter,0
+2022,IPL_T20_DC,PLY_0509,Rovman Powell,Batter,1
+2022,IPL_T20_DC,PLY_0629,Tim Seifert,Wicketkeeper,1
+2022,IPL_T20_DC,PLY_0454,Prithvi Shaw,Batter,0
+2022,IPL_T20_DC,PLY_0157,David Warner,Batter,1
+2022,IPL_T20_DC,PLY_0319,Lalit Yadav,Allrounder,0
+2022,IPL_T20_DC,PLY_0343,Mandeep Singh,Allrounder,0
+2022,IPL_T20_DC,PLY_0371,Mitchell Marsh,Allrounder,1
+2022,IPL_T20_DC,PLY_0089,Axar Patel,Allrounder,0
+2022,IPL_T20_DC,PLY_0555,Shardul Thakur,Allrounder,0
+2022,IPL_T20_DC,PLY_0301,Khaleel Ahmed,Bowler,0
+2022,IPL_T20_DC,PLY_0446,Praveen Dubey,Bowler,0
+2022,IPL_T20_DC,PLY_0306,Kuldeep Yadav,Bowler,0
+2022,IPL_T20_DC,PLY_0399,Mustafizur Rahman,Bowler,1
+2022,IPL_T20_DC,PLY_0284,Kamlesh Nagarkoti,Bowler,0
+2022,IPL_T20_DC,PLY_0705,Lungi Ngidi,Bowler,1
+2022,IPL_T20_DC,PLY_0066,Anrich Nortje,Bowler,1
+2022,IPL_T20_DC,PLY_0757,Vicky Ostwal,Bowler,0
+2022,IPL_T20_DC,PLY_0127,Chetan Sakariya,Bowler,0
+2022,IPL_T20_GT,PLY_0580,Shubman Gill,Batter,0
+2022,IPL_T20_GT,PLY_0521,Sai Sudharsan,Batter,0
+2022,IPL_T20_GT,PLY_0814,,Batter,0
+2022,IPL_T20_GT,PLY_0156,David Miller,Batter,1
+2022,IPL_T20_GT,PLY_0461,Rahmanullah Gurbaz,Wicketkeeper,1
+2022,IPL_T20_GT,PLY_0679,Wriddhiman Saha,Wicketkeeper,0
+2022,IPL_T20_GT,PLY_0361,Matthew Wade,Wicketkeeper,1
+2022,IPL_T20_GT,PLY_0214,Hardik Pandya,Allrounder,0
+2022,IPL_T20_GT,PLY_0815,,Allrounder,1
+2022,IPL_T20_GT,PLY_0009,Abhinav Manohar,Allrounder,0
+2022,IPL_T20_GT,PLY_0478,Rashid Khan,Allrounder,1
+2022,IPL_T20_GT,PLY_0658,Vijay Shankar,Allrounder,0
+2022,IPL_T20_GT,PLY_0466,Rahul Tewatia,Allrounder,0
+2022,IPL_T20_GT,PLY_0653,Varun Aaron,Bowler,0
+2022,IPL_T20_GT,PLY_0328,Lockie Ferguson,Bowler,1
+2022,IPL_T20_GT,PLY_0042,Alzarri Joseph,Bowler,1
+2022,IPL_T20_GT,PLY_0382,Mohammad Shami,Bowler,0
+2022,IPL_T20_GT,PLY_0152,Darshan Nalkande,Bowler,0
+2022,IPL_T20_GT,PLY_0419,Noor Ahmad,Bowler,1
+2022,IPL_T20_GT,PLY_0520,Sai Kishore,Bowler,0
+2022,IPL_T20_GT,PLY_0442,Pradeep Sangwan,Bowler,0
+2022,IPL_T20_GT,PLY_0258,Jayant Yadav,Bowler,0
+2022,IPL_T20_GT,PLY_0682,Yash Dayal,Bowler,0
+2022,IPL_T20_KKR,PLY_0577,Shreyas Iyer,Batter,0
+2022,IPL_T20_KKR,PLY_0523,Sam Billings,Wicketkeeper,1
+2022,IPL_T20_KKR,PLY_0003,Aaron Finch,Batter,1
+2022,IPL_T20_KKR,PLY_0095,B Indrajith,Batter,0
+2022,IPL_T20_KKR,PLY_0561,Sheldon Jackson,Wicketkeeper,0
+2022,IPL_T20_KKR,PLY_0816,,Batter,0
+2022,IPL_T20_KKR,PLY_0028,Ajinkya Rahane,Batter,0
+2022,IPL_T20_KKR,PLY_0418,Nitish Rana,Batter,0
+2022,IPL_T20_KKR,PLY_0493,Rinku Singh,Batter,0
+2022,IPL_T20_KKR,PLY_0007,Abhijeet Tomar,Batter,0
+2022,IPL_T20_KKR,PLY_0043,Aman Khan,Allrounder,0
+2022,IPL_T20_KKR,PLY_0655,Venkatesh Iyer,Allrounder,0
+2022,IPL_T20_KKR,PLY_0817,,Allrounder,1
+2022,IPL_T20_KKR,PLY_0381,Mohammad Nabi,Allrounder,1
+2022,IPL_T20_KKR,PLY_0604,Sunil Narine,Allrounder,1
+2022,IPL_T20_KKR,PLY_0069,Anukul Roy,Allrounder,0
+2022,IPL_T20_KKR,PLY_0049,Andre Russell,Allrounder,1
+2022,IPL_T20_KKR,PLY_0566,Shivam Mavi,Allrounder,0
+2022,IPL_T20_KKR,PLY_0709,Ashok Sharma,Bowler,0
+2022,IPL_T20_KKR,PLY_0223,Harshit Rana,Bowler,0
+2022,IPL_T20_KKR,PLY_0818,,Bowler,0
+2022,IPL_T20_KKR,PLY_0630,Tim Southee,Bowler,1
+2022,IPL_T20_KKR,PLY_0654,Varun Chakaravarthy,Bowler,0
+2022,IPL_T20_KKR,PLY_0644,Umesh Yadav,Bowler,0
+2022,IPL_T20_LSG,PLY_0280,KL Rahul,Wicketkeeper,0
+2022,IPL_T20_LSG,PLY_0090,Ayush Badoni,Batter,0
+2022,IPL_T20_LSG,PLY_0458,Quinton de Kock,Wicketkeeper,1
+2022,IPL_T20_LSG,PLY_0193,Evin Lewis,Batter,1
+2022,IPL_T20_LSG,PLY_0344,Manish Pandey,Batter,0
+2022,IPL_T20_LSG,PLY_0341,Manan Vohra,Batter,0
+2022,IPL_T20_LSG,PLY_0304,Krishnappa Gowtham,Allrounder,0
+2022,IPL_T20_LSG,PLY_0254,Jason Holder,Allrounder,1
+2022,IPL_T20_LSG,PLY_0164,Deepak Hooda,Allrounder,0
+2022,IPL_T20_LSG,PLY_0316,Kyle Mayers,Allrounder,1
+2022,IPL_T20_LSG,PLY_0305,Krunal Pandya,Allrounder,0
+2022,IPL_T20_LSG,PLY_0290,Karan Sharma,Allrounder,0
+2022,IPL_T20_LSG,PLY_0352,Marcus Stoinis,Allrounder,1
+2022,IPL_T20_LSG,PLY_0088,Avesh Khan,Bowler,0
+2022,IPL_T20_LSG,PLY_0186,Dushmantha Chameera,Bowler,1
+2022,IPL_T20_LSG,PLY_0388,Mohsin Khan,Bowler,0
+2022,IPL_T20_LSG,PLY_0542,Shahbaz Nadeem,Bowler,0
+2022,IPL_T20_LSG,PLY_0062,Ankit Rajpoot,Bowler,0
+2022,IPL_T20_LSG,PLY_0481,Ravi Bishnoi,Bowler,0
+2022,IPL_T20_LSG,PLY_0053,Andrew Tye,Bowler,1
+2022,IPL_T20_LSG,PLY_0727,Mayank Yadav,Bowler,0
+2022,IPL_T20_MI,PLY_0505,Rohit Sharma,Batter,0
+2022,IPL_T20_MI,PLY_0065,Anmolpreet Singh,Batter,0
+2022,IPL_T20_MI,PLY_0168,Dewald Brevis,Batter,1
+2022,IPL_T20_MI,PLY_0819,,Batter,0
+2022,IPL_T20_MI,PLY_0627,Tim David,Batter,1
+2022,IPL_T20_MI,PLY_0232,Ishan Kishan,Wicketkeeper,0
+2022,IPL_T20_MI,PLY_0820,,Wicketkeeper,0
+2022,IPL_T20_MI,PLY_0475,Ramandeep Singh,Batter,0
+2022,IPL_T20_MI,PLY_0638,Tristan Stubbs,Wicketkeeper,1
+2022,IPL_T20_MI,PLY_0610,Suryakumar Yadav,Batter,0
+2022,IPL_T20_MI,PLY_0194,Fabian Allen,Allrounder,1
+2022,IPL_T20_MI,PLY_0302,Kieron Pollard,Allrounder,1
+2022,IPL_T20_MI,PLY_0625,Tilak Varma,Allrounder,0
+2022,IPL_T20_MI,PLY_0147,Daniel Sams,Allrounder,1
+2022,IPL_T20_MI,PLY_0821,,Allrounder,0
+2022,IPL_T20_MI,PLY_0267,Jofra Archer,Bowler,1
+2022,IPL_T20_MI,PLY_0397,Murugan Ashwin,Bowler,0
+2022,IPL_T20_MI,PLY_0099,Basil Thampi,Bowler,0
+2022,IPL_T20_MI,PLY_0256,Jasprit Bumrah,Bowler,0
+2022,IPL_T20_MI,PLY_0781,,Bowler,0
+2022,IPL_T20_MI,PLY_0363,Mayank Markande,Bowler,0
+2022,IPL_T20_MI,PLY_0800,,Bowler,1
+2022,IPL_T20_MI,PLY_0227,Hrithik Shokeen,Bowler,0
+2022,IPL_T20_MI,PLY_0073,Arjun Tendulkar,Bowler,0
+2022,IPL_T20_MI,PLY_0259,Jaydev Unadkat,Bowler,0
+2022,IPL_T20_PBKS,PLY_0362,Mayank Agarwal,Batter,0
+2022,IPL_T20_PBKS,PLY_0271,Jonny Bairstow,Wicketkeeper,1
+2022,IPL_T20_PBKS,PLY_0563,Shikhar Dhawan,Batter,0
+2022,IPL_T20_PBKS,PLY_0440,Prabhsimran Singh,Wicketkeeper,0
+2022,IPL_T20_PBKS,PLY_0106,Bhanuka Rajapaksa,Batter,1
+2022,IPL_T20_PBKS,PLY_0544,Shahrukh Khan,Batter,0
+2022,IPL_T20_PBKS,PLY_0264,Jitesh Sharma,Wicketkeeper,0
+2022,IPL_T20_PBKS,PLY_0730,Raj Bawa,Allrounder,0
+2022,IPL_T20_PBKS,PLY_0822,,Allrounder,0
+2022,IPL_T20_PBKS,PLY_0496,Rishi Dhawan,Allrounder,0
+2022,IPL_T20_PBKS,PLY_0823,,Allrounder,1
+2022,IPL_T20_PBKS,PLY_0324,Liam Livingstone,Allrounder,1
+2022,IPL_T20_PBKS,PLY_0451,Prerak Mankad,Allrounder,0
+2022,IPL_T20_PBKS,PLY_0423,Odean Smith,Allrounder,1
+2022,IPL_T20_PBKS,PLY_0087,Atharva Taide,Allrounder,0
+2022,IPL_T20_PBKS,PLY_0076,Arshdeep Singh,Bowler,0
+2022,IPL_T20_PBKS,PLY_0651,Vaibhav Arora,Bowler,0
+2022,IPL_T20_PBKS,PLY_0462,Rahul Chahar,Bowler,0
+2022,IPL_T20_PBKS,PLY_0406,Nathan Ellis,Bowler,1
+2022,IPL_T20_PBKS,PLY_0824,,Bowler,0
+2022,IPL_T20_PBKS,PLY_0825,,Bowler,0
+2022,IPL_T20_PBKS,PLY_0282,Kagiso Rabada,Bowler,1
+2022,IPL_T20_PBKS,PLY_0530,Sandeep Sharma,Bowler,0
+2022,IPL_T20_PBKS,PLY_0803,,Bowler,0
+2022,IPL_T20_PBKS,PLY_0218,Harpreet Brar,Bowler,0
+2022,IPL_T20_RR,PLY_0532,Sanju Samson,Wicketkeeper,0
+2022,IPL_T20_RR,PLY_0272,Jos Buttler,Wicketkeeper,1
+2022,IPL_T20_RR,PLY_0826,,Batter,0
+2022,IPL_T20_RR,PLY_0564,Shimron Hetmyer,Batter,1
+2022,IPL_T20_RR,PLY_0684,Yashasvi Jaiswal,Batter,0
+2022,IPL_T20_RR,PLY_0170,Dhruv Jurel,Wicketkeeper,0
+2022,IPL_T20_RR,PLY_0294,Karun Nair,Batter,0
+2022,IPL_T20_RR,PLY_0165,Devdutt Padikkal,Batter,0
+2022,IPL_T20_RR,PLY_0497,Riyan Parag,Batter,0
+2022,IPL_T20_RR,PLY_0480,Rassie van der Dussen,Batter,1
+2022,IPL_T20_RR,PLY_0484,Ravichandran Ashwin,Allrounder,0
+2022,IPL_T20_RR,PLY_0140,Corbin Bosch,Allrounder,1
+2022,IPL_T20_RR,PLY_0153,Daryl Mitchell,Allrounder,1
+2022,IPL_T20_RR,PLY_0249,James Neesham,Allrounder,1
+2022,IPL_T20_RR,PLY_0827,,Bowler,0
+2022,IPL_T20_RR,PLY_0637,Trent Boult,Bowler,1
+2022,IPL_T20_RR,PLY_0279,KC Cariappa,Bowler,0
+2022,IPL_T20_RR,PLY_0693,Yuzvendra Chahal,Bowler,0
+2022,IPL_T20_RR,PLY_0422,Obed McCoy,Bowler,1
+2022,IPL_T20_RR,PLY_0445,Prasidh Krishna,Bowler,0
+2022,IPL_T20_RR,PLY_0408,Navdeep Saini,Bowler,0
+2022,IPL_T20_RR,PLY_0749,Kuldeep Sen,Bowler,0
+2022,IPL_T20_RR,PLY_0828,,Bowler,0
+2022,IPL_T20_RR,PLY_0307,Kuldip Yadav,Bowler,0
+2022,IPL_T20_RCB,PLY_0196,Faf du Plessis,Batter,1
+2022,IPL_T20_RCB,PLY_0712,Finn Allen,Batter,1
+2022,IPL_T20_RCB,PLY_0068,Anuj Rawat,Wicketkeeper,0
+2022,IPL_T20_RCB,PLY_0176,Dinesh Karthik,Wicketkeeper,0
+2022,IPL_T20_RCB,PLY_0666,Virat Kohli,Batter,0
+2022,IPL_T20_RCB,PLY_0473,Rajat Patidar,Batter,0
+2022,IPL_T20_RCB,PLY_0562,Sherfane Rutherford,Batter,1
+2022,IPL_T20_RCB,PLY_0829,,Allrounder,0
+2022,IPL_T20_RCB,PLY_0339,Mahipal Lomror,Allrounder,0
+2022,IPL_T20_RCB,PLY_0204,Glenn Maxwell,Allrounder,1
+2022,IPL_T20_RCB,PLY_0541,Shahbaz Ahmed,Allrounder,0
+2022,IPL_T20_RCB,PLY_0612,Suyash S Prabhudessai,Allrounder,0
+2022,IPL_T20_RCB,PLY_0672,Wanindu Hasaranga,Allrounder,1
+2022,IPL_T20_RCB,PLY_0159,David Willey,Allrounder,1
+2022,IPL_T20_RCB,PLY_0031,Akash Deep,Bowler,0
+2022,IPL_T20_RCB,PLY_0253,Jason Behrendorff,Bowler,1
+2022,IPL_T20_RCB,PLY_0273,Josh Hazlewood,Bowler,1
+2022,IPL_T20_RCB,PLY_0581,Siddarth Kaul,Bowler,0
+2022,IPL_T20_RCB,PLY_0830,,Bowler,0
+2022,IPL_T20_RCB,PLY_0383,Mohammed Siraj,Bowler,0
+2022,IPL_T20_RCB,PLY_0292,Karn Sharma,Bowler,0
+2022,IPL_T20_RCB,PLY_0222,Harshal Patel,Allrounder,0
+2022,IPL_T20_SRH,PLY_0288,Kane Williamson,Batter,1
+2022,IPL_T20_SRH,PLY_0005,Abdul Samad,Batter,0
+2022,IPL_T20_SRH,PLY_0455,Priyam Garg,Batter,0
+2022,IPL_T20_SRH,PLY_0026,Aiden Markram,Batter,1
+2022,IPL_T20_SRH,PLY_0413,Nicholas Pooran,Wicketkeeper,1
+2022,IPL_T20_SRH,PLY_0831,,Batter,0
+2022,IPL_T20_SRH,PLY_0467,Rahul Tripathi,Batter,0
+2022,IPL_T20_SRH,PLY_0669,Vishnu Vinod,Wicketkeeper,0
+2022,IPL_T20_SRH,PLY_0538,Sean Abbott,Allrounder,1
+2022,IPL_T20_SRH,PLY_0014,Abhishek Sharma,Allrounder,0
+2022,IPL_T20_SRH,PLY_0673,Washington Sundar,Allrounder,0
+2022,IPL_T20_SRH,PLY_0351,Marco Jansen,Allrounder,1
+2022,IPL_T20_SRH,PLY_0206,Glenn Phillips,Allrounder,1
+2022,IPL_T20_SRH,PLY_0199,Fazalhaq Farooqi,Bowler,1
+2022,IPL_T20_SRH,PLY_0576,Shreyas Gopal,Bowler,0
+2022,IPL_T20_SRH,PLY_0293,Kartik Tyagi,Bowler,0
+2022,IPL_T20_SRH,PLY_0109,Bhuvneshwar Kumar,Bowler,0
+2022,IPL_T20_SRH,PLY_0747,Sushant Mishra,Bowler,0
+2022,IPL_T20_SRH,PLY_0616,T Natarajan,Bowler,0
+2022,IPL_T20_SRH,PLY_0244,Jagadeesha Suchith,Bowler,0
+2022,IPL_T20_SRH,PLY_0645,Umran Malik,Bowler,0
+2022,IPL_T20_SRH,PLY_0556,Shashank Singh,Allrounder,0
+2022,IPL_T20_SRH,PLY_0506,Romario Shepherd,Allrounder,1
+2021,IPL_T20_CSK,PLY_0334,MS Dhoni,Wicketkeeper,0
+2021,IPL_T20_CSK,PLY_0196,Faf du Plessis,Batter,1
+2021,IPL_T20_CSK,PLY_0510,Ruturaj Gaikwad,Batter,0
+2021,IPL_T20_CSK,PLY_0811,,Batter,0
+2021,IPL_T20_CSK,PLY_0404,Narayan Jagadeesan,Wicketkeeper,0
+2021,IPL_T20_CSK,PLY_0129,Cheteshwar Pujara,Batter,0
+2021,IPL_T20_CSK,PLY_0608,Suresh Raina,Batter,0
+2021,IPL_T20_CSK,PLY_0044,Ambati Rayudu,Batter,0
+2021,IPL_T20_CSK,PLY_0501,Robin Uthappa,Batter,0
+2021,IPL_T20_CSK,PLY_0376,Moeen Ali,Allrounder,1
+2021,IPL_T20_CSK,PLY_0189,Dwayne Bravo,Allrounder,1
+2021,IPL_T20_CSK,PLY_0815,,Allrounder,1
+2021,IPL_T20_CSK,PLY_0304,Krishnappa Gowtham,Allrounder,0
+2021,IPL_T20_CSK,PLY_0485,Ravindra Jadeja,Allrounder,0
+2021,IPL_T20_CSK,PLY_0373,Mitchell Santner,Allrounder,1
+2021,IPL_T20_CSK,PLY_0555,Shardul Thakur,Allrounder,0
+2021,IPL_T20_CSK,PLY_0524,Sam Curran,Allrounder,1
+2021,IPL_T20_CSK,PLY_0807,,Bowler,0
+2021,IPL_T20_CSK,PLY_0253,Jason Behrendorff,Bowler,1
+2021,IPL_T20_CSK,PLY_0794,,Allrounder,0
+2021,IPL_T20_CSK,PLY_0163,Deepak Chahar,Bowler,0
+2021,IPL_T20_CSK,PLY_0273,Josh Hazlewood,Bowler,1
+2021,IPL_T20_CSK,PLY_0228,Imran Tahir,Bowler,1
+2021,IPL_T20_CSK,PLY_0705,Lungi Ngidi,Bowler,1
+2021,IPL_T20_CSK,PLY_0832,,Bowler,0
+2021,IPL_T20_CSK,PLY_0520,Sai Kishore,Bowler,0
+2021,IPL_T20_CSK,PLY_0292,Karn Sharma,Bowler,0
+2021,IPL_T20_DC,PLY_0495,Rishabh Pant,Wicketkeeper,0
+2021,IPL_T20_DC,PLY_0523,Sam Billings,Wicketkeeper,1
+2021,IPL_T20_DC,PLY_0563,Shikhar Dhawan,Batter,0
+2021,IPL_T20_DC,PLY_0564,Shimron Hetmyer,Batter,1
+2021,IPL_T20_DC,PLY_0577,Shreyas Iyer,Batter,0
+2021,IPL_T20_DC,PLY_0494,Ripal Patel,Batter,0
+2021,IPL_T20_DC,PLY_0028,Ajinkya Rahane,Batter,0
+2021,IPL_T20_DC,PLY_0454,Prithvi Shaw,Batter,0
+2021,IPL_T20_DC,PLY_0597,Steve Smith,Batter,1
+2021,IPL_T20_DC,PLY_0669,Vishnu Vinod,Wicketkeeper,0
+2021,IPL_T20_DC,PLY_0833,,Batter,0
+2021,IPL_T20_DC,PLY_0484,Ravichandran Ashwin,Allrounder,0
+2021,IPL_T20_DC,PLY_0633,Tom Curran,Allrounder,1
+2021,IPL_T20_DC,PLY_0319,Lalit Yadav,Allrounder,0
+2021,IPL_T20_DC,PLY_0089,Axar Patel,Allrounder,0
+2021,IPL_T20_DC,PLY_0352,Marcus Stoinis,Allrounder,1
+2021,IPL_T20_DC,PLY_0549,Shams Mulani,Allrounder,0
+2021,IPL_T20_DC,PLY_0135,Chris Woakes,Allrounder,1
+2021,IPL_T20_DC,PLY_0088,Avesh Khan,Bowler,0
+2021,IPL_T20_DC,PLY_0446,Praveen Dubey,Bowler,0
+2021,IPL_T20_DC,PLY_0739,Ben Dwarshuis,Bowler,1
+2021,IPL_T20_DC,PLY_0711,Kulwant Khejroliya,Bowler,0
+2021,IPL_T20_DC,PLY_0834,,Bowler,0
+2021,IPL_T20_DC,PLY_0045,Amit Mishra,Bowler,0
+2021,IPL_T20_DC,PLY_0066,Anrich Nortje,Bowler,1
+2021,IPL_T20_DC,PLY_0282,Kagiso Rabada,Bowler,1
+2021,IPL_T20_DC,PLY_0235,Ishant Sharma,Bowler,0
+2021,IPL_T20_DC,PLY_0644,Umesh Yadav,Bowler,0
+2021,IPL_T20_DC,PLY_0725,Manimaran Siddharth,Bowler,0
+2021,IPL_T20_KKR,PLY_0192,Eoin Morgan,Batter,1
+2021,IPL_T20_KKR,PLY_0814,,Batter,0
+2021,IPL_T20_KKR,PLY_0561,Sheldon Jackson,Wicketkeeper,0
+2021,IPL_T20_KKR,PLY_0176,Dinesh Karthik,Wicketkeeper,0
+2021,IPL_T20_KKR,PLY_0294,Karun Nair,Batter,0
+2021,IPL_T20_KKR,PLY_0418,Nitish Rana,Batter,0
+2021,IPL_T20_KKR,PLY_0629,Tim Seifert,Wicketkeeper,1
+2021,IPL_T20_KKR,PLY_0580,Shubman Gill,Batter,0
+2021,IPL_T20_KKR,PLY_0467,Rahul Tripathi,Batter,0
+2021,IPL_T20_KKR,PLY_0493,Rinku Singh,Batter,0
+2021,IPL_T20_KKR,PLY_0100,Ben Cutting,Allrounder,1
+2021,IPL_T20_KKR,PLY_0655,Venkatesh Iyer,Allrounder,0
+2021,IPL_T20_KKR,PLY_0604,Sunil Narine,Allrounder,1
+2021,IPL_T20_KKR,PLY_0049,Andre Russell,Allrounder,1
+2021,IPL_T20_KKR,PLY_0547,Shakib Al Hasan,Allrounder,1
+2021,IPL_T20_KKR,PLY_0566,Shivam Mavi,Allrounder,0
+2021,IPL_T20_KKR,PLY_0651,Vaibhav Arora,Bowler,0
+2021,IPL_T20_KKR,PLY_0328,Lockie Ferguson,Bowler,1
+2021,IPL_T20_KKR,PLY_0213,Harbhajan Singh,Bowler,0
+2021,IPL_T20_KKR,PLY_0284,Kamlesh Nagarkoti,Bowler,0
+2021,IPL_T20_KKR,PLY_0435,Pawan Negi,Bowler,0
+2021,IPL_T20_KKR,PLY_0445,Prasidh Krishna,Bowler,0
+2021,IPL_T20_KKR,PLY_0777,,Bowler,0
+2021,IPL_T20_KKR,PLY_0630,Tim Southee,Bowler,1
+2021,IPL_T20_KKR,PLY_0654,Varun Chakaravarthy,Bowler,0
+2021,IPL_T20_KKR,PLY_0432,Pat Cummins,Bowler,1
+2021,IPL_T20_KKR,PLY_0306,Kuldeep Yadav,Bowler,0
+2021,IPL_T20_MI,PLY_0505,Rohit Sharma,Batter,0
+2021,IPL_T20_MI,PLY_0065,Anmolpreet Singh,Batter,0
+2021,IPL_T20_MI,PLY_0458,Quinton de Kock,Wicketkeeper,1
+2021,IPL_T20_MI,PLY_0232,Ishan Kishan,Wicketkeeper,0
+2021,IPL_T20_MI,PLY_0133,Chris Lynn,Batter,1
+2021,IPL_T20_MI,PLY_0023,Aditya Tare,Wicketkeeper,0
+2021,IPL_T20_MI,PLY_0535,Saurabh Tiwary,Batter,0
+2021,IPL_T20_MI,PLY_0610,Suryakumar Yadav,Batter,0
+2021,IPL_T20_MI,PLY_0439,Piyush Chawla,Allrounder,0
+2021,IPL_T20_MI,PLY_0405,Nathan Coulter-Nile,Allrounder,1
+2021,IPL_T20_MI,PLY_0351,Marco Jansen,Allrounder,1
+2021,IPL_T20_MI,PLY_0249,James Neesham,Allrounder,1
+2021,IPL_T20_MI,PLY_0305,Krunal Pandya,Allrounder,0
+2021,IPL_T20_MI,PLY_0214,Hardik Pandya,Allrounder,0
+2021,IPL_T20_MI,PLY_0302,Kieron Pollard,Allrounder,1
+2021,IPL_T20_MI,PLY_0069,Anukul Roy,Allrounder,0
+2021,IPL_T20_MI,PLY_0637,Trent Boult,Bowler,1
+2021,IPL_T20_MI,PLY_0256,Jasprit Bumrah,Bowler,0
+2021,IPL_T20_MI,PLY_0462,Rahul Chahar,Bowler,0
+2021,IPL_T20_MI,PLY_0835,,Bowler,0
+2021,IPL_T20_MI,PLY_0169,Dhawal Kulkarni,Bowler,0
+2021,IPL_T20_MI,PLY_0018,Adam Milne,Bowler,1
+2021,IPL_T20_MI,PLY_0586,Simarjeet Singh,Bowler,0
+2021,IPL_T20_MI,PLY_0258,Jayant Yadav,Bowler,0
+2021,IPL_T20_MI,PLY_0690,Yudhvir Singh,Bowler,0
+2021,IPL_T20_MI,PLY_0388,Mohsin Khan,Bowler,0
+2021,IPL_T20_PBKS,PLY_0280,KL Rahul,Wicketkeeper,0
+2021,IPL_T20_PBKS,PLY_0362,Mayank Agarwal,Batter,0
+2021,IPL_T20_PBKS,PLY_0534,Sarfaraz Khan,Batter,0
+2021,IPL_T20_PBKS,PLY_0026,Aiden Markram,Batter,1
+2021,IPL_T20_PBKS,PLY_0413,Nicholas Pooran,Wicketkeeper,1
+2021,IPL_T20_PBKS,PLY_0440,Prabhsimran Singh,Wicketkeeper,0
+2021,IPL_T20_PBKS,PLY_0544,Shahrukh Khan,Batter,0
+2021,IPL_T20_PBKS,PLY_0161,Dawid Malan,Batter,1
+2021,IPL_T20_PBKS,PLY_0194,Fabian Allen,Allrounder,1
+2021,IPL_T20_PBKS,PLY_0389,Moises Henriques,Allrounder,1
+2021,IPL_T20_PBKS,PLY_0164,Deepak Hooda,Allrounder,0
+2021,IPL_T20_PBKS,PLY_0836,,Allrounder,0
+2021,IPL_T20_PBKS,PLY_0343,Mandeep Singh,Allrounder,0
+2021,IPL_T20_PBKS,PLY_0837,,Allrounder,0
+2021,IPL_T20_PBKS,PLY_0838,,Allrounder,0
+2021,IPL_T20_PBKS,PLY_0131,Chris Gayle,Allrounder,1
+2021,IPL_T20_PBKS,PLY_0076,Arshdeep Singh,Bowler,0
+2021,IPL_T20_PBKS,PLY_0397,Murugan Ashwin,Bowler,0
+2021,IPL_T20_PBKS,PLY_0406,Nathan Ellis,Bowler,1
+2021,IPL_T20_PBKS,PLY_0218,Harpreet Brar,Bowler,0
+2021,IPL_T20_PBKS,PLY_0132,Chris Jordan,Bowler,1
+2021,IPL_T20_PBKS,PLY_0382,Mohammad Shami,Bowler,0
+2021,IPL_T20_PBKS,PLY_0152,Darshan Nalkande,Bowler,0
+2021,IPL_T20_PBKS,PLY_0825,,Bowler,0
+2021,IPL_T20_PBKS,PLY_0021,Adil Rashid,Bowler,1
+2021,IPL_T20_PBKS,PLY_0481,Ravi Bishnoi,Bowler,0
+2021,IPL_T20_PBKS,PLY_0262,Jhye Richardson,Bowler,1
+2021,IPL_T20_PBKS,PLY_0800,,Bowler,1
+2021,IPL_T20_RR,PLY_0532,Sanju Samson,Wicketkeeper,0
+2021,IPL_T20_RR,PLY_0068,Anuj Rawat,Wicketkeeper,0
+2021,IPL_T20_RR,PLY_0684,Yashasvi Jaiswal,Batter,0
+2021,IPL_T20_RR,PLY_0193,Evin Lewis,Batter,1
+2021,IPL_T20_RR,PLY_0156,David Miller,Batter,1
+2021,IPL_T20_RR,PLY_0497,Riyan Parag,Batter,0
+2021,IPL_T20_RR,PLY_0341,Manan Vohra,Batter,0
+2021,IPL_T20_RR,PLY_0272,Jos Buttler,Wicketkeeper,1
+2021,IPL_T20_RR,PLY_0565,Shivam Dube,Allrounder,0
+2021,IPL_T20_RR,PLY_0324,Liam Livingstone,Allrounder,1
+2021,IPL_T20_RR,PLY_0339,Mahipal Lomror,Allrounder,0
+2021,IPL_T20_RR,PLY_0134,Chris Morris,Allrounder,1
+2021,IPL_T20_RR,PLY_0206,Glenn Phillips,Allrounder,1
+2021,IPL_T20_RR,PLY_0466,Rahul Tewatia,Allrounder,0
+2021,IPL_T20_RR,PLY_0104,Ben Stokes,Allrounder,1
+2021,IPL_T20_RR,PLY_0723,Akash Singh,Bowler,0
+2021,IPL_T20_RR,PLY_0279,KC Cariappa,Bowler,0
+2021,IPL_T20_RR,PLY_0576,Shreyas Gopal,Bowler,0
+2021,IPL_T20_RR,PLY_0293,Kartik Tyagi,Bowler,0
+2021,IPL_T20_RR,PLY_0363,Mayank Markande,Bowler,0
+2021,IPL_T20_RR,PLY_0399,Mustafizur Rahman,Bowler,1
+2021,IPL_T20_RR,PLY_0127,Chetan Sakariya,Bowler,0
+2021,IPL_T20_RR,PLY_0617,Tabraiz Shamsi,Bowler,1
+2021,IPL_T20_RR,PLY_0839,,Bowler,1
+2021,IPL_T20_RR,PLY_0307,Kuldip Yadav,Bowler,0
+2021,IPL_T20_RR,PLY_0259,Jaydev Unadkat,Bowler,0
+2021,IPL_T20_RR,PLY_0053,Andrew Tye,Bowler,1
+2021,IPL_T20_RR,PLY_0267,Jofra Archer,Bowler,1
+2021,IPL_T20_RR,PLY_0203,Gerald Coetzee,Bowler,1
+2021,IPL_T20_RCB,PLY_0666,Virat Kohli,Batter,0
+2021,IPL_T20_RCB,PLY_0594,Srikar Bharat,Wicketkeeper,0
+2021,IPL_T20_RCB,PLY_0627,Tim David,Batter,1
+2021,IPL_T20_RCB,PLY_0001,AB de Villiers,Wicketkeeper,1
+2021,IPL_T20_RCB,PLY_0840,,Wicketkeeper,0
+2021,IPL_T20_RCB,PLY_0165,Devdutt Padikkal,Batter,0
+2021,IPL_T20_RCB,PLY_0473,Rajat Patidar,Batter,0
+2021,IPL_T20_RCB,PLY_0516,Sachin Baby,Batter,0
+2021,IPL_T20_RCB,PLY_0712,Finn Allen,Batter,1
+2021,IPL_T20_RCB,PLY_0275,Josh Philippe,Wicketkeeper,1
+2021,IPL_T20_RCB,PLY_0145,Dan Christian,Allrounder,1
+2021,IPL_T20_RCB,PLY_0841,,Allrounder,0
+2021,IPL_T20_RCB,PLY_0202,George Garton,Allrounder,1
+2021,IPL_T20_RCB,PLY_0204,Glenn Maxwell,Allrounder,1
+2021,IPL_T20_RCB,PLY_0222,Harshal Patel,Allrounder,0
+2021,IPL_T20_RCB,PLY_0612,Suyash S Prabhudessai,Allrounder,0
+2021,IPL_T20_RCB,PLY_0541,Shahbaz Ahmed,Allrounder,0
+2021,IPL_T20_RCB,PLY_0672,Wanindu Hasaranga,Allrounder,1
+2021,IPL_T20_RCB,PLY_0842,,Allrounder,1
+2021,IPL_T20_RCB,PLY_0147,Daniel Sams,Allrounder,1
+2021,IPL_T20_RCB,PLY_0673,Washington Sundar,Allrounder,0
+2021,IPL_T20_RCB,PLY_0031,Akash Deep,Bowler,0
+2021,IPL_T20_RCB,PLY_0693,Yuzvendra Chahal,Bowler,0
+2021,IPL_T20_RCB,PLY_0315,Kyle Jamieson,Bowler,1
+2021,IPL_T20_RCB,PLY_0383,Mohammed Siraj,Bowler,0
+2021,IPL_T20_RCB,PLY_0408,Navdeep Saini,Bowler,0
+2021,IPL_T20_RCB,PLY_0186,Dushmantha Chameera,Bowler,1
+2021,IPL_T20_RCB,PLY_0287,Kane Richardson,Bowler,1
+2021,IPL_T20_RCB,PLY_0020,Adam Zampa,Bowler,1
+2021,IPL_T20_SRH,PLY_0288,Kane Williamson,Batter,1
+2021,IPL_T20_SRH,PLY_0005,Abdul Samad,Batter,0
+2021,IPL_T20_SRH,PLY_0455,Priyam Garg,Batter,0
+2021,IPL_T20_SRH,PLY_0575,Shreevats Goswami,Wicketkeeper,0
+2021,IPL_T20_SRH,PLY_0344,Manish Pandey,Batter,0
+2021,IPL_T20_SRH,PLY_0255,Jason Roy,Batter,1
+2021,IPL_T20_SRH,PLY_0679,Wriddhiman Saha,Wicketkeeper,0
+2021,IPL_T20_SRH,PLY_0667,Virat Singh,Batter,0
+2021,IPL_T20_SRH,PLY_0157,David Warner,Batter,1
+2021,IPL_T20_SRH,PLY_0271,Jonny Bairstow,Wicketkeeper,1
+2021,IPL_T20_SRH,PLY_0562,Sherfane Rutherford,Batter,1
+2021,IPL_T20_SRH,PLY_0014,Abhishek Sharma,Allrounder,0
+2021,IPL_T20_SRH,PLY_0254,Jason Holder,Allrounder,1
+2021,IPL_T20_SRH,PLY_0295,Kedar Jadhav,Allrounder,0
+2021,IPL_T20_SRH,PLY_0381,Mohammad Nabi,Allrounder,1
+2021,IPL_T20_SRH,PLY_0478,Rashid Khan,Allrounder,1
+2021,IPL_T20_SRH,PLY_0658,Vijay Shankar,Allrounder,0
+2021,IPL_T20_SRH,PLY_0371,Mitchell Marsh,Allrounder,1
+2021,IPL_T20_SRH,PLY_0301,Khaleel Ahmed,Bowler,0
+2021,IPL_T20_SRH,PLY_0099,Basil Thampi,Bowler,0
+2021,IPL_T20_SRH,PLY_0581,Siddarth Kaul,Bowler,0
+2021,IPL_T20_SRH,PLY_0109,Bhuvneshwar Kumar,Bowler,0
+2021,IPL_T20_SRH,PLY_0391,Mujeeb Ur Rahman,Bowler,1
+2021,IPL_T20_SRH,PLY_0542,Shahbaz Nadeem,Bowler,0
+2021,IPL_T20_SRH,PLY_0616,T Natarajan,Bowler,0
+2021,IPL_T20_SRH,PLY_0530,Sandeep Sharma,Bowler,0
+2021,IPL_T20_SRH,PLY_0244,Jagadeesha Suchith,Bowler,0
+2021,IPL_T20_SRH,PLY_0645,Umran Malik,Bowler,0
+2020,IPL_T20_CSK,PLY_0334,MS Dhoni,Wicketkeeper,0
+2020,IPL_T20_CSK,PLY_0404,Narayan Jagadeesan,Wicketkeeper,0
+2020,IPL_T20_CSK,PLY_0196,Faf du Plessis,Batter,1
+2020,IPL_T20_CSK,PLY_0510,Ruturaj Gaikwad,Batter,0
+2020,IPL_T20_CSK,PLY_0044,Ambati Rayudu,Batter,0
+2020,IPL_T20_CSK,PLY_0396,Murali Vijay,Batter,0
+2020,IPL_T20_CSK,PLY_0524,Sam Curran,Allrounder,1
+2020,IPL_T20_CSK,PLY_0189,Dwayne Bravo,Allrounder,1
+2020,IPL_T20_CSK,PLY_0553,Shane Watson,Allrounder,1
+2020,IPL_T20_CSK,PLY_0485,Ravindra Jadeja,Allrounder,0
+2020,IPL_T20_CSK,PLY_0373,Mitchell Santner,Allrounder,1
+2020,IPL_T20_CSK,PLY_0439,Piyush Chawla,Allrounder,0
+2020,IPL_T20_CSK,PLY_0295,Kedar Jadhav,Allrounder,0
+2020,IPL_T20_CSK,PLY_0843,,Allrounder,0
+2020,IPL_T20_CSK,PLY_0292,Karn Sharma,Bowler,0
+2020,IPL_T20_CSK,PLY_0555,Shardul Thakur,Bowler,0
+2020,IPL_T20_CSK,PLY_0163,Deepak Chahar,Bowler,0
+2020,IPL_T20_CSK,PLY_0705,Lungi Ngidi,Bowler,1
+2020,IPL_T20_CSK,PLY_0273,Josh Hazlewood,Bowler,1
+2020,IPL_T20_CSK,PLY_0228,Imran Tahir,Bowler,1
+2020,IPL_T20_CSK,PLY_0807,,Bowler,0
+2020,IPL_T20_CSK,PLY_0520,Sai Kishore,Bowler,0
+2020,IPL_T20_DC,PLY_0577,Shreyas Iyer,Batter,0
+2020,IPL_T20_DC,PLY_0563,Shikhar Dhawan,Batter,0
+2020,IPL_T20_DC,PLY_0495,Rishabh Pant,Wicketkeeper,0
+2020,IPL_T20_DC,PLY_0454,Prithvi Shaw,Batter,0
+2020,IPL_T20_DC,PLY_0028,Ajinkya Rahane,Batter,0
+2020,IPL_T20_DC,PLY_0564,Shimron Hetmyer,Batter,1
+2020,IPL_T20_DC,PLY_0038,Alex Carey,Wicketkeeper,1
+2020,IPL_T20_DC,PLY_0352,Marcus Stoinis,Allrounder,1
+2020,IPL_T20_DC,PLY_0484,Ravichandran Ashwin,Allrounder,0
+2020,IPL_T20_DC,PLY_0089,Axar Patel,Allrounder,0
+2020,IPL_T20_DC,PLY_0222,Harshal Patel,Allrounder,0
+2020,IPL_T20_DC,PLY_0296,Keemo Paul,Allrounder,1
+2020,IPL_T20_DC,PLY_0147,Daniel Sams,Allrounder,1
+2020,IPL_T20_DC,PLY_0319,Lalit Yadav,Allrounder,0
+2020,IPL_T20_DC,PLY_0282,Kagiso Rabada,Bowler,1
+2020,IPL_T20_DC,PLY_0066,Anrich Nortje,Bowler,1
+2020,IPL_T20_DC,PLY_0386,Mohit Sharma,Bowler,0
+2020,IPL_T20_DC,PLY_0446,Praveen Dubey,Bowler,0
+2020,IPL_T20_DC,PLY_0529,Sandeep Lamichhane,Bowler,1
+2020,IPL_T20_DC,PLY_0088,Avesh Khan,Bowler,0
+2020,IPL_T20_DC,PLY_0639,Tushar Deshpande,Bowler,0
+2020,IPL_T20_PBKS,PLY_0280,KL Rahul,Wicketkeeper,0
+2020,IPL_T20_PBKS,PLY_0413,Nicholas Pooran,Wicketkeeper,1
+2020,IPL_T20_PBKS,PLY_0440,Prabhsimran Singh,Wicketkeeper,0
+2020,IPL_T20_PBKS,PLY_0362,Mayank Agarwal,Batter,0
+2020,IPL_T20_PBKS,PLY_0294,Karun Nair,Batter,0
+2020,IPL_T20_PBKS,PLY_0534,Sarfaraz Khan,Batter,0
+2020,IPL_T20_PBKS,PLY_0343,Mandeep Singh,Allrounder,0
+2020,IPL_T20_PBKS,PLY_0131,Chris Gayle,Allrounder,1
+2020,IPL_T20_PBKS,PLY_0204,Glenn Maxwell,Allrounder,1
+2020,IPL_T20_PBKS,PLY_0249,James Neesham,Allrounder,1
+2020,IPL_T20_PBKS,PLY_0164,Deepak Hooda,Allrounder,0
+2020,IPL_T20_PBKS,PLY_0304,Krishnappa Gowtham,Allrounder,0
+2020,IPL_T20_PBKS,PLY_0844,,Allrounder,0
+2020,IPL_T20_PBKS,PLY_0382,Mohammad Shami,Bowler,0
+2020,IPL_T20_PBKS,PLY_0560,Sheldon Cottrell,Bowler,1
+2020,IPL_T20_PBKS,PLY_0132,Chris Jordan,Bowler,1
+2020,IPL_T20_PBKS,PLY_0481,Ravi Bishnoi,Bowler,0
+2020,IPL_T20_PBKS,PLY_0397,Murugan Ashwin,Bowler,0
+2020,IPL_T20_PBKS,PLY_0076,Arshdeep Singh,Bowler,0
+2020,IPL_T20_PBKS,PLY_0215,Hardus Viljoen,Bowler,1
+2020,IPL_T20_PBKS,PLY_0825,,Bowler,0
+2020,IPL_T20_PBKS,PLY_0244,Jagadeesha Suchith,Bowler,0
+2020,IPL_T20_PBKS,PLY_0391,Mujeeb Ur Rahman,Bowler,1
+2020,IPL_T20_PBKS,PLY_0152,Darshan Nalkande,Bowler,0
+2020,IPL_T20_PBKS,PLY_0218,Harpreet Brar,Bowler,0
+2020,IPL_T20_KKR,PLY_0176,Dinesh Karthik,Wicketkeeper,0
+2020,IPL_T20_KKR,PLY_0192,Eoin Morgan,Batter,1
+2020,IPL_T20_KKR,PLY_0414,Nikhil Naik,Wicketkeeper,0
+2020,IPL_T20_KKR,PLY_0580,Shubman Gill,Batter,0
+2020,IPL_T20_KKR,PLY_0418,Nitish Rana,Batter,0
+2020,IPL_T20_KKR,PLY_0467,Rahul Tripathi,Batter,0
+2020,IPL_T20_KKR,PLY_0493,Rinku Singh,Batter,0
+2020,IPL_T20_KKR,PLY_0632,Tom Banton,Wicketkeeper,1
+2020,IPL_T20_KKR,PLY_0584,Siddhesh Lad,Batter,0
+2020,IPL_T20_KKR,PLY_0604,Sunil Narine,Allrounder,1
+2020,IPL_T20_KKR,PLY_0049,Andre Russell,Allrounder,1
+2020,IPL_T20_KKR,PLY_0432,Pat Cummins,Allrounder,1
+2020,IPL_T20_KKR,PLY_0845,,Allrounder,1
+2020,IPL_T20_KKR,PLY_0566,Shivam Mavi,Allrounder,0
+2020,IPL_T20_KKR,PLY_0328,Lockie Ferguson,Bowler,1
+2020,IPL_T20_KKR,PLY_0306,Kuldeep Yadav,Bowler,0
+2020,IPL_T20_KKR,PLY_0654,Varun Chakaravarthy,Bowler,0
+2020,IPL_T20_KKR,PLY_0445,Prasidh Krishna,Bowler,0
+2020,IPL_T20_KKR,PLY_0284,Kamlesh Nagarkoti,Bowler,0
+2020,IPL_T20_KKR,PLY_0777,,Bowler,0
+2020,IPL_T20_KKR,PLY_0846,,Bowler,1
+2020,IPL_T20_KKR,PLY_0847,,Bowler,0
+2020,IPL_T20_MI,PLY_0505,Rohit Sharma,Batter,0
+2020,IPL_T20_MI,PLY_0458,Quinton de Kock,Wicketkeeper,1
+2020,IPL_T20_MI,PLY_0232,Ishan Kishan,Wicketkeeper,0
+2020,IPL_T20_MI,PLY_0023,Aditya Tare,Wicketkeeper,0
+2020,IPL_T20_MI,PLY_0610,Suryakumar Yadav,Batter,0
+2020,IPL_T20_MI,PLY_0535,Saurabh Tiwary,Batter,0
+2020,IPL_T20_MI,PLY_0133,Chris Lynn,Batter,1
+2020,IPL_T20_MI,PLY_0562,Sherfane Rutherford,Batter,1
+2020,IPL_T20_MI,PLY_0065,Anmolpreet Singh,Batter,0
+2020,IPL_T20_MI,PLY_0214,Hardik Pandya,Allrounder,0
+2020,IPL_T20_MI,PLY_0302,Kieron Pollard,Allrounder,1
+2020,IPL_T20_MI,PLY_0305,Krunal Pandya,Allrounder,0
+2020,IPL_T20_MI,PLY_0405,Nathan Coulter-Nile,Allrounder,1
+2020,IPL_T20_MI,PLY_0256,Jasprit Bumrah,Bowler,0
+2020,IPL_T20_MI,PLY_0637,Trent Boult,Bowler,1
+2020,IPL_T20_MI,PLY_0250,James Pattinson,Bowler,1
+2020,IPL_T20_MI,PLY_0462,Rahul Chahar,Bowler,0
+2020,IPL_T20_MI,PLY_0169,Dhawal Kulkarni,Bowler,0
+2020,IPL_T20_MI,PLY_0372,Mitchell McClenaghan,Bowler,1
+2020,IPL_T20_MI,PLY_0388,Mohsin Khan,Bowler,0
+2020,IPL_T20_MI,PLY_0848,,Bowler,0
+2020,IPL_T20_MI,PLY_0849,,Bowler,0
+2020,IPL_T20_MI,PLY_0258,Jayant Yadav,Bowler,0
+2020,IPL_T20_RR,PLY_0597,Steve Smith,Batter,1
+2020,IPL_T20_RR,PLY_0532,Sanju Samson,Wicketkeeper,0
+2020,IPL_T20_RR,PLY_0272,Jos Buttler,Wicketkeeper,1
+2020,IPL_T20_RR,PLY_0501,Robin Uthappa,Batter,0
+2020,IPL_T20_RR,PLY_0156,David Miller,Batter,1
+2020,IPL_T20_RR,PLY_0341,Manan Vohra,Batter,0
+2020,IPL_T20_RR,PLY_0497,Riyan Parag,Batter,0
+2020,IPL_T20_RR,PLY_0833,,Batter,0
+2020,IPL_T20_RR,PLY_0104,Ben Stokes,Allrounder,1
+2020,IPL_T20_RR,PLY_0633,Tom Curran,Allrounder,1
+2020,IPL_T20_RR,PLY_0339,Mahipal Lomror,Allrounder,0
+2020,IPL_T20_RR,PLY_0556,Shashank Singh,Allrounder,0
+2020,IPL_T20_RR,PLY_0466,Rahul Tewatia,Allrounder,0
+2020,IPL_T20_RR,PLY_0576,Shreyas Gopal,Allrounder,0
+2020,IPL_T20_RR,PLY_0267,Jofra Archer,Allrounder,1
+2020,IPL_T20_RR,PLY_0259,Jaydev Unadkat,Bowler,0
+2020,IPL_T20_RR,PLY_0653,Varun Aaron,Bowler,0
+2020,IPL_T20_RR,PLY_0293,Kartik Tyagi,Bowler,0
+2020,IPL_T20_RR,PLY_0062,Ankit Rajpoot,Bowler,0
+2020,IPL_T20_RR,PLY_0053,Andrew Tye,Bowler,1
+2020,IPL_T20_RR,PLY_0839,,Bowler,1
+2020,IPL_T20_RR,PLY_0363,Mayank Markande,Bowler,0
+2020,IPL_T20_RR,PLY_0723,Akash Singh,Bowler,0
+2020,IPL_T20_RR,PLY_0068,Anuj Rawat,Wicketkeeper,0
+2020,IPL_T20_RCB,PLY_0666,Virat Kohli,Batter,0
+2020,IPL_T20_RCB,PLY_0001,AB de Villiers,Wicketkeeper,1
+2020,IPL_T20_RCB,PLY_0003,Aaron Finch,Batter,1
+2020,IPL_T20_RCB,PLY_0165,Devdutt Padikkal,Batter,0
+2020,IPL_T20_RCB,PLY_0429,Parthiv Patel,Wicketkeeper,0
+2020,IPL_T20_RCB,PLY_0275,Josh Philippe,Wicketkeeper,1
+2020,IPL_T20_RCB,PLY_0814,,Batter,0
+2020,IPL_T20_RCB,PLY_0565,Shivam Dube,Allrounder,0
+2020,IPL_T20_RCB,PLY_0376,Moeen Ali,Allrounder,1
+2020,IPL_T20_RCB,PLY_0134,Chris Morris,Allrounder,1
+2020,IPL_T20_RCB,PLY_0236,Isuru Udana,Allrounder,1
+2020,IPL_T20_RCB,PLY_0673,Washington Sundar,Allrounder,0
+2020,IPL_T20_RCB,PLY_0841,,Allrounder,0
+2020,IPL_T20_RCB,PLY_0541,Shahbaz Ahmed,Allrounder,0
+2020,IPL_T20_RCB,PLY_0693,Yuzvendra Chahal,Bowler,0
+2020,IPL_T20_RCB,PLY_0408,Navdeep Saini,Bowler,0
+2020,IPL_T20_RCB,PLY_0383,Mohammed Siraj,Bowler,0
+2020,IPL_T20_RCB,PLY_0644,Umesh Yadav,Bowler,0
+2020,IPL_T20_RCB,PLY_0143,Dale Steyn,Bowler,1
+2020,IPL_T20_RCB,PLY_0020,Adam Zampa,Bowler,1
+2020,IPL_T20_RCB,PLY_0435,Pawan Negi,Bowler,0
+2020,IPL_T20_SRH,PLY_0157,David Warner,Batter,1
+2020,IPL_T20_SRH,PLY_0271,Jonny Bairstow,Wicketkeeper,1
+2020,IPL_T20_SRH,PLY_0679,Wriddhiman Saha,Wicketkeeper,0
+2020,IPL_T20_SRH,PLY_0575,Shreevats Goswami,Wicketkeeper,0
+2020,IPL_T20_SRH,PLY_0344,Manish Pandey,Batter,0
+2020,IPL_T20_SRH,PLY_0288,Kane Williamson,Batter,1
+2020,IPL_T20_SRH,PLY_0667,Virat Singh,Batter,0
+2020,IPL_T20_SRH,PLY_0455,Priyam Garg,Batter,0
+2020,IPL_T20_SRH,PLY_0005,Abdul Samad,Batter,0
+2020,IPL_T20_SRH,PLY_0850,,Batter,0
+2020,IPL_T20_SRH,PLY_0014,Abhishek Sharma,Allrounder,0
+2020,IPL_T20_SRH,PLY_0254,Jason Holder,Allrounder,1
+2020,IPL_T20_SRH,PLY_0658,Vijay Shankar,Allrounder,0
+2020,IPL_T20_SRH,PLY_0381,Mohammad Nabi,Allrounder,1
+2020,IPL_T20_SRH,PLY_0194,Fabian Allen,Allrounder,1
+2020,IPL_T20_SRH,PLY_0821,,Allrounder,0
+2020,IPL_T20_SRH,PLY_0478,Rashid Khan,Allrounder,1
+2020,IPL_T20_SRH,PLY_0530,Sandeep Sharma,Bowler,0
+2020,IPL_T20_SRH,PLY_0301,Khaleel Ahmed,Bowler,0
+2020,IPL_T20_SRH,PLY_0616,T Natarajan,Bowler,0
+2020,IPL_T20_SRH,PLY_0581,Siddarth Kaul,Bowler,0
+2020,IPL_T20_SRH,PLY_0542,Shahbaz Nadeem,Bowler,0
+2020,IPL_T20_SRH,PLY_0099,Basil Thampi,Bowler,0
+2020,IPL_T20_SRH,PLY_0110,Billy Stanlake,Bowler,1
+2020,IPL_T20_SRH,PLY_0851,,Bowler,0
+2019,IPL_T20_CSK,PLY_0334,MS Dhoni,Wicketkeeper,0
+2019,IPL_T20_CSK,PLY_0523,Sam Billings,Wicketkeeper,1
+2019,IPL_T20_CSK,PLY_0196,Faf du Plessis,Batter,1
+2019,IPL_T20_CSK,PLY_0510,Ruturaj Gaikwad,Batter,0
+2019,IPL_T20_CSK,PLY_0404,Narayan Jagadeesan,Wicketkeeper,0
+2019,IPL_T20_CSK,PLY_0608,Suresh Raina,Batter,0
+2019,IPL_T20_CSK,PLY_0044,Ambati Rayudu,Batter,0
+2019,IPL_T20_CSK,PLY_0171,Dhruv Shorey,Batter,0
+2019,IPL_T20_CSK,PLY_0396,Murali Vijay,Batter,0
+2019,IPL_T20_CSK,PLY_0189,Dwayne Bravo,Allrounder,1
+2019,IPL_T20_CSK,PLY_0852,,Allrounder,0
+2019,IPL_T20_CSK,PLY_0485,Ravindra Jadeja,Allrounder,0
+2019,IPL_T20_CSK,PLY_0295,Kedar Jadhav,Allrounder,0
+2019,IPL_T20_CSK,PLY_0843,,Allrounder,0
+2019,IPL_T20_CSK,PLY_0373,Mitchell Santner,Allrounder,1
+2019,IPL_T20_CSK,PLY_0555,Shardul Thakur,Allrounder,0
+2019,IPL_T20_CSK,PLY_0553,Shane Watson,Allrounder,1
+2019,IPL_T20_CSK,PLY_0159,David Willey,Allrounder,1
+2019,IPL_T20_CSK,PLY_0807,,Bowler,0
+2019,IPL_T20_CSK,PLY_0163,Deepak Chahar,Bowler,0
+2019,IPL_T20_CSK,PLY_0213,Harbhajan Singh,Bowler,0
+2019,IPL_T20_CSK,PLY_0228,Imran Tahir,Bowler,1
+2019,IPL_T20_CSK,PLY_0292,Karn Sharma,Bowler,0
+2019,IPL_T20_CSK,PLY_0386,Mohit Sharma,Bowler,0
+2019,IPL_T20_CSK,PLY_0705,Lungi Ngidi,Bowler,1
+2019,IPL_T20_CSK,PLY_0842,,Allrounder,1
+2019,IPL_T20_DC,PLY_0577,Shreyas Iyer,Batter,0
+2019,IPL_T20_DC,PLY_0853,,Wicketkeeper,0
+2019,IPL_T20_DC,PLY_0563,Shikhar Dhawan,Batter,0
+2019,IPL_T20_DC,PLY_0137,Colin Ingram,Batter,1
+2019,IPL_T20_DC,PLY_0854,,Batter,0
+2019,IPL_T20_DC,PLY_0138,Colin Munro,Batter,1
+2019,IPL_T20_DC,PLY_0495,Rishabh Pant,Wicketkeeper,0
+2019,IPL_T20_DC,PLY_0562,Sherfane Rutherford,Batter,1
+2019,IPL_T20_DC,PLY_0454,Prithvi Shaw,Batter,0
+2019,IPL_T20_DC,PLY_0836,,Allrounder,0
+2019,IPL_T20_DC,PLY_0134,Chris Morris,Allrounder,1
+2019,IPL_T20_DC,PLY_0212,Hanuma Vihari,Allrounder,0
+2019,IPL_T20_DC,PLY_0089,Axar Patel,Allrounder,0
+2019,IPL_T20_DC,PLY_0222,Harshal Patel,Allrounder,0
+2019,IPL_T20_DC,PLY_0296,Keemo Paul,Allrounder,1
+2019,IPL_T20_DC,PLY_0466,Rahul Tewatia,Allrounder,0
+2019,IPL_T20_DC,PLY_0088,Avesh Khan,Bowler,0
+2019,IPL_T20_DC,PLY_0855,,Bowler,0
+2019,IPL_T20_DC,PLY_0637,Trent Boult,Bowler,1
+2019,IPL_T20_DC,PLY_0529,Sandeep Lamichhane,Bowler,1
+2019,IPL_T20_DC,PLY_0045,Amit Mishra,Bowler,0
+2019,IPL_T20_DC,PLY_0282,Kagiso Rabada,Bowler,1
+2019,IPL_T20_DC,PLY_0235,Ishant Sharma,Bowler,0
+2019,IPL_T20_DC,PLY_0856,,Bowler,0
+2019,IPL_T20_DC,PLY_0244,Jagadeesha Suchith,Bowler,0
+2019,IPL_T20_PBKS,PLY_0484,Ravichandran Ashwin,Allrounder,0
+2019,IPL_T20_PBKS,PLY_0362,Mayank Agarwal,Batter,0
+2019,IPL_T20_PBKS,PLY_0534,Sarfaraz Khan,Batter,0
+2019,IPL_T20_PBKS,PLY_0156,David Miller,Batter,1
+2019,IPL_T20_PBKS,PLY_0294,Karun Nair,Batter,0
+2019,IPL_T20_PBKS,PLY_0413,Nicholas Pooran,Wicketkeeper,1
+2019,IPL_T20_PBKS,PLY_0440,Prabhsimran Singh,Wicketkeeper,0
+2019,IPL_T20_PBKS,PLY_0280,KL Rahul,Wicketkeeper,0
+2019,IPL_T20_PBKS,PLY_0524,Sam Curran,Allrounder,1
+2019,IPL_T20_PBKS,PLY_0131,Chris Gayle,Allrounder,1
+2019,IPL_T20_PBKS,PLY_0389,Moises Henriques,Allrounder,1
+2019,IPL_T20_PBKS,PLY_0343,Mandeep Singh,Allrounder,0
+2019,IPL_T20_PBKS,PLY_0397,Murugan Ashwin,Bowler,0
+2019,IPL_T20_PBKS,PLY_0076,Arshdeep Singh,Bowler,0
+2019,IPL_T20_PBKS,PLY_0857,,Bowler,0
+2019,IPL_T20_PBKS,PLY_0218,Harpreet Brar,Bowler,0
+2019,IPL_T20_PBKS,PLY_0382,Mohammad Shami,Bowler,0
+2019,IPL_T20_PBKS,PLY_0391,Mujeeb Ur Rahman,Bowler,1
+2019,IPL_T20_PBKS,PLY_0152,Darshan Nalkande,Bowler,0
+2019,IPL_T20_PBKS,PLY_0062,Ankit Rajpoot,Bowler,0
+2019,IPL_T20_PBKS,PLY_0053,Andrew Tye,Bowler,1
+2019,IPL_T20_PBKS,PLY_0654,Varun Chakaravarthy,Bowler,0
+2019,IPL_T20_PBKS,PLY_0215,Hardus Viljoen,Bowler,1
+2019,IPL_T20_KKR,PLY_0176,Dinesh Karthik,Wicketkeeper,0
+2019,IPL_T20_KKR,PLY_0265,Joe Denly,Batter,1
+2019,IPL_T20_KKR,PLY_0133,Chris Lynn,Batter,1
+2019,IPL_T20_KKR,PLY_0414,Nikhil Naik,Wicketkeeper,0
+2019,IPL_T20_KKR,PLY_0418,Nitish Rana,Batter,0
+2019,IPL_T20_KKR,PLY_0580,Shubman Gill,Batter,0
+2019,IPL_T20_KKR,PLY_0493,Rinku Singh,Batter,0
+2019,IPL_T20_KKR,PLY_0501,Robin Uthappa,Batter,0
+2019,IPL_T20_KKR,PLY_0122,Carlos Brathwaite,Allrounder,1
+2019,IPL_T20_KKR,PLY_0439,Piyush Chawla,Allrounder,0
+2019,IPL_T20_KKR,PLY_0858,,Allrounder,0
+2019,IPL_T20_KKR,PLY_0604,Sunil Narine,Allrounder,1
+2019,IPL_T20_KKR,PLY_0049,Andre Russell,Allrounder,1
+2019,IPL_T20_KKR,PLY_0566,Shivam Mavi,Allrounder,0
+2019,IPL_T20_KKR,PLY_0221,Harry Gurney,Bowler,1
+2019,IPL_T20_KKR,PLY_0306,Kuldeep Yadav,Bowler,0
+2019,IPL_T20_KKR,PLY_0445,Prasidh Krishna,Bowler,0
+2019,IPL_T20_KKR,PLY_0851,,Bowler,0
+2019,IPL_T20_KKR,PLY_0777,,Bowler,0
+2019,IPL_T20_KKR,PLY_0279,KC Cariappa,Bowler,0
+2019,IPL_T20_KKR,PLY_0328,Lockie Ferguson,Bowler,1
+2019,IPL_T20_KKR,PLY_0284,Kamlesh Nagarkoti,Bowler,0
+2019,IPL_T20_KKR,PLY_0066,Anrich Nortje,Bowler,1
+2019,IPL_T20_MI,PLY_0505,Rohit Sharma,Batter,0
+2019,IPL_T20_MI,PLY_0065,Anmolpreet Singh,Batter,0
+2019,IPL_T20_MI,PLY_0458,Quinton de Kock,Wicketkeeper,1
+2019,IPL_T20_MI,PLY_0232,Ishan Kishan,Wicketkeeper,0
+2019,IPL_T20_MI,PLY_0584,Siddhesh Lad,Batter,0
+2019,IPL_T20_MI,PLY_0193,Evin Lewis,Batter,1
+2019,IPL_T20_MI,PLY_0023,Aditya Tare,Wicketkeeper,0
+2019,IPL_T20_MI,PLY_0610,Suryakumar Yadav,Batter,0
+2019,IPL_T20_MI,PLY_0692,Yuvraj Singh,Batter,0
+2019,IPL_T20_MI,PLY_0100,Ben Cutting,Allrounder,1
+2019,IPL_T20_MI,PLY_0214,Hardik Pandya,Allrounder,0
+2019,IPL_T20_MI,PLY_0305,Krunal Pandya,Allrounder,0
+2019,IPL_T20_MI,PLY_0302,Kieron Pollard,Allrounder,1
+2019,IPL_T20_MI,PLY_0253,Jason Behrendorff,Bowler,1
+2019,IPL_T20_MI,PLY_0256,Jasprit Bumrah,Bowler,0
+2019,IPL_T20_MI,PLY_0462,Rahul Chahar,Bowler,0
+2019,IPL_T20_MI,PLY_0105,Beuran Hendricks,Bowler,1
+2019,IPL_T20_MI,PLY_0859,,Bowler,0
+2019,IPL_T20_MI,PLY_0320,Lasith Malinga,Bowler,1
+2019,IPL_T20_MI,PLY_0363,Mayank Markande,Bowler,0
+2019,IPL_T20_MI,PLY_0372,Mitchell McClenaghan,Bowler,1
+2019,IPL_T20_MI,PLY_0479,Rasikh Salam,Bowler,0
+2019,IPL_T20_MI,PLY_0098,Barinder Sran,Bowler,0
+2019,IPL_T20_MI,PLY_0258,Jayant Yadav,Bowler,0
+2019,IPL_T20_MI,PLY_0042,Alzarri Joseph,Bowler,1
+2019,IPL_T20_MI,PLY_0018,Adam Milne,Bowler,1
+2019,IPL_T20_RR,PLY_0597,Steve Smith,Batter,1
+2019,IPL_T20_RR,PLY_0860,,Batter,0
+2019,IPL_T20_RR,PLY_0272,Jos Buttler,Wicketkeeper,1
+2019,IPL_T20_RR,PLY_0444,Prashant Chopra,Batter,0
+2019,IPL_T20_RR,PLY_0497,Riyan Parag,Batter,0
+2019,IPL_T20_RR,PLY_0028,Ajinkya Rahane,Batter,0
+2019,IPL_T20_RR,PLY_0532,Sanju Samson,Wicketkeeper,0
+2019,IPL_T20_RR,PLY_0467,Rahul Tripathi,Batter,0
+2019,IPL_T20_RR,PLY_0085,Ashton Turner,Batter,1
+2019,IPL_T20_RR,PLY_0341,Manan Vohra,Batter,0
+2019,IPL_T20_RR,PLY_0598,Stuart Binny,Allrounder,0
+2019,IPL_T20_RR,PLY_0304,Krishnappa Gowtham,Allrounder,0
+2019,IPL_T20_RR,PLY_0104,Ben Stokes,Allrounder,1
+2019,IPL_T20_RR,PLY_0324,Liam Livingstone,Allrounder,1
+2019,IPL_T20_RR,PLY_0339,Mahipal Lomror,Allrounder,0
+2019,IPL_T20_RR,PLY_0576,Shreyas Gopal,Bowler,0
+2019,IPL_T20_RR,PLY_0169,Dhawal Kulkarni,Bowler,0
+2019,IPL_T20_RR,PLY_0861,,Bowler,0
+2019,IPL_T20_RR,PLY_0231,Ish Sodhi,Bowler,1
+2019,IPL_T20_RR,PLY_0839,,Bowler,1
+2019,IPL_T20_RR,PLY_0259,Jaydev Unadkat,Bowler,0
+2019,IPL_T20_RR,PLY_0653,Varun Aaron,Bowler,0
+2019,IPL_T20_RR,PLY_0267,Jofra Archer,Bowler,1
+2019,IPL_T20_RCB,PLY_0666,Virat Kohli,Batter,0
+2019,IPL_T20_RCB,PLY_0001,AB de Villiers,Wicketkeeper,1
+2019,IPL_T20_RCB,PLY_0814,,Batter,0
+2019,IPL_T20_RCB,PLY_0564,Shimron Hetmyer,Batter,1
+2019,IPL_T20_RCB,PLY_0722,Himmat Singh,Batter,0
+2019,IPL_T20_RCB,PLY_0225,Heinrich Klaasen,Wicketkeeper,1
+2019,IPL_T20_RCB,PLY_0036,Akshdeep Nath,Batter,0
+2019,IPL_T20_RCB,PLY_0165,Devdutt Padikkal,Batter,0
+2019,IPL_T20_RCB,PLY_0429,Parthiv Patel,Wicketkeeper,0
+2019,IPL_T20_RCB,PLY_0565,Shivam Dube,Allrounder,0
+2019,IPL_T20_RCB,PLY_0862,,Allrounder,0
+2019,IPL_T20_RCB,PLY_0352,Marcus Stoinis,Allrounder,1
+2019,IPL_T20_RCB,PLY_0673,Washington Sundar,Allrounder,0
+2019,IPL_T20_RCB,PLY_0376,Moeen Ali,Allrounder,1
+2019,IPL_T20_RCB,PLY_0139,Colin de Grandhomme,Allrounder,1
+2019,IPL_T20_RCB,PLY_0405,Nathan Coulter-Nile,Allrounder,1
+2019,IPL_T20_RCB,PLY_0693,Yuzvendra Chahal,Bowler,0
+2019,IPL_T20_RCB,PLY_0711,Kulwant Khejroliya,Bowler,0
+2019,IPL_T20_RCB,PLY_0383,Mohammed Siraj,Bowler,0
+2019,IPL_T20_RCB,PLY_0435,Pawan Negi,Bowler,0
+2019,IPL_T20_RCB,PLY_0450,Prayas Ray Barman,Bowler,0
+2019,IPL_T20_RCB,PLY_0408,Navdeep Saini,Bowler,0
+2019,IPL_T20_RCB,PLY_0630,Tim Southee,Bowler,1
+2019,IPL_T20_RCB,PLY_0143,Dale Steyn,Bowler,1
+2019,IPL_T20_RCB,PLY_0644,Umesh Yadav,Bowler,0
+2019,IPL_T20_SRH,PLY_0288,Kane Williamson,Batter,1
+2019,IPL_T20_SRH,PLY_0271,Jonny Bairstow,Wicketkeeper,1
+2019,IPL_T20_SRH,PLY_0490,Ricky Bhui,Batter,0
+2019,IPL_T20_SRH,PLY_0575,Shreevats Goswami,Wicketkeeper,0
+2019,IPL_T20_SRH,PLY_0356,Martin Guptill,Batter,1
+2019,IPL_T20_SRH,PLY_0344,Manish Pandey,Batter,0
+2019,IPL_T20_SRH,PLY_0679,Wriddhiman Saha,Wicketkeeper,0
+2019,IPL_T20_SRH,PLY_0157,David Warner,Batter,1
+2019,IPL_T20_SRH,PLY_0014,Abhishek Sharma,Allrounder,0
+2019,IPL_T20_SRH,PLY_0164,Deepak Hooda,Allrounder,0
+2019,IPL_T20_SRH,PLY_0381,Mohammad Nabi,Allrounder,1
+2019,IPL_T20_SRH,PLY_0691,Yusuf Pathan,Allrounder,0
+2019,IPL_T20_SRH,PLY_0478,Rashid Khan,Allrounder,1
+2019,IPL_T20_SRH,PLY_0547,Shakib Al Hasan,Allrounder,1
+2019,IPL_T20_SRH,PLY_0658,Vijay Shankar,Allrounder,0
+2019,IPL_T20_SRH,PLY_0301,Khaleel Ahmed,Bowler,0
+2019,IPL_T20_SRH,PLY_0099,Basil Thampi,Bowler,0
+2019,IPL_T20_SRH,PLY_0581,Siddarth Kaul,Bowler,0
+2019,IPL_T20_SRH,PLY_0109,Bhuvneshwar Kumar,Bowler,0
+2019,IPL_T20_SRH,PLY_0542,Shahbaz Nadeem,Bowler,0
+2019,IPL_T20_SRH,PLY_0616,T Natarajan,Bowler,0
+2019,IPL_T20_SRH,PLY_0530,Sandeep Sharma,Bowler,0
+2019,IPL_T20_SRH,PLY_0110,Billy Stanlake,Bowler,1
+2018,IPL_T20_CSK,PLY_0334,MS Dhoni,Wicketkeeper,0
+2018,IPL_T20_CSK,PLY_0523,Sam Billings,Wicketkeeper,1
+2018,IPL_T20_CSK,PLY_0196,Faf du Plessis,Batter,1
+2018,IPL_T20_CSK,PLY_0404,Narayan Jagadeesan,Wicketkeeper,0
+2018,IPL_T20_CSK,PLY_0863,,Batter,0
+2018,IPL_T20_CSK,PLY_0608,Suresh Raina,Batter,0
+2018,IPL_T20_CSK,PLY_0044,Ambati Rayudu,Batter,0
+2018,IPL_T20_CSK,PLY_0171,Dhruv Shorey,Batter,0
+2018,IPL_T20_CSK,PLY_0396,Murali Vijay,Batter,0
+2018,IPL_T20_CSK,PLY_0852,,Allrounder,0
+2018,IPL_T20_CSK,PLY_0189,Dwayne Bravo,Allrounder,1
+2018,IPL_T20_CSK,PLY_0485,Ravindra Jadeja,Allrounder,0
+2018,IPL_T20_CSK,PLY_0843,,Allrounder,0
+2018,IPL_T20_CSK,PLY_0864,,Allrounder,0
+2018,IPL_T20_CSK,PLY_0555,Shardul Thakur,Allrounder,0
+2018,IPL_T20_CSK,PLY_0553,Shane Watson,Allrounder,1
+2018,IPL_T20_CSK,PLY_0159,David Willey,Allrounder,1
+2018,IPL_T20_CSK,PLY_0295,Kedar Jadhav,Allrounder,0
+2018,IPL_T20_CSK,PLY_0373,Mitchell Santner,Allrounder,1
+2018,IPL_T20_CSK,PLY_0807,,Bowler,0
+2018,IPL_T20_CSK,PLY_0163,Deepak Chahar,Bowler,0
+2018,IPL_T20_CSK,PLY_0213,Harbhajan Singh,Bowler,0
+2018,IPL_T20_CSK,PLY_0228,Imran Tahir,Bowler,1
+2018,IPL_T20_CSK,PLY_0705,Lungi Ngidi,Bowler,1
+2018,IPL_T20_CSK,PLY_0292,Karn Sharma,Bowler,0
+2018,IPL_T20_CSK,PLY_0354,Mark Wood,Bowler,1
+2018,IPL_T20_DC,PLY_0577,Shreyas Iyer,Batter,0
+2018,IPL_T20_DC,PLY_0200,Gautam Gambhir,Batter,0
+2018,IPL_T20_DC,PLY_0814,,Batter,0
+2018,IPL_T20_DC,PLY_0854,,Batter,0
+2018,IPL_T20_DC,PLY_0138,Colin Munro,Batter,1
+2018,IPL_T20_DC,PLY_0255,Jason Roy,Batter,1
+2018,IPL_T20_DC,PLY_0454,Prithvi Shaw,Batter,0
+2018,IPL_T20_DC,PLY_0403,Naman Ojha,Wicketkeeper,0
+2018,IPL_T20_DC,PLY_0495,Rishabh Pant,Wicketkeeper,0
+2018,IPL_T20_DC,PLY_0014,Abhishek Sharma,Allrounder,0
+2018,IPL_T20_DC,PLY_0145,Dan Christian,Allrounder,1
+2018,IPL_T20_DC,PLY_0204,Glenn Maxwell,Allrounder,1
+2018,IPL_T20_DC,PLY_0222,Harshal Patel,Allrounder,0
+2018,IPL_T20_DC,PLY_0658,Vijay Shankar,Allrounder,0
+2018,IPL_T20_DC,PLY_0466,Rahul Tewatia,Allrounder,0
+2018,IPL_T20_DC,PLY_0134,Chris Morris,Allrounder,1
+2018,IPL_T20_DC,PLY_0088,Avesh Khan,Bowler,0
+2018,IPL_T20_DC,PLY_0637,Trent Boult,Bowler,1
+2018,IPL_T20_DC,PLY_0045,Amit Mishra,Bowler,0
+2018,IPL_T20_DC,PLY_0382,Mohammad Shami,Bowler,0
+2018,IPL_T20_DC,PLY_0865,,Bowler,0
+2018,IPL_T20_DC,PLY_0542,Shahbaz Nadeem,Bowler,0
+2018,IPL_T20_DC,PLY_0325,Liam Plunkett,Bowler,1
+2018,IPL_T20_DC,PLY_0529,Sandeep Lamichhane,Bowler,1
+2018,IPL_T20_DC,PLY_0866,,Bowler,1
+2018,IPL_T20_DC,PLY_0258,Jayant Yadav,Bowler,0
+2018,IPL_T20_PBKS,PLY_0362,Mayank Agarwal,Batter,0
+2018,IPL_T20_PBKS,PLY_0003,Aaron Finch,Batter,1
+2018,IPL_T20_PBKS,PLY_0867,,Batter,0
+2018,IPL_T20_PBKS,PLY_0156,David Miller,Batter,1
+2018,IPL_T20_PBKS,PLY_0294,Karun Nair,Batter,0
+2018,IPL_T20_PBKS,PLY_0036,Akshdeep Nath,Batter,0
+2018,IPL_T20_PBKS,PLY_0280,KL Rahul,Wicketkeeper,0
+2018,IPL_T20_PBKS,PLY_0346,Manoj Tiwary,Batter,0
+2018,IPL_T20_PBKS,PLY_0692,Yuvraj Singh,Batter,0
+2018,IPL_T20_PBKS,PLY_0131,Chris Gayle,Allrounder,1
+2018,IPL_T20_PBKS,PLY_0484,Ravichandran Ashwin,Allrounder,0
+2018,IPL_T20_PBKS,PLY_0089,Axar Patel,Allrounder,0
+2018,IPL_T20_PBKS,PLY_0441,Pradeep Sahu,Allrounder,0
+2018,IPL_T20_PBKS,PLY_0352,Marcus Stoinis,Allrounder,1
+2018,IPL_T20_PBKS,PLY_0788,,Bowler,0
+2018,IPL_T20_PBKS,PLY_0739,Ben Dwarshuis,Bowler,1
+2018,IPL_T20_PBKS,PLY_0391,Mujeeb Ur Rahman,Bowler,1
+2018,IPL_T20_PBKS,PLY_0062,Ankit Rajpoot,Bowler,0
+2018,IPL_T20_PBKS,PLY_0386,Mohit Sharma,Bowler,0
+2018,IPL_T20_PBKS,PLY_0098,Barinder Sran,Bowler,0
+2018,IPL_T20_PBKS,PLY_0053,Andrew Tye,Bowler,1
+2018,IPL_T20_KKR,PLY_0176,Dinesh Karthik,Wicketkeeper,0
+2018,IPL_T20_KKR,PLY_0868,,Batter,1
+2018,IPL_T20_KKR,PLY_0234,Ishank Jaggi,Batter,0
+2018,IPL_T20_KKR,PLY_0133,Chris Lynn,Batter,1
+2018,IPL_T20_KKR,PLY_0418,Nitish Rana,Batter,0
+2018,IPL_T20_KKR,PLY_0580,Shubman Gill,Batter,0
+2018,IPL_T20_KKR,PLY_0493,Rinku Singh,Batter,0
+2018,IPL_T20_KKR,PLY_0501,Robin Uthappa,Batter,0
+2018,IPL_T20_KKR,PLY_0869,,Batter,0
+2018,IPL_T20_KKR,PLY_0439,Piyush Chawla,Allrounder,0
+2018,IPL_T20_KKR,PLY_0633,Tom Curran,Allrounder,1
+2018,IPL_T20_KKR,PLY_0604,Sunil Narine,Allrounder,1
+2018,IPL_T20_KKR,PLY_0049,Andre Russell,Allrounder,1
+2018,IPL_T20_KKR,PLY_0257,Javon Searles,Allrounder,1
+2018,IPL_T20_KKR,PLY_0566,Shivam Mavi,Allrounder,0
+2018,IPL_T20_KKR,PLY_0284,Kamlesh Nagarkoti,Bowler,0
+2018,IPL_T20_KKR,PLY_0370,Mitchell Johnson,Bowler,1
+2018,IPL_T20_KKR,PLY_0306,Kuldeep Yadav,Bowler,0
+2018,IPL_T20_KKR,PLY_0445,Prasidh Krishna,Bowler,0
+2018,IPL_T20_KKR,PLY_0664,Vinay Kumar,Bowler,0
+2018,IPL_T20_MI,PLY_0505,Rohit Sharma,Batter,0
+2018,IPL_T20_MI,PLY_0232,Ishan Kishan,Wicketkeeper,0
+2018,IPL_T20_MI,PLY_0584,Siddhesh Lad,Batter,0
+2018,IPL_T20_MI,PLY_0193,Evin Lewis,Batter,1
+2018,IPL_T20_MI,PLY_0870,,Batter,0
+2018,IPL_T20_MI,PLY_0023,Aditya Tare,Wicketkeeper,0
+2018,IPL_T20_MI,PLY_0535,Saurabh Tiwary,Batter,0
+2018,IPL_T20_MI,PLY_0610,Suryakumar Yadav,Batter,0
+2018,IPL_T20_MI,PLY_0100,Ben Cutting,Allrounder,1
+2018,IPL_T20_MI,PLY_0034,Akila Dananjaya,Allrounder,1
+2018,IPL_T20_MI,PLY_0871,,Allrounder,1
+2018,IPL_T20_MI,PLY_0305,Krunal Pandya,Allrounder,0
+2018,IPL_T20_MI,PLY_0214,Hardik Pandya,Allrounder,0
+2018,IPL_T20_MI,PLY_0302,Kieron Pollard,Allrounder,1
+2018,IPL_T20_MI,PLY_0069,Anukul Roy,Allrounder,0
+2018,IPL_T20_MI,PLY_0844,,Allrounder,0
+2018,IPL_T20_MI,PLY_0256,Jasprit Bumrah,Bowler,0
+2018,IPL_T20_MI,PLY_0462,Rahul Chahar,Bowler,0
+2018,IPL_T20_MI,PLY_0363,Mayank Markande,Bowler,0
+2018,IPL_T20_MI,PLY_0372,Mitchell McClenaghan,Bowler,1
+2018,IPL_T20_MI,PLY_0018,Adam Milne,Bowler,1
+2018,IPL_T20_MI,PLY_0399,Mustafizur Rahman,Bowler,1
+2018,IPL_T20_MI,PLY_0442,Pradeep Sangwan,Bowler,0
+2018,IPL_T20_MI,PLY_0872,,Bowler,0
+2018,IPL_T20_MI,PLY_0388,Mohsin Khan,Bowler,0
+2018,IPL_T20_RR,PLY_0028,Ajinkya Rahane,Batter,0
+2018,IPL_T20_RR,PLY_0860,,Batter,0
+2018,IPL_T20_RR,PLY_0272,Jos Buttler,Wicketkeeper,1
+2018,IPL_T20_RR,PLY_0444,Prashant Chopra,Batter,0
+2018,IPL_T20_RR,PLY_0873,,Batter,0
+2018,IPL_T20_RR,PLY_0225,Heinrich Klaasen,Wicketkeeper,1
+2018,IPL_T20_RR,PLY_0532,Sanju Samson,Wicketkeeper,0
+2018,IPL_T20_RR,PLY_0142,D'Arcy Short,Batter,1
+2018,IPL_T20_RR,PLY_0467,Rahul Tripathi,Batter,0
+2018,IPL_T20_RR,PLY_0598,Stuart Binny,Allrounder,0
+2018,IPL_T20_RR,PLY_0304,Krishnappa Gowtham,Allrounder,0
+2018,IPL_T20_RR,PLY_0339,Mahipal Lomror,Allrounder,0
+2018,IPL_T20_RR,PLY_0104,Ben Stokes,Allrounder,1
+2018,IPL_T20_RR,PLY_0063,Ankit Sharma,Bowler,0
+2018,IPL_T20_RR,PLY_0070,Anureet Singh,Bowler,0
+2018,IPL_T20_RR,PLY_0267,Jofra Archer,Bowler,1
+2018,IPL_T20_RR,PLY_0576,Shreyas Gopal,Bowler,0
+2018,IPL_T20_RR,PLY_0169,Dhawal Kulkarni,Bowler,0
+2018,IPL_T20_RR,PLY_0102,Ben Laughlin,Bowler,1
+2018,IPL_T20_RR,PLY_0231,Ish Sodhi,Bowler,1
+2018,IPL_T20_RR,PLY_0259,Jaydev Unadkat,Bowler,0
+2018,IPL_T20_RR,PLY_0186,Dushmantha Chameera,Bowler,1
+2018,IPL_T20_RR,PLY_0861,,Bowler,0
+2018,IPL_T20_RCB,PLY_0666,Virat Kohli,Batter,0
+2018,IPL_T20_RCB,PLY_0458,Quinton de Kock,Wicketkeeper,1
+2018,IPL_T20_RCB,PLY_0001,AB de Villiers,Wicketkeeper,1
+2018,IPL_T20_RCB,PLY_0833,,Batter,0
+2018,IPL_T20_RCB,PLY_0534,Sarfaraz Khan,Batter,0
+2018,IPL_T20_RCB,PLY_0117,Brendon McCullum,Wicketkeeper,1
+2018,IPL_T20_RCB,PLY_0429,Parthiv Patel,Wicketkeeper,0
+2018,IPL_T20_RCB,PLY_0341,Manan Vohra,Batter,0
+2018,IPL_T20_RCB,PLY_0343,Mandeep Singh,Allrounder,0
+2018,IPL_T20_RCB,PLY_0139,Colin de Grandhomme,Allrounder,1
+2018,IPL_T20_RCB,PLY_0841,,Allrounder,0
+2018,IPL_T20_RCB,PLY_0673,Washington Sundar,Allrounder,0
+2018,IPL_T20_RCB,PLY_0135,Chris Woakes,Allrounder,1
+2018,IPL_T20_RCB,PLY_0397,Murugan Ashwin,Bowler,0
+2018,IPL_T20_RCB,PLY_0693,Yuzvendra Chahal,Bowler,0
+2018,IPL_T20_RCB,PLY_0056,Aniket Choudhary,Bowler,0
+2018,IPL_T20_RCB,PLY_0711,Kulwant Khejroliya,Bowler,0
+2018,IPL_T20_RCB,PLY_0383,Mohammed Siraj,Bowler,0
+2018,IPL_T20_RCB,PLY_0630,Tim Southee,Bowler,1
+2018,IPL_T20_RCB,PLY_0644,Umesh Yadav,Bowler,0
+2018,IPL_T20_RCB,PLY_0141,Corey Anderson,Allrounder,1
+2018,IPL_T20_SRH,PLY_0288,Kane Williamson,Batter,1
+2018,IPL_T20_SRH,PLY_0874,,Batter,0
+2018,IPL_T20_SRH,PLY_0490,Ricky Bhui,Batter,0
+2018,IPL_T20_SRH,PLY_0563,Shikhar Dhawan,Batter,0
+2018,IPL_T20_SRH,PLY_0575,Shreevats Goswami,Wicketkeeper,0
+2018,IPL_T20_SRH,PLY_0039,Alex Hales,Batter,1
+2018,IPL_T20_SRH,PLY_0344,Manish Pandey,Batter,0
+2018,IPL_T20_SRH,PLY_0516,Sachin Baby,Batter,0
+2018,IPL_T20_SRH,PLY_0679,Wriddhiman Saha,Wicketkeeper,0
+2018,IPL_T20_SRH,PLY_0112,Bipul Sharma,Allrounder,0
+2018,IPL_T20_SRH,PLY_0122,Carlos Brathwaite,Allrounder,1
+2018,IPL_T20_SRH,PLY_0164,Deepak Hooda,Allrounder,0
+2018,IPL_T20_SRH,PLY_0381,Mohammad Nabi,Allrounder,1
+2018,IPL_T20_SRH,PLY_0691,Yusuf Pathan,Allrounder,0
+2018,IPL_T20_SRH,PLY_0478,Rashid Khan,Allrounder,1
+2018,IPL_T20_SRH,PLY_0547,Shakib Al Hasan,Allrounder,1
+2018,IPL_T20_SRH,PLY_0301,Khaleel Ahmed,Bowler,0
+2018,IPL_T20_SRH,PLY_0099,Basil Thampi,Bowler,0
+2018,IPL_T20_SRH,PLY_0109,Bhuvneshwar Kumar,Bowler,0
+2018,IPL_T20_SRH,PLY_0110,Billy Stanlake,Bowler,1
+2018,IPL_T20_SRH,PLY_0132,Chris Jordan,Bowler,1
+2018,IPL_T20_SRH,PLY_0581,Siddarth Kaul,Bowler,0
+2018,IPL_T20_SRH,PLY_0530,Sandeep Sharma,Bowler,0
+2018,IPL_T20_SRH,PLY_0616,T Natarajan,Bowler,0
+2018,IPL_T20_SRH,PLY_0875,,Bowler,0
+2017,IPL_T20_DC,PLY_0694,Zaheer Khan,Bowler,0
+2017,IPL_T20_DC,PLY_0061,Ankit Bawne,Batter,0
+2017,IPL_T20_DC,PLY_0523,Sam Billings,Wicketkeeper,1
+2017,IPL_T20_DC,PLY_0458,Quinton de Kock,Wicketkeeper,1
+2017,IPL_T20_DC,PLY_0577,Shreyas Iyer,Batter,0
+2017,IPL_T20_DC,PLY_0294,Karun Nair,Batter,0
+2017,IPL_T20_DC,PLY_0495,Rishabh Pant,Wicketkeeper,0
+2017,IPL_T20_DC,PLY_0532,Sanju Samson,Wicketkeeper,0
+2017,IPL_T20_DC,PLY_0355,Marlon Samuels,Batter,1
+2017,IPL_T20_DC,PLY_0023,Aditya Tare,Wicketkeeper,0
+2017,IPL_T20_DC,PLY_0141,Corey Anderson,Allrounder,1
+2017,IPL_T20_DC,PLY_0122,Carlos Brathwaite,Allrounder,1
+2017,IPL_T20_DC,PLY_0054,Angelo Mathews,Allrounder,1
+2017,IPL_T20_DC,PLY_0134,Chris Morris,Allrounder,1
+2017,IPL_T20_DC,PLY_0556,Shashank Singh,Allrounder,0
+2017,IPL_T20_DC,PLY_0871,,Allrounder,1
+2017,IPL_T20_DC,PLY_0301,Khaleel Ahmed,Bowler,0
+2017,IPL_T20_DC,PLY_0397,Murugan Ashwin,Bowler,0
+2017,IPL_T20_DC,PLY_0432,Pat Cummins,Bowler,1
+2017,IPL_T20_DC,PLY_0876,,Bowler,1
+2017,IPL_T20_DC,PLY_0830,,Bowler,0
+2017,IPL_T20_DC,PLY_0045,Amit Mishra,Bowler,0
+2017,IPL_T20_DC,PLY_0382,Mohammad Shami,Bowler,0
+2017,IPL_T20_DC,PLY_0542,Shahbaz Nadeem,Bowler,0
+2017,IPL_T20_DC,PLY_0877,,Bowler,0
+2017,IPL_T20_DC,PLY_0282,Kagiso Rabada,Bowler,1
+2017,IPL_T20_DC,PLY_0408,Navdeep Saini,Bowler,0
+2017,IPL_T20_DC,PLY_0258,Jayant Yadav,Bowler,0
+2017,IPL_T20_GL,PLY_0608,Suresh Raina,Batter,0
+2017,IPL_T20_GL,PLY_0878,,Batter,1
+2017,IPL_T20_GL,PLY_0003,Aaron Finch,Batter,1
+2017,IPL_T20_GL,PLY_0232,Ishan Kishan,Wicketkeeper,0
+2017,IPL_T20_GL,PLY_0176,Dinesh Karthik,Wicketkeeper,0
+2017,IPL_T20_GL,PLY_0117,Brendon McCullum,Wicketkeeper,1
+2017,IPL_T20_GL,PLY_0036,Akshdeep Nath,Batter,0
+2017,IPL_T20_GL,PLY_0816,,Batter,0
+2017,IPL_T20_GL,PLY_0064,Ankit Soni,Allrounder,0
+2017,IPL_T20_GL,PLY_0246,James Faulkner,Allrounder,1
+2017,IPL_T20_GL,PLY_0485,Ravindra Jadeja,Allrounder,0
+2017,IPL_T20_GL,PLY_0230,Irfan Pathan,Allrounder,0
+2017,IPL_T20_GL,PLY_0190,Dwayne Smith,Allrounder,1
+2017,IPL_T20_GL,PLY_0099,Basil Thampi,Bowler,0
+2017,IPL_T20_GL,PLY_0347,Manpreet Gony,Bowler,0
+2017,IPL_T20_GL,PLY_0540,Shadab Jakati,Bowler,0
+2017,IPL_T20_GL,PLY_0569,Shivil Kaushik,Bowler,0
+2017,IPL_T20_GL,PLY_0169,Dhawal Kulkarni,Bowler,0
+2017,IPL_T20_GL,PLY_0447,Praveen Kumar,Bowler,0
+2017,IPL_T20_GL,PLY_0394,Munaf Patel,Bowler,0
+2017,IPL_T20_GL,PLY_0442,Pradeep Sangwan,Bowler,0
+2017,IPL_T20_GL,PLY_0856,,Bowler,0
+2017,IPL_T20_GL,PLY_0828,,Bowler,0
+2017,IPL_T20_GL,PLY_0053,Andrew Tye,Bowler,1
+2017,IPL_T20_GL,PLY_0826,,Allrounder,0
+2017,IPL_T20_GL,PLY_0879,,Bowler,0
+2017,IPL_T20_PBKS,PLY_0204,Glenn Maxwell,Allrounder,1
+2017,IPL_T20_PBKS,PLY_0224,Hashim Amla,Batter,1
+2017,IPL_T20_PBKS,PLY_0880,,Batter,0
+2017,IPL_T20_PBKS,PLY_0356,Martin Guptill,Batter,1
+2017,IPL_T20_PBKS,PLY_0814,,Batter,0
+2017,IPL_T20_PBKS,PLY_0557,Shaun Marsh,Batter,1
+2017,IPL_T20_PBKS,PLY_0156,David Miller,Batter,1
+2017,IPL_T20_PBKS,PLY_0192,Eoin Morgan,Batter,1
+2017,IPL_T20_PBKS,PLY_0414,Nikhil Naik,Wicketkeeper,0
+2017,IPL_T20_PBKS,PLY_0679,Wriddhiman Saha,Wicketkeeper,0
+2017,IPL_T20_PBKS,PLY_0493,Rinku Singh,Batter,0
+2017,IPL_T20_PBKS,PLY_0341,Manan Vohra,Batter,0
+2017,IPL_T20_PBKS,PLY_0089,Axar Patel,Allrounder,0
+2017,IPL_T20_PBKS,PLY_0441,Pradeep Sahu,Allrounder,0
+2017,IPL_T20_PBKS,PLY_0151,Darren Sammy,Allrounder,1
+2017,IPL_T20_PBKS,PLY_0352,Marcus Stoinis,Allrounder,1
+2017,IPL_T20_PBKS,PLY_0466,Rahul Tewatia,Allrounder,0
+2017,IPL_T20_PBKS,PLY_0653,Varun Aaron,Bowler,0
+2017,IPL_T20_PBKS,PLY_0070,Anureet Singh,Bowler,0
+2017,IPL_T20_PBKS,PLY_0279,KC Cariappa,Bowler,0
+2017,IPL_T20_PBKS,PLY_0700,Matt Henry,Bowler,1
+2017,IPL_T20_PBKS,PLY_0616,T Natarajan,Bowler,0
+2017,IPL_T20_PBKS,PLY_0530,Sandeep Sharma,Bowler,0
+2017,IPL_T20_PBKS,PLY_0235,Ishant Sharma,Bowler,0
+2017,IPL_T20_PBKS,PLY_0386,Mohit Sharma,Bowler,0
+2017,IPL_T20_PBKS,PLY_0614,Swapnil Singh,Bowler,0
+2017,IPL_T20_KKR,PLY_0200,Gautam Gambhir,Batter,0
+2017,IPL_T20_KKR,PLY_0149,Darren Bravo,Batter,1
+2017,IPL_T20_KKR,PLY_0561,Sheldon Jackson,Wicketkeeper,0
+2017,IPL_T20_KKR,PLY_0234,Ishank Jaggi,Batter,0
+2017,IPL_T20_KKR,PLY_0133,Chris Lynn,Batter,1
+2017,IPL_T20_KKR,PLY_0344,Manish Pandey,Batter,0
+2017,IPL_T20_KKR,PLY_0509,Rovman Powell,Batter,1
+2017,IPL_T20_KKR,PLY_0501,Robin Uthappa,Batter,0
+2017,IPL_T20_KKR,PLY_0610,Suryakumar Yadav,Batter,0
+2017,IPL_T20_KKR,PLY_0439,Piyush Chawla,Allrounder,0
+2017,IPL_T20_KKR,PLY_0405,Nathan Coulter-Nile,Allrounder,1
+2017,IPL_T20_KKR,PLY_0139,Colin de Grandhomme,Allrounder,1
+2017,IPL_T20_KKR,PLY_0496,Rishi Dhawan,Allrounder,0
+2017,IPL_T20_KKR,PLY_0604,Sunil Narine,Allrounder,1
+2017,IPL_T20_KKR,PLY_0691,Yusuf Pathan,Allrounder,0
+2017,IPL_T20_KKR,PLY_0821,,Allrounder,0
+2017,IPL_T20_KKR,PLY_0547,Shakib Al Hasan,Allrounder,1
+2017,IPL_T20_KKR,PLY_0135,Chris Woakes,Allrounder,1
+2017,IPL_T20_KKR,PLY_0637,Trent Boult,Bowler,1
+2017,IPL_T20_KKR,PLY_0865,,Bowler,0
+2017,IPL_T20_KKR,PLY_0306,Kuldeep Yadav,Bowler,0
+2017,IPL_T20_KKR,PLY_0062,Ankit Rajpoot,Bowler,0
+2017,IPL_T20_KKR,PLY_0644,Umesh Yadav,Bowler,0
+2017,IPL_T20_MI,PLY_0505,Rohit Sharma,Batter,0
+2017,IPL_T20_MI,PLY_0272,Jos Buttler,Wicketkeeper,1
+2017,IPL_T20_MI,PLY_0881,,Batter,1
+2017,IPL_T20_MI,PLY_0584,Siddhesh Lad,Batter,0
+2017,IPL_T20_MI,PLY_0429,Parthiv Patel,Wicketkeeper,0
+2017,IPL_T20_MI,PLY_0413,Nicholas Pooran,Wicketkeeper,1
+2017,IPL_T20_MI,PLY_0418,Nitish Rana,Batter,0
+2017,IPL_T20_MI,PLY_0044,Ambati Rayudu,Batter,0
+2017,IPL_T20_MI,PLY_0535,Saurabh Tiwary,Batter,0
+2017,IPL_T20_MI,PLY_0304,Krishnappa Gowtham,Allrounder,0
+2017,IPL_T20_MI,PLY_0305,Krunal Pandya,Allrounder,0
+2017,IPL_T20_MI,PLY_0214,Hardik Pandya,Allrounder,0
+2017,IPL_T20_MI,PLY_0302,Kieron Pollard,Allrounder,1
+2017,IPL_T20_MI,PLY_0256,Jasprit Bumrah,Bowler,0
+2017,IPL_T20_MI,PLY_0576,Shreyas Gopal,Bowler,0
+2017,IPL_T20_MI,PLY_0213,Harbhajan Singh,Bowler,0
+2017,IPL_T20_MI,PLY_0370,Mitchell Johnson,Bowler,1
+2017,IPL_T20_MI,PLY_0711,Kulwant Khejroliya,Bowler,0
+2017,IPL_T20_MI,PLY_0320,Lasith Malinga,Bowler,1
+2017,IPL_T20_MI,PLY_0372,Mitchell McClenaghan,Bowler,1
+2017,IPL_T20_MI,PLY_0882,,Bowler,0
+2017,IPL_T20_MI,PLY_0292,Karn Sharma,Bowler,0
+2017,IPL_T20_MI,PLY_0630,Tim Southee,Bowler,1
+2017,IPL_T20_MI,PLY_0244,Jagadeesha Suchith,Bowler,0
+2017,IPL_T20_MI,PLY_0664,Vinay Kumar,Bowler,0
+2017,IPL_T20_RPS,PLY_0597,Steve Smith,Batter,1
+2017,IPL_T20_RPS,PLY_0362,Mayank Agarwal,Batter,0
+2017,IPL_T20_RPS,PLY_0853,,Wicketkeeper,0
+2017,IPL_T20_RPS,PLY_0334,MS Dhoni,Wicketkeeper,0
+2017,IPL_T20_RPS,PLY_0196,Faf du Plessis,Batter,1
+2017,IPL_T20_RPS,PLY_0648,Usman Khawaja,Batter,1
+2017,IPL_T20_RPS,PLY_0028,Ajinkya Rahane,Batter,0
+2017,IPL_T20_RPS,PLY_0346,Manoj Tiwary,Batter,0
+2017,IPL_T20_RPS,PLY_0883,,Allrounder,0
+2017,IPL_T20_RPS,PLY_0472,Rajat Bhatia,Allrounder,0
+2017,IPL_T20_RPS,PLY_0145,Dan Christian,Allrounder,1
+2017,IPL_T20_RPS,PLY_0837,,Allrounder,0
+2017,IPL_T20_RPS,PLY_0104,Ben Stokes,Allrounder,1
+2017,IPL_T20_RPS,PLY_0555,Shardul Thakur,Allrounder,0
+2017,IPL_T20_RPS,PLY_0673,Washington Sundar,Allrounder,0
+2017,IPL_T20_RPS,PLY_0063,Ankit Sharma,Bowler,0
+2017,IPL_T20_RPS,PLY_0462,Rahul Chahar,Bowler,0
+2017,IPL_T20_RPS,PLY_0163,Deepak Chahar,Bowler,0
+2017,IPL_T20_RPS,PLY_0083,Ashok Dinda,Bowler,0
+2017,IPL_T20_RPS,PLY_0328,Lockie Ferguson,Bowler,1
+2017,IPL_T20_RPS,PLY_0228,Imran Tahir,Bowler,1
+2017,IPL_T20_RPS,PLY_0252,Jaskaran Singh,Bowler,0
+2017,IPL_T20_RPS,PLY_0884,,Bowler,0
+2017,IPL_T20_RPS,PLY_0259,Jaydev Unadkat,Bowler,0
+2017,IPL_T20_RPS,PLY_0020,Adam Zampa,Bowler,1
+2017,IPL_T20_RPS,PLY_0885,,Batter,0
+2017,IPL_T20_RCB,PLY_0666,Virat Kohli,Batter,0
+2017,IPL_T20_RCB,PLY_0001,AB de Villiers,Wicketkeeper,1
+2017,IPL_T20_RCB,PLY_0219,Harpreet Singh,Batter,0
+2017,IPL_T20_RCB,PLY_0636,Travis Head,Batter,1
+2017,IPL_T20_RCB,PLY_0516,Sachin Baby,Batter,0
+2017,IPL_T20_RCB,PLY_0669,Vishnu Vinod,Wicketkeeper,0
+2017,IPL_T20_RCB,PLY_0598,Stuart Binny,Allrounder,0
+2017,IPL_T20_RCB,PLY_0435,Pawan Negi,Allrounder,0
+2017,IPL_T20_RCB,PLY_0229,Iqbal Abdulla,Allrounder,0
+2017,IPL_T20_RCB,PLY_0295,Kedar Jadhav,Allrounder,0
+2017,IPL_T20_RCB,PLY_0343,Mandeep Singh,Allrounder,0
+2017,IPL_T20_RCB,PLY_0222,Harshal Patel,Allrounder,0
+2017,IPL_T20_RCB,PLY_0553,Shane Watson,Allrounder,1
+2017,IPL_T20_RCB,PLY_0592,Sreenath Aravind,Bowler,0
+2017,IPL_T20_RCB,PLY_0088,Avesh Khan,Bowler,0
+2017,IPL_T20_RCB,PLY_0527,Samuel Badree,Bowler,1
+2017,IPL_T20_RCB,PLY_0693,Yuzvendra Chahal,Bowler,0
+2017,IPL_T20_RCB,PLY_0056,Aniket Choudhary,Bowler,0
+2017,IPL_T20_RCB,PLY_0446,Praveen Dubey,Bowler,0
+2017,IPL_T20_RCB,PLY_0640,Tymal Mills,Bowler,1
+2017,IPL_T20_RCB,PLY_0018,Adam Milne,Bowler,1
+2017,IPL_T20_RCB,PLY_0617,Tabraiz Shamsi,Bowler,1
+2017,IPL_T20_RCB,PLY_0110,Billy Stanlake,Bowler,1
+2017,IPL_T20_SRH,PLY_0157,David Warner,Batter,1
+2017,IPL_T20_SRH,PLY_0874,,Batter,0
+2017,IPL_T20_SRH,PLY_0490,Ricky Bhui,Batter,0
+2017,IPL_T20_SRH,PLY_0563,Shikhar Dhawan,Batter,0
+2017,IPL_T20_SRH,PLY_0191,Eklavya Dwivedi,Wicketkeeper,0
+2017,IPL_T20_SRH,PLY_0403,Naman Ojha,Wicketkeeper,0
+2017,IPL_T20_SRH,PLY_0288,Kane Williamson,Batter,1
+2017,IPL_T20_SRH,PLY_0692,Yuvraj Singh,Batter,0
+2017,IPL_T20_SRH,PLY_0381,Mohammad Nabi,Allrounder,1
+2017,IPL_T20_SRH,PLY_0478,Rashid Khan,Allrounder,1
+2017,IPL_T20_SRH,PLY_0658,Vijay Shankar,Allrounder,0
+2017,IPL_T20_SRH,PLY_0132,Chris Jordan,Bowler,1
+2017,IPL_T20_SRH,PLY_0581,Siddarth Kaul,Bowler,0
+2017,IPL_T20_SRH,PLY_0109,Bhuvneshwar Kumar,Bowler,0
+2017,IPL_T20_SRH,PLY_0102,Ben Laughlin,Bowler,1
+2017,IPL_T20_SRH,PLY_0008,Abhimanyu Mithun,Bowler,0
+2017,IPL_T20_SRH,PLY_0383,Mohammed Siraj,Bowler,0
+2017,IPL_T20_SRH,PLY_0399,Mustafizur Rahman,Bowler,1
+2017,IPL_T20_SRH,PLY_0080,Ashish Nehra,Bowler,0
+2017,IPL_T20_SRH,PLY_0098,Barinder Sran,Bowler,0
+2017,IPL_T20_SRH,PLY_0449,Pravin Tambe,Bowler,0
+2016,IPL_T20_DC,PLY_0362,Mayank Agarwal,Batter,0
+2016,IPL_T20_DC,PLY_0523,Sam Billings,Wicketkeeper,1
+2016,IPL_T20_DC,PLY_0458,Quinton de Kock,Wicketkeeper,1
+2016,IPL_T20_DC,PLY_0886,,Batter,0
+2016,IPL_T20_DC,PLY_0577,Shreyas Iyer,Batter,0
+2016,IPL_T20_DC,PLY_0294,Karun Nair,Batter,0
+2016,IPL_T20_DC,PLY_0495,Rishabh Pant,Wicketkeeper,0
+2016,IPL_T20_DC,PLY_0532,Sanju Samson,Wicketkeeper,0
+2016,IPL_T20_DC,PLY_0122,Carlos Brathwaite,Allrounder,1
+2016,IPL_T20_DC,PLY_0871,,Allrounder,1
+2016,IPL_T20_DC,PLY_0339,Mahipal Lomror,Allrounder,0
+2016,IPL_T20_DC,PLY_0134,Chris Morris,Allrounder,1
+2016,IPL_T20_DC,PLY_0694,Zaheer Khan,Bowler,0
+2016,IPL_T20_DC,PLY_0301,Khaleel Ahmed,Bowler,0
+2016,IPL_T20_DC,PLY_0228,Imran Tahir,Bowler,1
+2016,IPL_T20_DC,PLY_0830,,Bowler,0
+2016,IPL_T20_DC,PLY_0045,Amit Mishra,Bowler,0
+2016,IPL_T20_DC,PLY_0382,Mohammad Shami,Bowler,0
+2016,IPL_T20_DC,PLY_0542,Shahbaz Nadeem,Bowler,0
+2016,IPL_T20_DC,PLY_0435,Pawan Negi,Bowler,0
+2016,IPL_T20_DC,PLY_0877,,Bowler,0
+2016,IPL_T20_DC,PLY_0887,,Bowler,0
+2016,IPL_T20_DC,PLY_0258,Jayant Yadav,Bowler,0
+2016,IPL_T20_DC,PLY_0888,,Bowler,1
+2016,IPL_T20_GL,PLY_0608,Suresh Raina,Batter,0
+2016,IPL_T20_GL,PLY_0428,Paras Dogra,Batter,0
+2016,IPL_T20_GL,PLY_0191,Eklavya Dwivedi,Wicketkeeper,0
+2016,IPL_T20_GL,PLY_0003,Aaron Finch,Batter,1
+2016,IPL_T20_GL,PLY_0232,Ishan Kishan,Wicketkeeper,0
+2016,IPL_T20_GL,PLY_0176,Dinesh Karthik,Wicketkeeper,0
+2016,IPL_T20_GL,PLY_0117,Brendon McCullum,Wicketkeeper,1
+2016,IPL_T20_GL,PLY_0036,Akshdeep Nath,Batter,0
+2016,IPL_T20_GL,PLY_0189,Dwayne Bravo,Allrounder,1
+2016,IPL_T20_GL,PLY_0246,James Faulkner,Allrounder,1
+2016,IPL_T20_GL,PLY_0485,Ravindra Jadeja,Allrounder,0
+2016,IPL_T20_GL,PLY_0190,Dwayne Smith,Allrounder,1
+2016,IPL_T20_GL,PLY_0045,Amit Mishra,Bowler,0
+2016,IPL_T20_GL,PLY_0540,Shadab Jakati,Bowler,0
+2016,IPL_T20_GL,PLY_0569,Shivil Kaushik,Bowler,0
+2016,IPL_T20_GL,PLY_0169,Dhawal Kulkarni,Bowler,0
+2016,IPL_T20_GL,PLY_0447,Praveen Kumar,Bowler,0
+2016,IPL_T20_GL,PLY_0889,,Bowler,0
+2016,IPL_T20_GL,PLY_0442,Pradeep Sangwan,Bowler,0
+2016,IPL_T20_GL,PLY_0143,Dale Steyn,Bowler,1
+2016,IPL_T20_GL,PLY_0449,Pravin Tambe,Bowler,0
+2016,IPL_T20_GL,PLY_0053,Andrew Tye,Bowler,1
+2016,IPL_T20_PBKS,PLY_0396,Murali Vijay,Batter,0
+2016,IPL_T20_PBKS,PLY_0224,Hashim Amla,Batter,1
+2016,IPL_T20_PBKS,PLY_0880,,Batter,0
+2016,IPL_T20_PBKS,PLY_0814,,Batter,0
+2016,IPL_T20_PBKS,PLY_0156,David Miller,Batter,1
+2016,IPL_T20_PBKS,PLY_0414,Nikhil Naik,Wicketkeeper,0
+2016,IPL_T20_PBKS,PLY_0679,Wriddhiman Saha,Wicketkeeper,0
+2016,IPL_T20_PBKS,PLY_0341,Manan Vohra,Batter,0
+2016,IPL_T20_PBKS,PLY_0198,Farhaan Behardien,Allrounder,1
+2016,IPL_T20_PBKS,PLY_0496,Rishi Dhawan,Allrounder,0
+2016,IPL_T20_PBKS,PLY_0089,Axar Patel,Allrounder,0
+2016,IPL_T20_PBKS,PLY_0441,Pradeep Sahu,Allrounder,0
+2016,IPL_T20_PBKS,PLY_0555,Shardul Thakur,Allrounder,0
+2016,IPL_T20_PBKS,PLY_0204,Glenn Maxwell,Allrounder,1
+2016,IPL_T20_PBKS,PLY_0352,Marcus Stoinis,Allrounder,1
+2016,IPL_T20_PBKS,PLY_0314,Kyle Abbott,Bowler,1
+2016,IPL_T20_PBKS,PLY_0070,Anureet Singh,Bowler,0
+2016,IPL_T20_PBKS,PLY_0279,KC Cariappa,Bowler,0
+2016,IPL_T20_PBKS,PLY_0370,Mitchell Johnson,Bowler,1
+2016,IPL_T20_PBKS,PLY_0530,Sandeep Sharma,Bowler,0
+2016,IPL_T20_PBKS,PLY_0386,Mohit Sharma,Bowler,0
+2016,IPL_T20_PBKS,PLY_0614,Swapnil Singh,Bowler,0
+2016,IPL_T20_KKR,PLY_0200,Gautam Gambhir,Batter,0
+2016,IPL_T20_KKR,PLY_0561,Sheldon Jackson,Wicketkeeper,0
+2016,IPL_T20_KKR,PLY_0133,Chris Lynn,Batter,1
+2016,IPL_T20_KKR,PLY_0138,Colin Munro,Batter,1
+2016,IPL_T20_KKR,PLY_0344,Manish Pandey,Batter,0
+2016,IPL_T20_KKR,PLY_0501,Robin Uthappa,Batter,0
+2016,IPL_T20_KKR,PLY_0610,Suryakumar Yadav,Batter,0
+2016,IPL_T20_KKR,PLY_0254,Jason Holder,Allrounder,1
+2016,IPL_T20_KKR,PLY_0890,,Allrounder,0
+2016,IPL_T20_KKR,PLY_0604,Sunil Narine,Allrounder,1
+2016,IPL_T20_KKR,PLY_0691,Yusuf Pathan,Allrounder,0
+2016,IPL_T20_KKR,PLY_0049,Andre Russell,Allrounder,1
+2016,IPL_T20_KKR,PLY_0470,Rajagopal Sathish,Allrounder,0
+2016,IPL_T20_KKR,PLY_0547,Shakib Al Hasan,Allrounder,1
+2016,IPL_T20_KKR,PLY_0891,,Allrounder,1
+2016,IPL_T20_KKR,PLY_0306,Kuldeep Yadav,Bowler,0
+2016,IPL_T20_KKR,PLY_0390,Morne Morkel,Bowler,1
+2016,IPL_T20_KKR,PLY_0062,Ankit Rajpoot,Bowler,0
+2016,IPL_T20_KKR,PLY_0559,Shaun Tait,Bowler,1
+2016,IPL_T20_KKR,PLY_0259,Jaydev Unadkat,Bowler,0
+2016,IPL_T20_KKR,PLY_0644,Umesh Yadav,Bowler,0
+2016,IPL_T20_KKR,PLY_0439,Piyush Chawla,Bowler,0
+2016,IPL_T20_KKR,PLY_0116,Brad Hogg,Bowler,1
+2016,IPL_T20_MI,PLY_0505,Rohit Sharma,Batter,0
+2016,IPL_T20_MI,PLY_0272,Jos Buttler,Wicketkeeper,1
+2016,IPL_T20_MI,PLY_0646,Unmukt Chand,Wicketkeeper,0
+2016,IPL_T20_MI,PLY_0356,Martin Guptill,Batter,1
+2016,IPL_T20_MI,PLY_0584,Siddhesh Lad,Batter,0
+2016,IPL_T20_MI,PLY_0429,Parthiv Patel,Wicketkeeper,0
+2016,IPL_T20_MI,PLY_0418,Nitish Rana,Batter,0
+2016,IPL_T20_MI,PLY_0044,Ambati Rayudu,Batter,0
+2016,IPL_T20_MI,PLY_0141,Corey Anderson,Allrounder,1
+2016,IPL_T20_MI,PLY_0892,,Allrounder,0
+2016,IPL_T20_MI,PLY_0305,Krunal Pandya,Allrounder,0
+2016,IPL_T20_MI,PLY_0214,Hardik Pandya,Allrounder,0
+2016,IPL_T20_MI,PLY_0302,Kieron Pollard,Allrounder,1
+2016,IPL_T20_MI,PLY_0256,Jasprit Bumrah,Bowler,0
+2016,IPL_T20_MI,PLY_0350,Marchant de Lange,Bowler,1
+2016,IPL_T20_MI,PLY_0576,Shreyas Gopal,Bowler,0
+2016,IPL_T20_MI,PLY_0213,Harbhajan Singh,Bowler,0
+2016,IPL_T20_MI,PLY_0372,Mitchell McClenaghan,Bowler,1
+2016,IPL_T20_MI,PLY_0882,,Bowler,0
+2016,IPL_T20_MI,PLY_0856,,Bowler,0
+2016,IPL_T20_MI,PLY_0630,Tim Southee,Bowler,1
+2016,IPL_T20_MI,PLY_0244,Jagadeesha Suchith,Bowler,0
+2016,IPL_T20_MI,PLY_0893,,Bowler,1
+2016,IPL_T20_MI,PLY_0664,Vinay Kumar,Bowler,0
+2016,IPL_T20_MI,PLY_0894,,Bowler,0
+2016,IPL_T20_MI,PLY_0320,Lasith Malinga,Bowler,1
+2016,IPL_T20_RPS,PLY_0334,MS Dhoni,Wicketkeeper,0
+2016,IPL_T20_RPS,PLY_0201,George Bailey,Batter,1
+2016,IPL_T20_RPS,PLY_0853,,Wicketkeeper,0
+2016,IPL_T20_RPS,PLY_0436,Peter Handscomb,Batter,1
+2016,IPL_T20_RPS,PLY_0648,Usman Khawaja,Batter,1
+2016,IPL_T20_RPS,PLY_0028,Ajinkya Rahane,Batter,0
+2016,IPL_T20_RPS,PLY_0535,Saurabh Tiwary,Batter,0
+2016,IPL_T20_RPS,PLY_0196,Faf du Plessis,Batter,1
+2016,IPL_T20_RPS,PLY_0299,Kevin Pietersen,Batter,1
+2016,IPL_T20_RPS,PLY_0597,Steve Smith,Batter,1
+2016,IPL_T20_RPS,PLY_0883,,Allrounder,0
+2016,IPL_T20_RPS,PLY_0484,Ravichandran Ashwin,Allrounder,0
+2016,IPL_T20_RPS,PLY_0472,Rajat Bhatia,Allrounder,0
+2016,IPL_T20_RPS,PLY_0037,Albie Morkel,Allrounder,1
+2016,IPL_T20_RPS,PLY_0230,Irfan Pathan,Allrounder,0
+2016,IPL_T20_RPS,PLY_0624,Thisara Perera,Allrounder,1
+2016,IPL_T20_RPS,PLY_0371,Mitchell Marsh,Allrounder,1
+2016,IPL_T20_RPS,PLY_0063,Ankit Sharma,Bowler,0
+2016,IPL_T20_RPS,PLY_0397,Murugan Ashwin,Bowler,0
+2016,IPL_T20_RPS,PLY_0895,,Bowler,1
+2016,IPL_T20_RPS,PLY_0163,Deepak Chahar,Bowler,0
+2016,IPL_T20_RPS,PLY_0083,Ashok Dinda,Bowler,0
+2016,IPL_T20_RPS,PLY_0252,Jaskaran Singh,Bowler,0
+2016,IPL_T20_RPS,PLY_0884,,Bowler,0
+2016,IPL_T20_RPS,PLY_0235,Ishant Sharma,Bowler,0
+2016,IPL_T20_RPS,PLY_0459,RP Singh,Bowler,0
+2016,IPL_T20_RPS,PLY_0020,Adam Zampa,Bowler,1
+2016,IPL_T20_RCB,PLY_0666,Virat Kohli,Batter,0
+2016,IPL_T20_RCB,PLY_0001,AB de Villiers,Wicketkeeper,1
+2016,IPL_T20_RCB,PLY_0636,Travis Head,Batter,1
+2016,IPL_T20_RCB,PLY_0534,Sarfaraz Khan,Batter,0
+2016,IPL_T20_RCB,PLY_0280,KL Rahul,Wicketkeeper,0
+2016,IPL_T20_RCB,PLY_0516,Sachin Baby,Batter,0
+2016,IPL_T20_RCB,PLY_0598,Stuart Binny,Allrounder,0
+2016,IPL_T20_RCB,PLY_0131,Chris Gayle,Allrounder,1
+2016,IPL_T20_RCB,PLY_0343,Mandeep Singh,Allrounder,0
+2016,IPL_T20_RCB,PLY_0430,Parveez Rasool,Allrounder,0
+2016,IPL_T20_RCB,PLY_0222,Harshal Patel,Allrounder,0
+2016,IPL_T20_RCB,PLY_0553,Shane Watson,Allrounder,1
+2016,IPL_T20_RCB,PLY_0158,David Wiese,Allrounder,1
+2016,IPL_T20_RCB,PLY_0653,Varun Aaron,Bowler,0
+2016,IPL_T20_RCB,PLY_0016,Abu Nechim,Bowler,0
+2016,IPL_T20_RCB,PLY_0592,Sreenath Aravind,Bowler,0
+2016,IPL_T20_RCB,PLY_0693,Yuzvendra Chahal,Bowler,0
+2016,IPL_T20_RCB,PLY_0446,Praveen Dubey,Bowler,0
+2016,IPL_T20_RCB,PLY_0132,Chris Jordan,Bowler,1
+2016,IPL_T20_RCB,PLY_0896,,Bowler,0
+2016,IPL_T20_RCB,PLY_0662,Vikramjeet Malik,Bowler,0
+2016,IPL_T20_RCB,PLY_0287,Kane Richardson,Bowler,1
+2016,IPL_T20_RCB,PLY_0617,Tabraiz Shamsi,Bowler,1
+2016,IPL_T20_RCB,PLY_0897,,Bowler,0
+2016,IPL_T20_RCB,PLY_0527,Samuel Badree,Bowler,1
+2016,IPL_T20_RCB,PLY_0018,Adam Milne,Bowler,1
+2016,IPL_T20_RCB,PLY_0374,Mitchell Starc,Bowler,1
+2016,IPL_T20_SRH,PLY_0157,David Warner,Batter,1
+2016,IPL_T20_SRH,PLY_0490,Ricky Bhui,Batter,0
+2016,IPL_T20_SRH,PLY_0563,Shikhar Dhawan,Batter,0
+2016,IPL_T20_SRH,PLY_0192,Eoin Morgan,Batter,1
+2016,IPL_T20_SRH,PLY_0403,Naman Ojha,Wicketkeeper,0
+2016,IPL_T20_SRH,PLY_0631,Tirumalasetti Suman,Batter,0
+2016,IPL_T20_SRH,PLY_0023,Aditya Tare,Wicketkeeper,0
+2016,IPL_T20_SRH,PLY_0288,Kane Williamson,Batter,1
+2016,IPL_T20_SRH,PLY_0692,Yuvraj Singh,Batter,0
+2016,IPL_T20_SRH,PLY_0081,Ashish Reddy,Allrounder,0
+2016,IPL_T20_SRH,PLY_0112,Bipul Sharma,Allrounder,0
+2016,IPL_T20_SRH,PLY_0100,Ben Cutting,Allrounder,1
+2016,IPL_T20_SRH,PLY_0389,Moises Henriques,Allrounder,1
+2016,IPL_T20_SRH,PLY_0164,Deepak Hooda,Allrounder,0
+2016,IPL_T20_SRH,PLY_0658,Vijay Shankar,Allrounder,0
+2016,IPL_T20_SRH,PLY_0637,Trent Boult,Bowler,1
+2016,IPL_T20_SRH,PLY_0581,Siddarth Kaul,Bowler,0
+2016,IPL_T20_SRH,PLY_0109,Bhuvneshwar Kumar,Bowler,0
+2016,IPL_T20_SRH,PLY_0008,Abhimanyu Mithun,Bowler,0
+2016,IPL_T20_SRH,PLY_0399,Mustafizur Rahman,Bowler,1
+2016,IPL_T20_SRH,PLY_0292,Karn Sharma,Bowler,0
+2016,IPL_T20_SRH,PLY_0098,Barinder Sran,Bowler,0
+2016,IPL_T20_SRH,PLY_0080,Ashish Nehra,Bowler,0
+2015,IPL_T20_CSK,PLY_0334,MS Dhoni,Wicketkeeper,0
+2015,IPL_T20_CSK,PLY_0314,Kyle Abbott,Bowler,1
+2015,IPL_T20_CSK,PLY_0883,,Allrounder,0
+2015,IPL_T20_CSK,PLY_0484,Ravichandran Ashwin,Allrounder,0
+2015,IPL_T20_CSK,PLY_0527,Samuel Badree,Bowler,1
+2015,IPL_T20_CSK,PLY_0853,,Wicketkeeper,0
+2015,IPL_T20_CSK,PLY_0189,Dwayne Bravo,Allrounder,1
+2015,IPL_T20_CSK,PLY_0196,Faf du Plessis,Batter,1
+2015,IPL_T20_CSK,PLY_0191,Eklavya Dwivedi,Wicketkeeper,0
+2015,IPL_T20_CSK,PLY_0700,Matt Henry,Bowler,1
+2015,IPL_T20_CSK,PLY_0366,Michael Hussey,Batter,1
+2015,IPL_T20_CSK,PLY_0485,Ravindra Jadeja,Allrounder,0
+2015,IPL_T20_CSK,PLY_0375,Mithun Manhas,Allrounder,0
+2015,IPL_T20_CSK,PLY_0117,Brendon McCullum,Wicketkeeper,1
+2015,IPL_T20_CSK,PLY_0507,Ronit More,Bowler,0
+2015,IPL_T20_CSK,PLY_0435,Pawan Negi,Bowler,0
+2015,IPL_T20_CSK,PLY_0080,Ashish Nehra,Bowler,0
+2015,IPL_T20_CSK,PLY_0884,,Bowler,0
+2015,IPL_T20_CSK,PLY_0230,Irfan Pathan,Allrounder,0
+2015,IPL_T20_CSK,PLY_0877,,Bowler,0
+2015,IPL_T20_CSK,PLY_0608,Suresh Raina,Batter,0
+2015,IPL_T20_CSK,PLY_0386,Mohit Sharma,Bowler,0
+2015,IPL_T20_CSK,PLY_0464,Rahul Sharma,Bowler,0
+2015,IPL_T20_CSK,PLY_0190,Dwayne Smith,Allrounder,1
+2015,IPL_T20_CSK,PLY_0053,Andrew Tye,Bowler,1
+2015,IPL_T20_DC,PLY_0871,,Allrounder,1
+2015,IPL_T20_DC,PLY_0362,Mayank Agarwal,Batter,0
+2015,IPL_T20_DC,PLY_0594,Srikar Bharat,Wicketkeeper,0
+2015,IPL_T20_DC,PLY_0405,Nathan Coulter-Nile,Allrounder,1
+2015,IPL_T20_DC,PLY_0458,Quinton de Kock,Wicketkeeper,1
+2015,IPL_T20_DC,PLY_0130,Chidhambaram Gautam,Wicketkeeper,0
+2015,IPL_T20_DC,PLY_0636,Travis Head,Batter,1
+2015,IPL_T20_DC,PLY_0228,Imran Tahir,Bowler,1
+2015,IPL_T20_DC,PLY_0577,Shreyas Iyer,Batter,0
+2015,IPL_T20_DC,PLY_0295,Kedar Jadhav,Allrounder,0
+2015,IPL_T20_DC,PLY_0898,,Bowler,0
+2015,IPL_T20_DC,PLY_0694,Zaheer Khan,Bowler,0
+2015,IPL_T20_DC,PLY_0054,Angelo Mathews,Allrounder,1
+2015,IPL_T20_DC,PLY_0045,Amit Mishra,Bowler,0
+2015,IPL_T20_DC,PLY_0382,Mohammad Shami,Bowler,0
+2015,IPL_T20_DC,PLY_0037,Albie Morkel,Allrounder,1
+2015,IPL_T20_DC,PLY_0899,,Batter,0
+2015,IPL_T20_DC,PLY_0542,Shahbaz Nadeem,Bowler,0
+2015,IPL_T20_DC,PLY_0900,,Bowler,1
+2015,IPL_T20_DC,PLY_0352,Marcus Stoinis,Allrounder,1
+2015,IPL_T20_DC,PLY_0346,Manoj Tiwary,Batter,0
+2015,IPL_T20_DC,PLY_0535,Saurabh Tiwary,Batter,0
+2015,IPL_T20_DC,PLY_0259,Jaydev Unadkat,Bowler,0
+2015,IPL_T20_DC,PLY_0258,Jayant Yadav,Bowler,0
+2015,IPL_T20_DC,PLY_0692,Yuvraj Singh,Batter,0
+2015,IPL_T20_PBKS,PLY_0201,George Bailey,Batter,1
+2015,IPL_T20_PBKS,PLY_0070,Anureet Singh,Bowler,0
+2015,IPL_T20_PBKS,PLY_0431,Parvinder Awana,Bowler,0
+2015,IPL_T20_PBKS,PLY_0496,Rishi Dhawan,Allrounder,0
+2015,IPL_T20_PBKS,PLY_0901,,Batter,0
+2015,IPL_T20_PBKS,PLY_0814,,Batter,0
+2015,IPL_T20_PBKS,PLY_0105,Beuran Hendricks,Bowler,1
+2015,IPL_T20_PBKS,PLY_0370,Mitchell Johnson,Bowler,1
+2015,IPL_T20_PBKS,PLY_0291,Karanveer Singh,Batter,0
+2015,IPL_T20_PBKS,PLY_0557,Shaun Marsh,Batter,1
+2015,IPL_T20_PBKS,PLY_0204,Glenn Maxwell,Allrounder,1
+2015,IPL_T20_PBKS,PLY_0156,David Miller,Batter,1
+2015,IPL_T20_PBKS,PLY_0414,Nikhil Naik,Wicketkeeper,0
+2015,IPL_T20_PBKS,PLY_0089,Axar Patel,Allrounder,0
+2015,IPL_T20_PBKS,PLY_0624,Thisara Perera,Allrounder,1
+2015,IPL_T20_PBKS,PLY_0679,Wriddhiman Saha,Wicketkeeper,0
+2015,IPL_T20_PBKS,PLY_0530,Sandeep Sharma,Bowler,0
+2015,IPL_T20_PBKS,PLY_0668,Virender Sehwag,Batter,0
+2015,IPL_T20_PBKS,PLY_0567,Shivam Sharma,Batter,0
+2015,IPL_T20_PBKS,PLY_0555,Shardul Thakur,Allrounder,0
+2015,IPL_T20_PBKS,PLY_0396,Murali Vijay,Batter,0
+2015,IPL_T20_PBKS,PLY_0341,Manan Vohra,Batter,0
+2015,IPL_T20_KKR,PLY_0200,Gautam Gambhir,Batter,0
+2015,IPL_T20_KKR,PLY_0093,Azhar Mahmood,Allrounder,1
+2015,IPL_T20_KKR,PLY_0269,Johan Botha,Allrounder,1
+2015,IPL_T20_KKR,PLY_0279,KC Cariappa,Bowler,0
+2015,IPL_T20_KKR,PLY_0439,Piyush Chawla,Allrounder,0
+2015,IPL_T20_KKR,PLY_0432,Pat Cummins,Bowler,1
+2015,IPL_T20_KKR,PLY_0902,,Batter,0
+2015,IPL_T20_KKR,PLY_0116,Brad Hogg,Allrounder,1
+2015,IPL_T20_KKR,PLY_0561,Sheldon Jackson,Wicketkeeper,0
+2015,IPL_T20_KKR,PLY_0306,Kuldeep Yadav,Bowler,0
+2015,IPL_T20_KKR,PLY_0390,Morne Morkel,Bowler,1
+2015,IPL_T20_KKR,PLY_0604,Sunil Narine,Allrounder,1
+2015,IPL_T20_KKR,PLY_0602,Sumit Narwal,Allrounder,0
+2015,IPL_T20_KKR,PLY_0344,Manish Pandey,Batter,0
+2015,IPL_T20_KKR,PLY_0691,Yusuf Pathan,Allrounder,0
+2015,IPL_T20_KKR,PLY_0903,,Batter,0
+2015,IPL_T20_KKR,PLY_0904,,Batter,0
+2015,IPL_T20_KKR,PLY_0049,Andre Russell,Allrounder,1
+2015,IPL_T20_KKR,PLY_0547,Shakib Al Hasan,Allrounder,1
+2015,IPL_T20_KKR,PLY_0515,Ryan ten Doeschate,Allrounder,1
+2015,IPL_T20_KKR,PLY_0501,Robin Uthappa,Batter,0
+2015,IPL_T20_KKR,PLY_0644,Umesh Yadav,Bowler,0
+2015,IPL_T20_KKR,PLY_0610,Suryakumar Yadav,Batter,0
+2015,IPL_T20_MI,PLY_0505,Rohit Sharma,Batter,0
+2015,IPL_T20_MI,PLY_0141,Corey Anderson,Allrounder,1
+2015,IPL_T20_MI,PLY_0025,Aiden Blizzard,Batter,1
+2015,IPL_T20_MI,PLY_0256,Jasprit Bumrah,Bowler,0
+2015,IPL_T20_MI,PLY_0646,Unmukt Chand,Wicketkeeper,1
+2015,IPL_T20_MI,PLY_0350,Marchant de Lange,Bowler,1
+2015,IPL_T20_MI,PLY_0576,Shreyas Gopal,Bowler,0
+2015,IPL_T20_MI,PLY_0039,Alex Hales,Batter,1
+2015,IPL_T20_MI,PLY_0213,Harbhajan Singh,Bowler,0
+2015,IPL_T20_MI,PLY_0876,,Bowler,1
+2015,IPL_T20_MI,PLY_0584,Siddhesh Lad,Batter,0
+2015,IPL_T20_MI,PLY_0320,Lasith Malinga,Bowler,1
+2015,IPL_T20_MI,PLY_0372,Mitchell McClenaghan,Bowler,1
+2015,IPL_T20_MI,PLY_0008,Abhimanyu Mithun,Bowler,0
+2015,IPL_T20_MI,PLY_0138,Colin Munro,Batter,1
+2015,IPL_T20_MI,PLY_0443,Pragyan Ojha,Bowler,0
+2015,IPL_T20_MI,PLY_0214,Hardik Pandya,Allrounder,0
+2015,IPL_T20_MI,PLY_0429,Parthiv Patel,Wicketkeeper,0
+2015,IPL_T20_MI,PLY_0302,Kieron Pollard,Allrounder,1
+2015,IPL_T20_MI,PLY_0418,Nitish Rana,Batter,0
+2015,IPL_T20_MI,PLY_0044,Ambati Rayudu,Batter,0
+2015,IPL_T20_MI,PLY_0323,Lendl Simmons,Batter,1
+2015,IPL_T20_MI,PLY_0244,Jagadeesha Suchith,Bowler,0
+2015,IPL_T20_MI,PLY_0887,,Bowler,0
+2015,IPL_T20_MI,PLY_0023,Aditya Tare,Wicketkeeper,0
+2015,IPL_T20_MI,PLY_0664,Vinay Kumar,Bowler,0
+2015,IPL_T20_MI,PLY_0894,,Bowler,0
+2015,IPL_T20_RR,PLY_0553,Shane Watson,Allrounder,1
+2015,IPL_T20_RR,PLY_0063,Ankit Sharma,Bowler,0
+2015,IPL_T20_RR,PLY_0472,Rajat Bhatia,Allrounder,0
+2015,IPL_T20_RR,PLY_0598,Stuart Binny,Allrounder,0
+2015,IPL_T20_RR,PLY_0100,Ben Cutting,Allrounder,1
+2015,IPL_T20_RR,PLY_0246,James Faulkner,Allrounder,1
+2015,IPL_T20_RR,PLY_0164,Deepak Hooda,Allrounder,0
+2015,IPL_T20_RR,PLY_0169,Dhawal Kulkarni,Bowler,0
+2015,IPL_T20_RR,PLY_0662,Vikramjeet Malik,Bowler,0
+2015,IPL_T20_RR,PLY_0134,Chris Morris,Allrounder,1
+2015,IPL_T20_RR,PLY_0294,Karun Nair,Batter,0
+2015,IPL_T20_RR,PLY_0012,Abhishek Nayar,Allrounder,0
+2015,IPL_T20_RR,PLY_0028,Ajinkya Rahane,Batter,0
+2015,IPL_T20_RR,PLY_0441,Pradeep Sahu,Allrounder,0
+2015,IPL_T20_RR,PLY_0177,Dinesh Salunkhe,Bowler,0
+2015,IPL_T20_RR,PLY_0532,Sanju Samson,Wicketkeeper,0
+2015,IPL_T20_RR,PLY_0597,Steve Smith,Batter,1
+2015,IPL_T20_RR,PLY_0630,Tim Southee,Bowler,1
+2015,IPL_T20_RR,PLY_0098,Barinder Sran,Bowler,0
+2015,IPL_T20_RR,PLY_0449,Pravin Tambe,Bowler,0
+2015,IPL_T20_RR,PLY_0466,Rahul Tewatia,Allrounder,0
+2015,IPL_T20_RR,PLY_0905,,Bowler,1
+2015,IPL_T20_RR,PLY_0906,,Batter,0
+2015,IPL_T20_RR,PLY_0179,Dishant Yagnik,Wicketkeeper,0
+2015,IPL_T20_RCB,PLY_0666,Virat Kohli,Batter,0
+2015,IPL_T20_RCB,PLY_0653,Varun Aaron,Bowler,0
+2015,IPL_T20_RCB,PLY_0538,Sean Abbott,Allrounder,1
+2015,IPL_T20_RCB,PLY_0016,Abu Nechim,Bowler,0
+2015,IPL_T20_RCB,PLY_0592,Sreenath Aravind,Bowler,0
+2015,IPL_T20_RCB,PLY_0907,,Batter,0
+2015,IPL_T20_RCB,PLY_0908,,Batter,0
+2015,IPL_T20_RCB,PLY_0349,Manvinder Bisla,Wicketkeeper,0
+2015,IPL_T20_RCB,PLY_0693,Yuzvendra Chahal,Bowler,0
+2015,IPL_T20_RCB,PLY_0001,AB de Villiers,Wicketkeeper,1
+2015,IPL_T20_RCB,PLY_0083,Ashok Dinda,Bowler,0
+2015,IPL_T20_RCB,PLY_0131,Chris Gayle,Allrounder,1
+2015,IPL_T20_RCB,PLY_0229,Iqbal Abdulla,Allrounder,0
+2015,IPL_T20_RCB,PLY_0836,,Allrounder,0
+2015,IPL_T20_RCB,PLY_0176,Dinesh Karthik,Wicketkeeper,0
+2015,IPL_T20_RCB,PLY_0534,Sarfaraz Khan,Batter,0
+2015,IPL_T20_RCB,PLY_0412,Nic Maddinson,Batter,1
+2015,IPL_T20_RCB,PLY_0343,Mandeep Singh,Allrounder,0
+2015,IPL_T20_RCB,PLY_0222,Harshal Patel,Allrounder,0
+2015,IPL_T20_RCB,PLY_0492,Rilee Rossouw,Batter,1
+2015,IPL_T20_RCB,PLY_0151,Darren Sammy,Allrounder,1
+2015,IPL_T20_RCB,PLY_0777,,Bowler,0
+2015,IPL_T20_RCB,PLY_0374,Mitchell Starc,Bowler,1
+2015,IPL_T20_RCB,PLY_0688,Yogesh Takawale,Batter,0
+2015,IPL_T20_RCB,PLY_0158,David Wiese,Allrounder,1
+2015,IPL_T20_RCB,PLY_0659,Vijay Zol,Batter,0
+2015,IPL_T20_SRH,PLY_0157,David Warner,Batter,1
+2015,IPL_T20_SRH,PLY_0081,Ashish Reddy,Allrounder,0
+2015,IPL_T20_SRH,PLY_0490,Ricky Bhui,Batter,0
+2015,IPL_T20_SRH,PLY_0112,Bipul Sharma,Allrounder,0
+2015,IPL_T20_SRH,PLY_0482,Ravi Bopara,Allrounder,1
+2015,IPL_T20_SRH,PLY_0637,Trent Boult,Bowler,1
+2015,IPL_T20_SRH,PLY_0563,Shikhar Dhawan,Batter,0
+2015,IPL_T20_SRH,PLY_0389,Moises Henriques,Allrounder,1
+2015,IPL_T20_SRH,PLY_0581,Siddarth Kaul,Bowler,0
+2015,IPL_T20_SRH,PLY_0447,Praveen Kumar,Bowler,0
+2015,IPL_T20_SRH,PLY_0109,Bhuvneshwar Kumar,Bowler,0
+2015,IPL_T20_SRH,PLY_0830,,Bowler,0
+2015,IPL_T20_SRH,PLY_0192,Eoin Morgan,Batter,1
+2015,IPL_T20_SRH,PLY_0403,Naman Ojha,Wicketkeeper,0
+2015,IPL_T20_SRH,PLY_0430,Parveez Rasool,Allrounder,0
+2015,IPL_T20_SRH,PLY_0299,Kevin Pietersen,Batter,1
+2015,IPL_T20_SRH,PLY_0909,,Allrounder,0
+2015,IPL_T20_SRH,PLY_0280,KL Rahul,Wicketkeeper,0
+2015,IPL_T20_SRH,PLY_0235,Ishant Sharma,Bowler,0
+2015,IPL_T20_SRH,PLY_0292,Karn Sharma,Bowler,0
+2015,IPL_T20_SRH,PLY_0910,,Allrounder,0
+2015,IPL_T20_SRH,PLY_0143,Dale Steyn,Bowler,1
+2015,IPL_T20_SRH,PLY_0212,Hanuma Vihari,Allrounder,0
+2015,IPL_T20_SRH,PLY_0288,Kane Williamson,Batter,1

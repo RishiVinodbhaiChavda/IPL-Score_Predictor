@@ -1,0 +1,12 @@
+{
+  "mlp_iterations": 112,
+  "xgb_mae": 19.75,
+  "mlp_mae": 45.33,
+  "hybrid_mae": 22.63,
+  "hybrid_r2": 0.428,
+  "cv_mae": 15.68,
+  "ensemble_weights": {
+    "xgb": 0.697,
+    "mlp": 0.303
+  }
+}

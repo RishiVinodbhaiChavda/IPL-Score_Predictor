@@ -1,0 +1,245 @@
+player_id,player_name,nationality,batting_style,bowling_style,role,is_overseas,current_team_id,photo_url
+PLY_0510,Ruturaj Gaikwad,India,Right-hand,Right-arm off-spin,Batter,0,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Ruturaj%20Gaikwad.png
+PLY_0168,Dewald Brevis,Overseas,Right-hand,Right-arm off-spin,Batter,1,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Dewald%20Brevis.png
+PLY_0334,MS Dhoni,India,Right-hand,Right-arm medium,Wicketkeeper,0,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/MS%20Dhoni.png
+PLY_0695,Kartik Sharma,India,Right-hand,,Wicketkeeper,0,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Kartik%20Sharma.png
+PLY_0534,Sarfaraz Khan,India,Right-hand,Right-arm off-spin,Batter,0,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Sarfaraz%20Khan.png
+PLY_0091,Ayush Mhatre,India,Right-hand,,Batter,0,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Ayush%20Mhatre.png
+PLY_0647,Urvil Patel,India,Right-hand,,Wicketkeeper,0,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Urvil%20Patel.png
+PLY_0532,Sanju Samson,India,Right-hand,,Wicketkeeper,0,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Sanju%20Samson.png
+PLY_0043,Aman Khan,India,Right-hand,Right-arm off-spin,Allrounder,0,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Aman%20Khan.png
+PLY_0565,Shivam Dube,India,Left-hand,Right-arm medium,Allrounder,0,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Shivam%20Dube.png
+PLY_0696,Zak Foulkes,Overseas,Right-hand,Right-arm fast,Allrounder,1,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Zak%20Foulkes.png
+PLY_0697,Ramakrishna Ghosh,India,Right-hand,Right-arm off-spin,Allrounder,0,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Ramakrishna%20Ghosh.png
+PLY_0067,Anshul Kamboj,India,Right-hand,Right-arm fast,Allrounder,0,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Anshul%20Kamboj.png
+PLY_0251,Jamie Overton,Overseas,Right-hand,Right-arm fast,Allrounder,1,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Jamie%20Overton.png
+PLY_0360,Matthew Short,Overseas,Right-hand,Right-arm off-spin,Allrounder,1,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Matthew%20Short.png
+PLY_0698,Prashant Veer,India,Right-hand,Right-arm fast,Allrounder,0,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Prashant%20Veer.png
+PLY_0301,Khaleel Ahmed,India,Left-hand,Left-arm fast,Bowler,0,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Khaleel%20Ahmed.png
+PLY_0462,Rahul Chahar,India,Right-hand,Right-arm leg-spin,Bowler,0,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Rahul%20Chahar.png
+PLY_0576,Shreyas Gopal,India,Right-hand,Right-arm leg-spin,Bowler,0,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Shreyas%20Gopal.png
+PLY_0699,Gurjapneet Singh,India,Right-hand,Left-arm fast,Bowler,0,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Gurjapneet%20Singh.png
+PLY_0700,Matt Henry,Overseas,Right-hand,Right-arm fast,Bowler,1,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Matt%20Henry.png
+PLY_0033,Akeal Hosein,Overseas,Left-hand,Left-arm off-spin,Bowler,1,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Akeal%20Hosein.png
+PLY_0591,Spencer Johnson,Overseas,Left-hand,Left-arm fast,Bowler,1,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Spencer%20Johnson.png
+PLY_0392,Mukesh Choudhary,India,Left-hand,Left-arm fast,Bowler,0,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Mukesh%20Choudhary.png
+PLY_0419,Noor Ahmad,Overseas,Right-hand,Left-arm leg-spin,Bowler,1,IPL_T20_CSK,https://scores.iplt20.com/ipl/playerimages/Noor%20Ahmad.png
+PLY_0015,Abishek Porel,India,Left-hand,,Wicketkeeper,0,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Abishek%20Porel.png
+PLY_0156,David Miller,Overseas,Left-hand,Right-arm medium,Batter,1,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/David%20Miller.png
+PLY_0294,Karun Nair,India,Right-hand,Right-arm off-spin,Batter,0,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Karun%20Nair.png
+PLY_0701,Pathum Nissanka,Overseas,Right-hand,Right-arm off-spin,Batter,1,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Pathum%20Nissanka.png
+PLY_0702,Sahil Parekh,India,Right-hand,,Batter,0,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Sahil%20Parekh.png
+PLY_0280,KL Rahul,India,Right-hand,,Wicketkeeper,0,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/KL%20Rahul.png
+PLY_0418,Nitish Rana,India,Left-hand,Right-arm off-spin,Batter,0,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Nitish%20Rana.png
+PLY_0454,Prithvi Shaw,India,Right-hand,,Batter,0,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Prithvi%20Shaw.png
+PLY_0638,Tristan Stubbs,Overseas,Right-hand,,Wicketkeeper,1,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Tristan%20Stubbs.png
+PLY_0089,Axar Patel,India,Left-hand,Left-arm off-spin,Allrounder,0,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Axar%20Patel.png
+PLY_0703,Ajay Mandal,India,Right-hand,Right-arm off-spin,Allrounder,0,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Ajay%20Mandal.png
+PLY_0525,Sameer Rizvi,India,Right-hand,Right-arm off-spin,Allrounder,0,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Sameer%20Rizvi.png
+PLY_0086,Ashutosh Sharma,India,Right-hand,Right-arm off-spin,Allrounder,0,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Ashutosh%20Sharma.png
+PLY_0335,Madhav Tiwari,India,Right-hand,Right-arm fast,Allrounder,0,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Madhav%20Tiwari.png
+PLY_0704,Auqib Nabi,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Auqib%20Nabi.png
+PLY_0186,Dushmantha Chameera,Overseas,Right-hand,Right-arm fast,Bowler,1,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Dushmantha%20Chameera.png
+PLY_0315,Kyle Jamieson,Overseas,Right-hand,Right-arm fast,Bowler,1,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Kyle%20Jamieson.png
+PLY_0306,Kuldeep Yadav,India,Left-hand,Left-arm leg-spin,Bowler,0,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Kuldeep%20Yadav.png
+PLY_0393,Mukesh Kumar,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Mukesh%20Kumar.png
+PLY_0616,T Natarajan,India,Left-hand,Left-arm fast,Bowler,0,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/T%20Natarajan.png
+PLY_0705,Lungi Ngidi,Overseas,Right-hand,Right-arm fast,Bowler,1,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Lungi%20Ngidi.png
+PLY_0665,Vipraj Nigam,India,Right-hand,Right-arm off-spin,Bowler,0,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Vipraj%20Nigam.png
+PLY_0374,Mitchell Starc,Overseas,Left-hand,Left-arm fast,Bowler,1,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Mitchell%20Starc.png
+PLY_0707,Tripurana Vijay,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_DC,https://scores.iplt20.com/ipl/playerimages/Tripurana%20Vijay.png
+PLY_0580,Shubman Gill,India,Right-hand,Right-arm off-spin,Batter,0,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Shubman%20Gill.png
+PLY_0068,Anuj Rawat,India,Left-hand,,Wicketkeeper,0,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Anuj%20Rawat.png
+PLY_0632,Tom Banton,Overseas,Right-hand,,Wicketkeeper,1,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Tom%20Banton.png
+PLY_0272,Jos Buttler,Overseas,Right-hand,,Wicketkeeper,1,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Jos%20Buttler.png
+PLY_0309,Kumar Kushagra,India,Right-hand,,Wicketkeeper,0,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Kumar%20Kushagra.png
+PLY_0521,Sai Sudharsan,India,Left-hand,Right-arm off-spin,Batter,0,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Sai%20Sudharsan.png
+PLY_0544,Shahrukh Khan,India,Right-hand,Right-arm off-spin,Batter,0,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Shahrukh%20Khan.png
+PLY_0254,Jason Holder,Overseas,Right-hand,Right-arm fast,Allrounder,1,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Jason%20Holder.png
+PLY_0206,Glenn Phillips,Overseas,Right-hand,Right-arm off-spin,Allrounder,1,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Glenn%20Phillips.png
+PLY_0478,Rashid Khan,Overseas,Right-hand,Right-arm leg-spin,Allrounder,1,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Rashid%20Khan.png
+PLY_0708,Nishant Sindhu,India,Left-hand,Left-arm off-spin,Allrounder,0,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Nishant%20Sindhu.png
+PLY_0342,Manav Suthar,India,Left-hand,Left-arm off-spin,Allrounder,0,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Manav%20Suthar.png
+PLY_0466,Rahul Tewatia,India,Left-hand,Right-arm leg-spin,Allrounder,0,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Rahul%20Tewatia.png
+PLY_0673,Washington Sundar,India,Right-hand,Right-arm off-spin,Allrounder,0,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Washington%20Sundar.png
+PLY_0075,Arshad Khan,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Arshad%20Khan.png
+PLY_0709,Ashok Sharma,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Ashok%20Sharma.png
+PLY_0710,Gurnoor Brar,India,Right-hand,Left-arm fast,Bowler,0,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Gurnoor%20Brar.png
+PLY_0711,Kulwant Khejroliya,India,Left-hand,Left-arm fast,Bowler,0,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Kulwant%20Khejroliya.png
+PLY_0383,Mohammed Siraj,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Mohammed%20Siraj.png
+PLY_0445,Prasidh Krishna,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Prasidh%20Krishna.png
+PLY_0282,Kagiso Rabada,Overseas,Right-hand,Right-arm fast,Bowler,1,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Kagiso%20Rabada.png
+PLY_0520,Sai Kishore,India,Left-hand,Left-arm off-spin,Bowler,0,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Sai%20Kishore.png
+PLY_0235,Ishant Sharma,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Ishant%20Sharma.png
+PLY_0331,Luke Wood,Overseas,Left-hand,Left-arm fast,Bowler,1,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Luke%20Wood.png
+PLY_0258,Jayant Yadav,India,Right-hand,Right-arm off-spin,Bowler,0,IPL_T20_GT,https://scores.iplt20.com/ipl/playerimages/Jayant%20Yadav.png
+PLY_0028,Ajinkya Rahane,India,Right-hand,Right-arm off-spin,Batter,0,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Ajinkya%20Rahane.png
+PLY_0493,Rinku Singh,India,Left-hand,Right-arm off-spin,Batter,0,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Rinku%20Singh.png
+PLY_0712,Finn Allen,Overseas,Right-hand,,Batter,1,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Finn%20Allen.png
+PLY_0713,Tejasvi Dahiya,India,Right-hand,,Wicketkeeper,0,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Tejasvi%20Dahiya.png
+PLY_0344,Manish Pandey,India,Right-hand,Right-arm off-spin,Batter,0,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Manish%20Pandey.png
+PLY_0509,Rovman Powell,Overseas,Right-hand,Right-arm medium,Batter,1,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Rovman%20Powell.png
+PLY_0055,Angkrish Raghuvanshi,India,Right-hand,,Batter,0,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Angkrish%20Raghuvanshi.png
+PLY_0475,Ramandeep Singh,India,Right-hand,Right-arm medium,Batter,0,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Ramandeep%20Singh.png
+PLY_0714,Tejasvi Dahiya,India,Right-hand,,Batter,0,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Tejasvi%20Dahiya.png
+PLY_0629,Tim Seifert,Overseas,Right-hand,,Wicketkeeper,1,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Tim%20Seifert.png
+PLY_0467,Rahul Tripathi,India,Right-hand,,Batter,0,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Rahul%20Tripathi.png
+PLY_0120,Cameron Green,Overseas,Right-hand,Right-arm fast,Allrounder,1,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Cameron%20Green.png
+PLY_0604,Sunil Narine,Overseas,Left-hand,Right-arm off-spin,Allrounder,1,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Sunil%20Narine.png
+PLY_0460,Rachin Ravindra,Overseas,Left-hand,Left-arm off-spin,Allrounder,1,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Rachin%20Ravindra.png
+PLY_0069,Anukul Roy,India,Left-hand,Left-arm off-spin,Allrounder,0,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Anukul%20Roy.png
+PLY_0651,Vaibhav Arora,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Vaibhav%20Arora.png
+PLY_0716,Saurabh Dube,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Saurabh%20Dube.png
+PLY_0293,Kartik Tyagi,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Kartik%20Tyagi.png
+PLY_0717,Blessing Muzarabani,Overseas,Right-hand,Right-arm fast,Bowler,1,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Blessing%20Muzarabani.png
+PLY_0718,Matheesha Pathirana,Overseas,Right-hand,Right-arm fast,Bowler,1,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Matheesha%20Pathirana.png
+PLY_0408,Navdeep Saini,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Navdeep%20Saini.png
+PLY_0719,Prashant Solanki,India,Right-hand,Right-arm off-spin,Bowler,0,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Prashant%20Solanki.png
+PLY_0645,Umran Malik,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Umran%20Malik.png
+PLY_0654,Varun Chakaravarthy,India,Right-hand,Right-arm leg-spin,Bowler,0,IPL_T20_KKR,https://scores.iplt20.com/ipl/playerimages/Varun%20Chakaravarthy.png
+PLY_0495,Rishabh Pant,India,Left-hand,Right-arm medium,Wicketkeeper,0,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Rishabh%20Pant.png
+PLY_0005,Abdul Samad,India,Right-hand,Right-arm leg-spin,Batter,0,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Abdul%20Samad.png
+PLY_0720,Akshat Raghuwanshi,India,Left-hand,Left-arm off-spin,Batter,0,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Akshat%20Raghuwanshi.png
+PLY_0090,Ayush Badoni,India,Right-hand,Right-arm off-spin,Batter,0,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Ayush%20Badoni.png
+PLY_0358,Matthew Breetzke,Overseas,Right-hand,,Batter,1,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Matthew%20Breetzke.png
+PLY_0721,Mukul Choudhary,India,Right-hand,Right-arm fast,Batter,0,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Mukul%20Choudhary.png
+PLY_0722,Himmat Singh,India,Right-hand,,Batter,0,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Himmat%20Singh.png
+PLY_0274,Josh Inglis,Overseas,Right-hand,,Wicketkeeper,1,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Josh%20Inglis.png
+PLY_0026,Aiden Markram,Overseas,Right-hand,Right-arm off-spin,Batter,1,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Aiden%20Markram.png
+PLY_0413,Nicholas Pooran,Overseas,Left-hand,,Wicketkeeper,1,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Nicholas%20Pooran.png
+PLY_0672,Wanindu Hasaranga,Overseas,Right-hand,Right-arm leg-spin,Allrounder,1,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Wanindu%20Hasaranga.png
+PLY_0077,Arshin Atul Kulkarni,India,Left-hand,Left-arm off-spin,Allrounder,0,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Arshin%20Atul%20Kulkarni.png
+PLY_0371,Mitchell Marsh,Overseas,Right-hand,Right-arm fast,Allrounder,1,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Mitchell%20Marsh.png
+PLY_0541,Shahbaz Ahmed,India,Left-hand,Left-arm off-spin,Allrounder,0,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Shahbaz%20Ahmed.png
+PLY_0723,Akash Singh,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Akash%20Singh.png
+PLY_0088,Avesh Khan,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Avesh%20Khan.png
+PLY_0382,Mohammad Shami,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Mohammad%20Shami.png
+PLY_0388,Mohsin Khan,India,Left-hand,Left-arm fast,Bowler,0,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Mohsin%20Khan.png
+PLY_0066,Anrich Nortje,Overseas,Right-hand,Right-arm fast,Bowler,1,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Anrich%20Nortje.png
+PLY_0452,Prince Yadav,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Prince%20Yadav.png
+PLY_0724,Digvesh Rathi,India,Right-hand,Right-arm leg-spin,Bowler,0,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Digvesh%20Rathi.png
+PLY_0725,Manimaran Siddharth,India,Left-hand,Left-arm off-spin,Bowler,0,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Manimaran%20Siddharth.png
+PLY_0073,Arjun Tendulkar,India,Left-hand,Left-arm fast,Bowler,0,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Arjun%20Tendulkar.png
+PLY_0726,Naman Tiwari,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Naman%20Tiwari.png
+PLY_0727,Mayank Yadav,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_LSG,https://scores.iplt20.com/ipl/playerimages/Mayank%20Yadav.png
+PLY_0458,Quinton de Kock,Overseas,Left-hand,,Wicketkeeper,1,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Quinton%20de%20Kock.png
+PLY_0728,Danish Malewar,India,Right-hand,,Batter,0,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Danish%20Malewar.png
+PLY_0499,Robin Minz,India,Right-hand,,Wicketkeeper,0,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Robin%20Minz.png
+PLY_0514,Ryan Rickelton,Overseas,Left-hand,,Wicketkeeper,1,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Ryan%20Rickelton.png
+PLY_0562,Sherfane Rutherford,Overseas,Left-hand,Right-arm medium,Batter,1,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Sherfane%20Rutherford.png
+PLY_0505,Rohit Sharma,India,Right-hand,Right-arm off-spin,Batter,0,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Rohit%20Sharma.png
+PLY_0610,Suryakumar Yadav,India,Right-hand,Right-arm off-spin,Batter,0,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Suryakumar%20Yadav.png
+PLY_0214,Hardik Pandya,India,Right-hand,Right-arm fast,Allrounder,0,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Hardik%20Pandya.png
+PLY_0729,Atharva Ankolekar,India,Left-hand,Left-arm off-spin,Allrounder,0,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Atharva%20Ankolekar.png
+PLY_0730,RajÃÂ Bawa,India,Right-hand,Right-arm fast,Allrounder,0,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Raj%C3%83%C2%82%C3%82%C2%A0Bawa.png
+PLY_0140,Corbin Bosch,Overseas,Right-hand,Right-arm fast,Allrounder,1,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Corbin%20Bosch.png
+PLY_0678,Will Jacks,Overseas,Right-hand,Right-arm off-spin,Allrounder,1,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Will%20Jacks.png
+PLY_0731,Mayank Rawat,India,Right-hand,,Allrounder,0,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Mayank%20Rawat.png
+PLY_0402,Naman Dhir,India,Right-hand,Right-arm off-spin,Allrounder,0,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Naman%20Dhir.png
+PLY_0373,Mitchell Santner,Overseas,Left-hand,Left-arm off-spin,Allrounder,1,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Mitchell%20Santner.png
+PLY_0555,Shardul Thakur,India,Right-hand,Right-arm fast,Allrounder,0,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Shardul%20Thakur.png
+PLY_0625,Tilak Varma,India,Left-hand,Right-arm off-spin,Allrounder,0,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Tilak%20Varma.png
+PLY_0732,Ashwani Kumar,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Ashwani%20Kumar.png
+PLY_0637,Trent Boult,Overseas,Right-hand,Left-arm fast,Bowler,1,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Trent%20Boult.png
+PLY_0256,Jasprit Bumrah,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Jasprit%20Bumrah.png
+PLY_0163,Deepak Chahar,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Deepak%20Chahar.png
+PLY_0733,AM Ghazanfar,Overseas,Right-hand,Right-arm off-spin,Bowler,1,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/AM%20Ghazanfar.png
+PLY_0363,Mayank Markande,India,Right-hand,Right-arm leg-spin,Bowler,0,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Mayank%20Markande.png
+PLY_0734,Mohd Izhar,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Mohd%20Izhar.png
+PLY_0464,Rahul Sharma,India,Right-hand,Right-arm leg-spin,Bowler,0,IPL_T20_MI,https://scores.iplt20.com/ipl/playerimages/Rahul%20Sharma.png
+PLY_0577,Shreyas Iyer,India,Right-hand,Right-arm off-spin,Batter,0,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Shreyas%20Iyer.png
+PLY_0456,Priyansh Arya,India,Left-hand,Right-arm off-spin,Batter,0,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Priyansh%20Arya.png
+PLY_0735,Pyla Avinash,India,Right-hand,,Batter,0,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Pyla%20Avinash.png
+PLY_0736,Harnoor Singh,India,Left-hand,,Batter,0,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Harnoor%20Singh.png
+PLY_0440,Prabhsimran Singh,India,Right-hand,,Wicketkeeper,0,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Prabhsimran%20Singh.png
+PLY_0669,Vishnu Vinod,India,Right-hand,,Wicketkeeper,0,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Vishnu%20Vinod.png
+PLY_0411,Nehal Wadhera,India,Left-hand,Right-arm off-spin,Batter,0,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Nehal%20Wadhera.png
+PLY_0094,Azmatullah Omarzai,Overseas,Right-hand,Right-arm fast,Allrounder,1,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Azmatullah%20Omarzai.png
+PLY_0737,Cooper Connolly,Overseas,Left-hand,Right-arm off-spin,Allrounder,1,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Cooper%20Connolly.png
+PLY_0351,Marco Jansen,Overseas,Left-hand,Left-arm fast,Allrounder,1,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Marco%20Jansen.png
+PLY_0738,Musheer Khan,India,Left-hand,Right-arm off-spin,Allrounder,0,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Musheer%20Khan.png
+PLY_0352,Marcus Stoinis,Overseas,Right-hand,Right-arm fast,Allrounder,1,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Marcus%20Stoinis.png
+PLY_0611,Suryansh Shedge,India,Right-hand,Right-arm off-spin,Allrounder,0,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Suryansh%20Shedge.png
+PLY_0076,Arshdeep Singh,India,Left-hand,Left-arm fast,Bowler,0,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Arshdeep%20Singh.png
+PLY_0680,Xavier Bartlett,Overseas,Right-hand,Right-arm fast,Bowler,1,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Xavier%20Bartlett.png
+PLY_0693,Yuzvendra Chahal,India,Right-hand,Right-arm leg-spin,Bowler,0,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Yuzvendra%20Chahal.png
+PLY_0446,Praveen Dubey,India,Right-hand,Right-arm leg-spin,Bowler,0,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Praveen%20Dubey.png
+PLY_0739,Ben Dwarshuis,Overseas,Left-hand,Left-arm fast,Bowler,1,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Ben%20Dwarshuis.png
+PLY_0328,Lockie Ferguson,Overseas,Right-hand,Right-arm fast,Bowler,1,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Lockie%20Ferguson.png
+PLY_0218,Harpreet Brar,India,Left-hand,Left-arm off-spin,Bowler,0,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Harpreet%20Brar.png
+PLY_0740,Vishal Nishad,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Vishal%20Nishad.png
+PLY_0741,Vijaykumar Vyshak,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_PBKS,https://scores.iplt20.com/ipl/playerimages/Vijaykumar%20Vyshak.png
+PLY_0497,Riyan Parag,India,Right-hand,Right-arm off-spin,Batter,0,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Riyan%20Parag.png
+PLY_0742,Aman Rao,India,Right-hand,,Batter,0,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Aman%20Rao.png
+PLY_0579,Shubham Dubey,India,Right-hand,Right-arm off-spin,Batter,0,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Shubham%20Dubey.png
+PLY_0564,Shimron Hetmyer,Overseas,Left-hand,Right-arm medium,Batter,1,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Shimron%20Hetmyer.png
+PLY_0684,Yashasvi Jaiswal,India,Left-hand,Right-arm off-spin,Batter,0,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Yashasvi%20Jaiswal.png
+PLY_0170,Dhruv Jurel,India,Right-hand,,Wicketkeeper,0,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Dhruv%20Jurel.png
+PLY_0743,Lhuan-dre Pretorius,Overseas,Right-hand,,Wicketkeeper,1,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Lhuan-dre%20Pretorius.png
+PLY_0744,Ravi Singh,India,Right-hand,,Batter,0,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Ravi%20Singh.png
+PLY_0652,Vaibhav Suryavanshi,India,Right-hand,,Batter,0,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Vaibhav%20Suryavanshi.png
+PLY_0183,Donovan Ferreira,Overseas,Right-hand,Right-arm fast,Allrounder,1,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Donovan%20Ferreira.png
+PLY_0485,Ravindra Jadeja,India,Left-hand,Left-arm off-spin,Allrounder,0,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Ravindra%20Jadeja.png
+PLY_0154,Dasun Shanaka,Overseas,Right-hand,Right-arm fast,Allrounder,1,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Dasun%20Shanaka.png
+PLY_0267,Jofra Archer,Overseas,Right-hand,Right-arm fast,Bowler,1,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Jofra%20Archer.png
+PLY_0745,Brijesh Sharma,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Brijesh%20Sharma.png
+PLY_0746,Nandre Burger,Overseas,Left-hand,Left-arm fast,Bowler,1,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Nandre%20Burger.png
+PLY_0639,Tushar Deshpande,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Tushar%20Deshpande.png
+PLY_0313,Kwena Maphaka,Overseas,Right-hand,Right-arm fast,Bowler,1,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Kwena%20Maphaka.png
+PLY_0018,Adam Milne,Overseas,Right-hand,Right-arm fast,Bowler,1,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Adam%20Milne.png
+PLY_0747,Sushant Mishra,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Sushant%20Mishra.png
+PLY_0748,Vignesh Puthur,India,Right-hand,Right-arm off-spin,Bowler,0,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Vignesh%20Puthur.png
+PLY_0481,Ravi Bishnoi,India,Right-hand,Right-arm leg-spin,Bowler,0,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Ravi%20Bishnoi.png
+PLY_0530,Sandeep Sharma,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Sandeep%20Sharma.png
+PLY_0749,Kuldeep Sen,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Kuldeep%20Sen.png
+PLY_0750,Yash Raj Punja,India,Left-hand,Left-arm fast,Bowler,0,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Yash%20Raj%20Punja.png
+PLY_0690,Yudhvir Singh,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_RR,https://scores.iplt20.com/ipl/playerimages/Yudhvir%20Singh.png
+PLY_0473,Rajat Patidar,India,Right-hand,Right-arm off-spin,Batter,0,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Rajat%20Patidar.png
+PLY_0751,Jordan Cox,Overseas,Right-hand,,Wicketkeeper,1,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Jordan%20Cox.png
+PLY_0627,Tim David,Overseas,Right-hand,Right-arm off-spin,Batter,1,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Tim%20David.png
+PLY_0666,Virat Kohli,India,Right-hand,Right-arm medium,Batter,0,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Virat%20Kohli.png
+PLY_0165,Devdutt Padikkal,India,Left-hand,Right-arm off-spin,Batter,0,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Devdutt%20Padikkal.png
+PLY_0437,Phil Salt,Overseas,Right-hand,,Wicketkeeper,1,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Phil%20Salt.png
+PLY_0264,Jitesh Sharma,India,Right-hand,,Wicketkeeper,0,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Jitesh%20Sharma.png
+PLY_0239,Jacob Bethell,Overseas,Left-hand,Right-arm off-spin,Allrounder,1,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Jacob%20Bethell.png
+PLY_0752,Kanishk Chouhan,India,Right-hand,Right-arm off-spin,Allrounder,0,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Kanishk%20Chouhan.png
+PLY_0655,Venkatesh Iyer,India,Left-hand,Right-arm medium,Allrounder,0,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Venkatesh%20Iyer.png
+PLY_0233,Vihan Malhotra,India,Right-hand,,Allrounder,0,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Vihan%20Malhotra.png
+PLY_0753,Mangesh Yadav,India,Right-hand,Right-arm fast,Allrounder,0,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Mangesh%20Yadav.png
+PLY_0305,Krunal Pandya,India,Left-hand,Left-arm off-spin,Allrounder,0,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Krunal%20Pandya.png
+PLY_0506,Romario Shepherd,Overseas,Right-hand,Right-arm fast,Allrounder,1,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Romario%20Shepherd.png
+PLY_0754,Abhinandan Singh,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Abhinandan%20Singh.png
+PLY_0755,Satvik Deswal,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Satvik%20Deswal.png
+PLY_0756,Jacob Duffy,Overseas,Right-hand,Right-arm fast,Bowler,1,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Jacob%20Duffy.png
+PLY_0273,Josh Hazlewood,Overseas,Right-hand,Right-arm fast,Bowler,1,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Josh%20Hazlewood.png
+PLY_0109,Bhuvneshwar Kumar,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Bhuvneshwar%20Kumar.png
+PLY_0757,Vicky Ostwal,India,Right-hand,Right-arm off-spin,Bowler,0,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Vicky%20Ostwal.png
+PLY_0479,Rasikh Salam,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Rasikh%20Salam.png
+PLY_0758,Vicky Ostwal,India,Right-hand,Right-arm off-spin,Bowler,0,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Vicky%20Ostwal.png
+PLY_0614,Swapnil Singh,India,Left-hand,Left-arm off-spin,Bowler,0,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Swapnil%20Singh.png
+PLY_0759,Nuwan Thushara,Overseas,Right-hand,Right-arm fast,Bowler,1,IPL_T20_RCB,https://scores.iplt20.com/ipl/playerimages/Nuwan%20Thushara.png
+PLY_0232,Ishan Kishan,India,Left-hand,,Wicketkeeper,0,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Ishan%20Kishan.png
+PLY_0760,Salil Arora,India,Right-hand,,Wicketkeeper,0,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Salil%20Arora.png
+PLY_0636,Travis Head,Overseas,Left-hand,Right-arm off-spin,Batter,1,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Travis%20Head.png
+PLY_0225,Heinrich Klaasen,Overseas,Right-hand,,Wicketkeeper,1,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Heinrich%20Klaasen.png
+PLY_0761,Ravichandran Smaran,India,Right-hand,,Batter,0,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Ravichandran%20Smaran.png
+PLY_0057,Aniket Verma,India,Right-hand,,Batter,0,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Aniket%20Verma.png
+PLY_0014,Abhishek Sharma,India,Left-hand,Left-arm off-spin,Allrounder,0,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Abhishek%20Sharma.png
+PLY_0762,Brydon Carse,Overseas,Right-hand,Right-arm fast,Allrounder,1,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Brydon%20Carse.png
+PLY_0763,Harsh Dubey,India,Right-hand,Right-arm off-spin,Allrounder,0,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Harsh%20Dubey.png
+PLY_0764,Krains Fuletra,India,Right-hand,Right-arm fast,Allrounder,0,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Krains%20Fuletra.png
+PLY_0324,Liam Livingstone,Overseas,Right-hand,Right-arm leg-spin,Allrounder,1,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Liam%20Livingstone.png
+PLY_0283,Kamindu Mendis,Overseas,Left-hand,Right-arm off-spin,Allrounder,1,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Kamindu%20Mendis.png
+PLY_0417,Nitish Kumar Reddy,India,Right-hand,Right-arm fast,Allrounder,0,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Nitish%20Kumar%20Reddy.png
+PLY_0222,Harshal Patel,India,Right-hand,Right-arm fast,Allrounder,0,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Harshal%20Patel.png
+PLY_0566,Shivam Mavi,India,Right-hand,Right-arm fast,Allrounder,0,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Shivam%20Mavi.png
+PLY_0765,Shivang Kumar,India,Right-hand,Right-arm off-spin,Allrounder,0,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Shivang%20Kumar.png
+PLY_0601,Sumit Kumar,India,Right-hand,Right-arm off-spin,Bowler,0,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Sumit%20Kumar.png
+PLY_0432,Pat Cummins,Overseas,Right-hand,Right-arm fast,Bowler,1,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Pat%20Cummins.png
+PLY_0766,Praful Hinge,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Praful%20Hinge.png
+PLY_0767,Eshan Malinga,Overseas,Right-hand,Right-arm fast,Bowler,1,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Eshan%20Malinga.png
+PLY_0768,David Payne,Overseas,Left-hand,Left-arm fast,Bowler,1,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/David%20Payne.png
+PLY_0769,Sakib Hussain,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Sakib%20Hussain.png
+PLY_0770,Onkar Tarmale,India,Right-hand,Right-arm fast,Bowler,0,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Onkar%20Tarmale.png
+PLY_0259,Jaydev Unadkat,India,Left-hand,Left-arm fast,Bowler,0,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Jaydev%20Unadkat.png
+PLY_0771,Zeeshan Ansari,India,Left-hand,Left-arm off-spin,Bowler,0,IPL_T20_SRH,https://scores.iplt20.com/ipl/playerimages/Zeeshan%20Ansari.png

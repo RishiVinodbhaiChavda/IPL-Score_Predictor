@@ -18,7 +18,7 @@ import os, pickle, json, numpy as np
 from ml.feature_engineering import build_features, FEATURE_NAMES
 from db.data_loader import matches, squads
 
-MODEL_DIR   = os.path.join(os.path.dirname(__file__), "../../../models")
+MODEL_DIR   = os.path.join(os.path.dirname(__file__), "../../models")
 XGB_PATH    = os.path.join(MODEL_DIR, "xgb_model.pkl")
 MLP_PATH    = os.path.join(MODEL_DIR, "mlp_model.pkl")
 SCALER_PATH = os.path.join(MODEL_DIR, "scaler.pkl")

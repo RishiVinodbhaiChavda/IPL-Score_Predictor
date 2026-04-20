@@ -2,7 +2,7 @@
 import pandas as pd
 import os
 
-BASE = os.path.join(os.path.dirname(__file__), "../../../Dataset")
+BASE = os.path.join(os.path.dirname(__file__), "../../Dataset")
 
 # Cache for loaded data
 _data_cache = {}

@@ -34,32 +34,26 @@ git clone https://github.com/RishiVinodbhaiChavda/IPL-Score_Predictor.git
 cd IPL-Score_Predictor
 ```
 
-### 2. Setup Dataset folder
-Ensure the `Dataset/` folder is in the parent directory with these CSV files:
-- `players.csv`, `teams.csv`, `venues.csv`, `squads.csv`, `matches.csv`
-- `player_vs_player.csv`, `player_batting_vs_type.csv`, `player_vs_team.csv`
-- `player_venue_stats.csv`, `player_phase_stats.csv`, `player_recent_form.csv`
-- `player_bowling_overall.csv`, `player_transfers.csv`, `match_training_data.csv`
-
-### 3. Install dependencies
+### 2. Install dependencies
 ```bash
 cd backend
 pip install -r requirements.txt
 ```
 
-### 4. Train the model (run once)
+### 3. Train the model (optional - pre-trained models included)
 ```bash
+cd backend
 python train_model.py
 ```
-This will create the `models/` folder with trained models (~5-10 minutes).
+**Note**: Pre-trained models are already included in the `models/` folder. You only need to run this if you want to retrain with updated data.
 
-### 5. Start the backend
+### 4. Start the backend
 ```bash
 uvicorn main:app --reload --port 8001
 ```
 Backend will run at `http://localhost:8001`
 
-### 6. Start the frontend
+### 5. Start the frontend
 Open `frontend/index.html` in your browser or use Live Server:
 ```bash
 # Using Python's built-in server
@@ -102,29 +96,31 @@ IPL-Score-Predictor/
 │   │   ├── api.js                   # API calls
 │   │   └── state.js                 # localStorage state management
 │   └── assets/                      # Venue images (25 stadiums)
-├── models/                          # Auto-created after training
-│   ├── xgb_model.pkl                # XGBoost model
-│   ├── mlp_model.pkl                # MLP Neural Network
+├── models/                          # Pre-trained models (included)
+│   ├── xgb_model.pkl                # XGBoost model (2.83 MB)
+│   ├── mlp_model.pkl                # MLP Neural Network (0.64 MB)
 │   ├── scaler.pkl                   # Feature scaler
 │   ├── ensemble_weights.pkl         # Ensemble weights
 │   ├── training_history.json        # Training metrics
-│   ├── training_validation_loss.png # Training graph (PNG)
-│   └── training_validation_loss.pdf # Training graph (PDF)
-├── Dataset/                         # CSV data files (parent dir)
+│   ├── training_validation_loss.png # Training graph (PNG, 0.77 MB)
+│   ├── training_validation_loss.pdf # Training graph (PDF)
+│   └── dnn_logs/                    # TensorBoard logs
+├── Dataset/                         # CSV data files (included)
 │   ├── players.csv                  # 244 players
 │   ├── teams.csv                    # 10 IPL teams
 │   ├── venues.csv                   # 25 venues
-│   ├── squads.csv                   # 2015-2026 squads
+│   ├── squads.csv                   # 2015-2026 squads (0.12 MB)
 │   ├── matches.csv                  # 711 matches
-│   ├── player_vs_player.csv         # 5439 matchups
+│   ├── player_vs_player.csv         # 5439 matchups (0.32 MB)
 │   ├── player_batting_vs_type.csv   # Pace/Spin stats
-│   ├── player_vs_team.csv           # Player vs team records
-│   ├── player_venue_stats.csv       # Venue-specific stats
-│   ├── player_phase_stats.csv       # Powerplay/Middle/Death
+│   ├── player_vs_team.csv           # Player vs team records (0.17 MB)
+│   ├── player_venue_stats.csv       # Venue-specific stats (0.32 MB)
+│   ├── player_phase_stats.csv       # Powerplay/Middle/Death (0.24 MB)
 │   ├── player_recent_form.csv       # Form classification
 │   ├── player_bowling_overall.csv   # Bowling stats
 │   ├── player_transfers.csv         # Transfer history
-│   └── match_training_data.csv      # Playing 11s
+│   ├── match_training_data.csv      # Playing 11s (0.33 MB)
+│   └── 2008_to_2025_batting_overall.xlsx # Batting data (0.21 MB)
 ├── ARCHITECTURE.md                  # System architecture (Mermaid)
 ├── ARCHITECTURE_VISUAL.txt          # ASCII architecture diagram
 ├── generate_architecture_diagram.py # Python diagram generator
@@ -311,8 +307,8 @@ Optional: Configure in `backend/weather_service.py`
 See `backend/WEATHER_API_SETUP.md` for details
 
 ### Dataset Location
-Expected: `../Dataset/` (parent directory)
-Configurable in `backend/db/data_loader.py`
+Included in repository: `Dataset/` folder
+All 16 CSV/XLSX files with comprehensive IPL statistics (2015-2026)
 
 ## 📝 License
 
