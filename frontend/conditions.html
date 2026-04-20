@@ -8,6 +8,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <style>
+    .refresh-btn {
+      background: rgba(0,229,255,0.1);
+      border: 1px solid rgba(0,229,255,0.3);
+      border-radius: 8px;
+      color: var(--accent);
+      padding: 0.4rem 0.6rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    .refresh-btn:hover {
+      background: rgba(0,229,255,0.2);
+      transform: rotate(180deg);
+    }
+  </style>
 </head>
 <body>
 
@@ -16,8 +32,8 @@
   <div class="nav-steps">
     <div class="step-dot done"></div>
     <div class="step-dot done"></div>
+    <div class="step-dot done"></div>
     <div class="step-dot active"></div>
-    <div class="step-dot"></div>
   </div>
 </nav>
 
@@ -27,25 +43,6 @@
 </div>
 
 <div class="conditions-form fade-in-delay-1">
-
-  <!-- Venue Section -->
-  <div class="form-section">
-    <div class="form-section-title">🏟️ Venue</div>
-    <div class="form-group">
-      <label>Select Stadium</label>
-      <select class="form-control" id="venueSelect" onchange="onVenueChange()">
-        <option value="">Choose a venue...</option>
-      </select>
-    </div>
-    <div class="venue-card-preview" id="venuePreview" style="display:none">
-      <div>
-        <div class="v-name" id="venueName">—</div>
-        <div class="v-city" id="venueCity">—</div>
-        <div class="v-avg">Avg Score: <strong id="venueAvg">—</strong></div>
-      </div>
-      <div class="pitch-badge" id="pitchBadge">—</div>
-    </div>
-  </div>
 
   <!-- Pitch Type Section -->
   <div class="form-section">
@@ -62,7 +59,7 @@
         <div class="ptc-sub">Even contest</div>
       </div>
       <div class="pitch-toggle-card" id="ptc-Bowling" onclick="setPitch('Bowling')">
-        <div class="ptc-icon">��</div>
+        <div class="ptc-icon">🎯</div>
         <div class="ptc-label">Bowling</div>
         <div class="ptc-sub">Low scoring</div>
       </div>
@@ -72,7 +69,12 @@
 
   <!-- Weather Section -->
   <div class="form-section">
-    <div class="form-section-title">🌤️ Weather Conditions</div>
+    <div class="form-section-title" style="display: flex; justify-content: space-between; align-items: center;">
+      <span>🌤️ Weather Conditions</span>
+      <button onclick="refreshWeather()" class="refresh-btn" title="Refresh weather data">
+        🔄
+      </button>
+    </div>
 
     <div class="form-group">
       <label>🌡️ Temperature</label>
@@ -116,7 +118,7 @@
 </div>
 
 <div class="bottom-bar">
-  <button class="btn btn-secondary" onclick="window.location.href='squad.html'">← Back</button>
+  <button class="btn btn-secondary" onclick="window.location.href='venue.html'">← Back</button>
   <button class="btn btn-primary" id="predictBtn" onclick="goPredict()">
     🔮 Predict Score →
   </button>
@@ -131,12 +133,16 @@
 <script src="js/api.js"></script>
 <script src="js/state.js"></script>
 <script>
+const API_BASE = 'http://localhost:8001/api';
 const state = loadState();
-if (!state.battingXI || !state.bowlingXI) window.location.href = 'squad.html';
+if (!state.battingXI || !state.bowlingXI || !state.venueId) {
+  window.location.href = 'venue.html';
+}
 
-let venues = [];
-let currentPitch = 'Balanced';
+// ── State ────────────────────────────────────────────────────────────────────
+let currentPitch = state.pitchType || 'Balanced';
 
+// ── Slider / Weather ─────────────────────────────────────────────────────────
 function updateSlider(id, val, suffix) {
   document.getElementById(id).textContent = val + suffix;
 }
@@ -144,7 +150,7 @@ function updateSlider(id, val, suffix) {
 function setPitch(type) {
   currentPitch = type;
   document.getElementById('pitchType').value = type;
-  ['Batting','Balanced','Bowling'].forEach(t => {
+  ['Batting', 'Balanced', 'Bowling'].forEach(t => {
     const el = document.getElementById(`ptc-${t}`);
     el.className = 'pitch-toggle-card' + (t === type ? ` active-${t.toLowerCase()}` : '');
   });
@@ -155,7 +161,7 @@ function updateWeatherImpact() {
   const humid = parseFloat(document.getElementById('humidRange').value);
   const dew   = parseFloat(document.getElementById('dewRange').value);
   let impact = 0;
-  if (temp > 35) impact -= Math.round((temp - 35) * 0.5);
+  if (temp  > 35) impact -= Math.round((temp  - 35) * 0.5);
   if (humid > 70) impact -= Math.round((humid - 70) * 0.2);
   impact += Math.round(dew * 1.2);
   const el = document.getElementById('weatherImpactVal');
@@ -163,45 +169,14 @@ function updateWeatherImpact() {
   el.style.color = impact >= 0 ? 'var(--accent3)' : 'var(--red)';
 }
 
-async function init() {
-  venues = await fetchVenues();
-  const sel = document.getElementById('venueSelect');
-  venues.forEach(v => {
-    const opt = document.createElement('option');
-    opt.value = v.venue_id;
-    opt.textContent = `${v.venue_name} (${v.city})`;
-    sel.appendChild(opt);
-  });
-  if (state.venueId) {
-    sel.value = state.venueId;
-    onVenueChange();
-  }
-  updateWeatherImpact();
-}
-
-function onVenueChange() {
-  const vid = document.getElementById('venueSelect').value;
-  const v = venues.find(x => x.venue_id === vid);
-  if (!v) { document.getElementById('venuePreview').style.display = 'none'; return; }
-  document.getElementById('venuePreview').style.display = 'flex';
-  document.getElementById('venueName').textContent = v.venue_name;
-  document.getElementById('venueCity').textContent  = v.city;
-  document.getElementById('venueAvg').textContent   = v.avg_score;
-  const badge = document.getElementById('pitchBadge');
-  badge.textContent = v.pitch_type;
-  badge.className = `pitch-badge pitch-${v.pitch_type}`;
-  setPitch(v.pitch_type);
-}
-
+// ── Predict ───────────────────────────────────────────────────────────────────
 async function goPredict() {
-  const venueId = document.getElementById('venueSelect').value;
-  if (!venueId) { showToast('Please select a venue', 'error'); return; }
   const payload = {
     batting_team_id: state.battingTeam,
     bowling_team_id: state.bowlingTeam,
     batting_xi:      state.battingXI,
     bowling_xi:      state.bowlingXI,
-    venue_id:        venueId,
+    venue_id:        state.venueId,
     pitch_type:      currentPitch,
     temperature:     parseFloat(document.getElementById('tempRange').value),
     humidity:        parseFloat(document.getElementById('humidRange').value),
@@ -212,12 +187,121 @@ async function goPredict() {
   try {
     const result = await predictScore(payload);
     if (result.error) { showToast(result.error.join(', '), 'error'); return; }
-    saveState({ ...state, venueId, prediction: result });
+    saveState({ ...state, prediction: result });
     window.location.href = 'result.html';
   } catch(e) {
     showToast('Prediction failed. Is the backend running?', 'error');
   }
   document.getElementById('loader').classList.remove('active');
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+async function init() {
+  setPitch(currentPitch);
+  updateWeatherImpact();
+  
+  // Auto-fetch weather data for selected venue
+  if (state.venueId) {
+    await fetchWeatherData(state.venueId);
+  }
+}
+
+// ── Weather API Integration ──────────────────────────────────────────────────
+async function fetchWeatherData(venueId) {
+  try {
+    showToast('Fetching live weather data...', 'info');
+    
+    const response = await fetch(`${API_BASE}/weather/${venueId}?match_hour=19`);
+    const data = await response.json();
+    
+    if (data.status === 'success') {
+      const weather = data.weather;
+      
+      // Update sliders with real weather data
+      document.getElementById('tempRange').value = weather.temperature;
+      document.getElementById('humidRange').value = weather.humidity;
+      document.getElementById('dewRange').value = weather.dew_factor;
+      
+      // Update display values
+      updateSlider('tempVal', weather.temperature, '°C');
+      updateSlider('humidVal', weather.humidity, '%');
+      updateSlider('dewVal', weather.dew_factor, '');
+      
+      // Update weather impact
+      updateWeatherImpact();
+      
+      // Show weather info
+      const source = weather.source === 'openweather' ? 'Live Weather' : 'Default';
+      showToast(`${source} data loaded for ${weather.city}`, 'success');
+      
+      // Add weather info card
+      addWeatherInfoCard(weather);
+    }
+  } catch (error) {
+    console.error('Weather fetch error:', error);
+    showToast('Using default weather conditions', 'warning');
+  }
+}
+
+function addWeatherInfoCard(weather) {
+  // Remove existing weather info if any
+  const existing = document.getElementById('weatherInfoCard');
+  if (existing) existing.remove();
+  
+  // Create weather info card
+  const card = document.createElement('div');
+  card.id = 'weatherInfoCard';
+  card.className = 'weather-info-card';
+  card.style.cssText = `
+    background: rgba(0,229,255,0.08);
+    border: 1px solid rgba(0,229,255,0.2);
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    animation: slideInWeather 0.4s ease;
+  `;
+  
+  const isLive = weather.source === 'openweather';
+  const icon = isLive ? '🌤️' : '📊';
+  const status = isLive ? 'Live Weather' : 'Default Conditions';
+  
+  card.innerHTML = `
+    <div style="font-size: 2rem;">${icon}</div>
+    <div>
+      <div style="font-weight: 600; color: var(--text2);">${status} - ${weather.city}</div>
+      <div style="font-size: 0.85rem; color: var(--muted); margin-top: 0.2rem;">
+        ${weather.description} • Match time: ${weather.match_time || '7:30 PM IST'}
+      </div>
+      ${weather.feels_like ? `<div style="font-size: 0.8rem; color: var(--muted); margin-top: 0.1rem;">Feels like ${weather.feels_like}°C</div>` : ''}
+    </div>
+  `;
+  
+  // Add CSS animation
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes slideInWeather {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  `;
+  document.head.appendChild(style);
+  
+  // Insert after weather section title
+  const weatherSection = document.querySelector('.form-section:last-child');
+  const title = weatherSection.querySelector('.form-section-title');
+  title.insertAdjacentElement('afterend', card);
+}
+
+// ── Weather refresh function ─────────────────────────────────────────────────
+async function refreshWeather() {
+  if (state.venueId) {
+    await fetchWeatherData(state.venueId);
+  } else {
+    showToast('Please select a venue first', 'warning');
+  }
 }
 
 init();

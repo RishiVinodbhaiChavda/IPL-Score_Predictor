@@ -295,9 +295,45 @@ async function init() {
 }
 
 function goNext() {
-  saveState({ ...state, battingXI: [...batSelected], bowlingXI: [...bowlSelected] });
-  window.location.href = 'conditions.html';
+  // Save player data with only essential fields
+  const battingXIData = batPlayers
+    .filter(p => batSelected.has(p.player_id))
+    .map(p => ({
+      player_id: p.player_id,
+      player_name: p.player_name,
+      photo_url: p.photo_url,
+      role: p.role
+    }));
+  
+  const bowlingXIData = bowlPlayers
+    .filter(p => bowlSelected.has(p.player_id))
+    .map(p => ({
+      player_id: p.player_id,
+      player_name: p.player_name,
+      photo_url: p.photo_url,
+      role: p.role
+    }));
+  
+  console.log('Saving state with batting XI:', battingXIData);
+  console.log('Saving state with bowling XI:', bowlingXIData);
+  
+  saveState({
+    ...state,
+    battingXI: [...batSelected],
+    bowlingXI: [...bowlSelected],
+    battingXIData: battingXIData,
+    bowlingXIData: bowlingXIData
+  });
+  
+  console.log('State saved, redirecting to venue.html');
+  window.location.href = 'venue.html';
 }
+
+// Update button text
+document.addEventListener('DOMContentLoaded', () => {
+  const nextBtn = document.getElementById('nextBtn');
+  if (nextBtn) nextBtn.textContent = 'Next: Select Venue →';
+});
 
 init();
 </script>

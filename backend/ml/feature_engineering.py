@@ -15,8 +15,8 @@ Feature priority (as per domain knowledge):
 import numpy as np
 import math
 from db.data_loader import (
-    pvt_idx, pvv_idx, phase_idx, bat_type_idx,
-    form_idx, bowl_idx, venue_avg, matches, venues, pvp
+    form_idx, venue_avg, matches, venues,
+    get_pvt_idx, get_pvp_bat_idx, get_pvv_idx, get_phase_idx, get_bat_type_idx, get_bowl_idx
 )
 
 FORM_SCORE = {"Red-hot": 6, "Superb": 5, "Excellent": 4,
@@ -26,20 +26,21 @@ FORM_SCORE = {"Red-hot": 6, "Superb": 5, "Excellent": 4,
 VENUE_PITCH = dict(zip(venues["venue_id"], venues["pitch_type"])) \
     if "pitch_type" in venues.columns else {}
 
-# Pitch score delta (runs above/below average)
-PITCH_DELTA = {"Batting": 10.0, "Balanced": 0.0, "Bowling": -10.0}
+# Pitch score delta (runs above/below average) - INCREASED for modern era
+PITCH_DELTA = {"Batting": 15.0, "Balanced": 0.0, "Bowling": -12.0}
 
-# Season trend: IPL avg first innings score per season (computed from data)
+# Season trend: IPL avg first innings score per season (ACTUAL DATA)
 # Model uses this to understand the era of cricket being played
+# Notice the sharp increase from 2023 onwards (modern high-scoring era)
 SEASON_AVG = {
-    2015: 159.0, 2016: 161.0, 2017: 163.0, 2018: 164.0,
-    2019: 163.0, 2020: 162.0, 2021: 159.0, 2022: 171.0,
-    2023: 183.0, 2024: 190.0, 2025: 189.0, 2026: 200.0,
+    2015: 166.3, 2016: 162.6, 2017: 165.8, 2018: 172.5,
+    2019: 166.7, 2020: 169.5, 2021: 159.3, 2022: 171.1,
+    2023: 182.7, 2024: 189.6, 2025: 188.8, 2026: 190.7,
 }
 
 # Pre-index pvp for fast lookup: (batter_id, bowler_id) -> row
-_pvp_bat_idx = pvp.set_index(["batter_id", "bowler_id"])
-_pvp_bowl_idx = pvp.set_index(["bowler_id", "batter_id"])
+def _get_pvp_bat_idx():
+    return get_pvp_bat_idx()
 
 
 def safe(val, default=0.0):
@@ -68,6 +69,7 @@ def pvp_batting_features(bat_pids, bowl_pids):
     Aggregate how the batting team's batters perform vs the bowling team's bowlers.
     Returns: avg SR, avg dismissal rate, total runs, matchup coverage ratio
     """
+    _pvp_bat_idx = _get_pvp_bat_idx()
     sr_list, dis_rate_list, runs_list = [], [], []
     matched = 0
     total_pairs = len(bat_pids) * len(bowl_pids)
@@ -89,7 +91,7 @@ def pvp_batting_features(bat_pids, bowl_pids):
 
     coverage = matched / max(total_pairs, 1)
     return (
-        smean(sr_list, default=130.0),      # avg SR in matchups
+        smean(sr_list, default=140.0),      # Updated from 130 to 140 (modern SR)
         smean(dis_rate_list, default=1.0),  # avg dismissal rate
         ssum(runs_list),                    # total runs in matchups
         round(coverage, 3),                 # how much matchup data we have
@@ -101,12 +103,13 @@ def pvp_bowling_features(bowl_pids, bat_pids):
     Aggregate how the bowling team's bowlers perform vs the batting team's batters.
     Returns: avg economy, avg wicket rate, total wickets
     """
+    _pvp_bat_idx = _get_pvp_bat_idx()
     econ_list, wkt_rate_list, wkts_list = [], [], []
 
     for bowler in bowl_pids:
         for batter in bat_pids:
             try:
-                row = _pvp_bowl_idx.loc[(bowler, batter)]
+                row = _pvp_bat_idx.loc[(batter, bowler)]
                 balls = safe(row["balls_faced"])
                 if balls >= 6:
                     runs = safe(row["runs_scored"])
@@ -118,7 +121,7 @@ def pvp_bowling_features(bowl_pids, bat_pids):
                 pass
 
     return (
-        smean(econ_list, default=8.5),      # avg economy in matchups
+        smean(econ_list, default=9.0),      # Updated from 8.5 to 9.0 (modern economy)
         smean(wkt_rate_list, default=1.0),  # avg wickets per over
         ssum(wkts_list),                    # total wickets in matchups
     )
@@ -147,8 +150,8 @@ def bat_form_features(bat_pids):
             pass
     return (
         smean(form_scores, default=3.0),
-        smean(sr_list, default=130.0),
-        smean(avg_list, default=25.0),
+        smean(sr_list, default=140.0),  # Updated from 130 to 140
+        smean(avg_list, default=28.0),  # Updated from 25 to 28
         ssum(runs_list),
     )
 
@@ -171,7 +174,7 @@ def bowl_form_features(bowl_pids):
             pass
     return (
         smean(form_scores, default=3.0),
-        smean(econ_list, default=8.5),
+        smean(econ_list, default=9.0),  # Updated from 8.5 to 9.0
         ssum(wkt_list),
     )
 
@@ -180,6 +183,7 @@ def bowl_form_features(bowl_pids):
 # 3. PLAYER AT VENUE
 # ══════════════════════════════════════════════════════════════════════════════
 def bat_venue_features(bat_pids, venue_id):
+    pvv_idx = get_pvv_idx()
     sr_list, avg_list, runs_list = [], [], []
     for pid in bat_pids:
         try:
@@ -190,10 +194,11 @@ def bat_venue_features(bat_pids, venue_id):
                 runs_list.append(safe(r["runs_scored"]))
         except KeyError:
             pass
-    return smean(sr_list, 130.0), smean(avg_list, 25.0), ssum(runs_list)
+    return smean(sr_list, 140.0), smean(avg_list, 28.0), ssum(runs_list)
 
 
 def bowl_venue_features(bowl_pids, venue_id):
+    pvv_idx = get_pvv_idx()
     econ_list, wkt_list = [], []
     for pid in bowl_pids:
         try:
@@ -203,7 +208,7 @@ def bowl_venue_features(bowl_pids, venue_id):
                 wkt_list.append(safe(r["wickets"]))
         except KeyError:
             pass
-    return smean(econ_list, 8.5), ssum(wkt_list)
+    return smean(econ_list, 9.0), ssum(wkt_list)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -221,7 +226,7 @@ def team_vs_team_features(bat_team, bowl_team, venue_id):
         (matches["venue_id"] == venue_id)
     ]["first_innings_score"]
 
-    overall_avg = safe(h2h.mean(), 173.0)
+    overall_avg = safe(h2h.mean(), 180.0)  # Updated from 173 to 180
     venue_avg_h2h = safe(h2h_venue.mean(), overall_avg)
     h2h_count = len(h2h)
     return overall_avg, venue_avg_h2h, h2h_count
@@ -231,6 +236,7 @@ def team_vs_team_features(bat_team, bowl_team, venue_id):
 # 5. PLAYER VS TEAM
 # ══════════════════════════════════════════════════════════════════════════════
 def bat_vs_team_features(bat_pids, opp_team):
+    pvt_idx = get_pvt_idx()
     sr_list, avg_list, runs_list = [], [], []
     for pid in bat_pids:
         try:
@@ -241,10 +247,11 @@ def bat_vs_team_features(bat_pids, opp_team):
                 runs_list.append(safe(r["runs_scored"]))
         except KeyError:
             pass
-    return smean(sr_list, 130.0), smean(avg_list, 25.0), ssum(runs_list)
+    return smean(sr_list, 140.0), smean(avg_list, 28.0), ssum(runs_list)
 
 
 def bowl_vs_team_features(bowl_pids, opp_team):
+    pvt_idx = get_pvt_idx()
     econ_list, avg_list, wkt_list = [], [], []
     for pid in bowl_pids:
         try:
@@ -255,13 +262,14 @@ def bowl_vs_team_features(bowl_pids, opp_team):
                 wkt_list.append(safe(r["wickets_taken"]))
         except KeyError:
             pass
-    return smean(econ_list, 8.5), smean(avg_list, 25.0), ssum(wkt_list)
+    return smean(econ_list, 9.0), smean(avg_list, 28.0), ssum(wkt_list)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
 # 6. PHASE STATS (powerplay/death specialists)
 # ══════════════════════════════════════════════════════════════════════════════
 def bat_phase_features(bat_pids, season, phase_name):
+    phase_idx = get_phase_idx()
     sr_list, runs_list = [], []
     for pid in bat_pids:
         try:
@@ -271,10 +279,11 @@ def bat_phase_features(bat_pids, season, phase_name):
                 runs_list.append(safe(r["runs_scored"]))
         except KeyError:
             pass
-    return smean(sr_list, 130.0), ssum(runs_list)
+    return smean(sr_list, 140.0), ssum(runs_list)
 
 
 def bowl_phase_features(bowl_pids, season, phase_name):
+    phase_idx = get_phase_idx()
     econ_list, wkt_list = [], []
     for pid in bowl_pids:
         try:
@@ -284,13 +293,14 @@ def bowl_phase_features(bowl_pids, season, phase_name):
                 wkt_list.append(safe(r["wickets"]))
         except KeyError:
             pass
-    return smean(econ_list, 8.5), ssum(wkt_list)
+    return smean(econ_list, 9.0), ssum(wkt_list)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
 # 7. INDIVIDUAL RECORDS (batting vs pace/spin)
 # ══════════════════════════════════════════════════════════════════════════════
 def bat_vs_type_features(bat_pids, season, btype):
+    bat_type_idx = get_bat_type_idx()
     sr_list, runs_list = [], []
     for pid in bat_pids:
         try:
@@ -299,7 +309,7 @@ def bat_vs_type_features(bat_pids, season, btype):
             runs_list.append(safe(r["runs"]))
         except KeyError:
             pass
-    return smean(sr_list, 130.0), ssum(runs_list)
+    return smean(sr_list, 140.0), ssum(runs_list)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -327,12 +337,12 @@ def weather_features(temperature, humidity, dew_factor):
 # MAIN FEATURE BUILDER
 # ══════════════════════════════════════════════════════════════════════════════
 def build_features(bat_pids, bowl_pids, venue_id, bat_team, bowl_team,
-                   pitch_type, temperature, humidity, dew_factor, season=2025):
+                   pitch_type, temperature, humidity, dew_factor, season=2026):
 
     # ── Venue & season context ─────────────────────────────────────────────────
-    v_avg = safe(venue_avg.get(venue_id, 173.0))
-    season_avg = SEASON_AVG.get(int(season), 173.0)
-    season_trend = season_avg - 173.0  # deviation from all-time avg
+    v_avg = safe(venue_avg.get(venue_id, 180.0))  # Updated baseline from 173 to 180
+    season_avg = SEASON_AVG.get(int(season), 190.0)  # Updated baseline from 173 to 190
+    season_trend = season_avg - 180.0  # deviation from updated baseline
 
     # Pitch
     actual_pitch = pitch_type

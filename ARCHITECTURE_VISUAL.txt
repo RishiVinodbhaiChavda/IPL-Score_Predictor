@@ -1,0 +1,164 @@
+
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                    IPL SCORE PREDICTOR - SYSTEM ARCHITECTURE                         ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────────────────┐
+│                              👤 USER (Web Browser)                                    │
+└────────────────────────────────────┬─────────────────────────────────────────────────┘
+                                     │ HTTP Requests
+                                     ▼
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                          🌐 FRONTEND LAYER (Port 8000)                               ║
+║                          Technology: HTML/CSS/JavaScript                             ║
+╠══════════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                      ║
+║  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐  ┌──────────┐ ║
+║  │   Team      │→ │   Squad     │→ │   Venue     │→ │   Summary   │→ │  Result  │ ║
+║  │ Selection   │  │ Selection   │  │ Selection   │  │    Page     │  │   Page   │ ║
+║  └─────────────┘  └─────────────┘  └─────────────┘  └─────────────┘  └──────────┘ ║
+║         │                │                │                │                         ║
+║         └────────────────┴────────────────┴────────────────┘                         ║
+║                                  │                                                   ║
+║                          ┌───────▼────────┐                                          ║
+║                          │  LocalStorage  │  ← State Management & Caching            ║
+║                          │  (Cache Data)  │                                          ║
+║                          └────────────────┘                                          ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝
+                                     │ REST API Calls
+                                     ▼
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                          ⚡ BACKEND LAYER (Port 8001)                                ║
+║                          Technology: FastAPI (Python)                                ║
+╠══════════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                      ║
+║  ┌────────────────────────────────────────────────────────────────────────────────┐ ║
+║  │                            API ENDPOINTS                                       │ ║
+║  ├────────────────────────────────────────────────────────────────────────────────┤ ║
+║  │  GET  /api/teams        →  List all IPL teams                                 │ ║
+║  │  GET  /api/players      →  Get squad for selected team                        │ ║
+║  │  GET  /api/venues       →  List all stadiums                                  │ ║
+║  │  GET  /api/weather      →  Get weather data for venue                         │ ║
+║  │  POST /api/predict      →  Generate score prediction                          │ ║
+║  └────────────────────────────────────────────────────────────────────────────────┘ ║
+║                                     │                                                ║
+╚═════════════════════════════════════╪════════════════════════════════════════════════╝
+                                      │
+                    ┌─────────────────┴─────────────────┐
+                    │                                   │
+                    ▼                                   ▼
+╔══════════════════════════════════════╗  ╔═══════════════════════════════════════════╗
+║      📊 DATA LAYER                   ║  ║      🤖 ML LAYER                          ║
+║      Technology: Pandas + NumPy      ║  ║      Technology: XGBoost + TensorFlow     ║
+╠══════════════════════════════════════╣  ╠═══════════════════════════════════════════╣
+║                                      ║  ║                                           ║
+║  ┌────────────────────────────────┐  ║  ║  ┌─────────────────────────────────────┐ ║
+║  │   Data Loader                  │  ║  ║  │   Feature Engineering               │ ║
+║  │   (Lazy Loading + Caching)     │  ║  ║  │   53 Features:                      │ ║
+║  └────────────────────────────────┘  ║  ║  │   • Player vs Player matchups       │ ║
+║                │                     ║  ║  │   • Recent form (last 5 matches)    │ ║
+║                ▼                     ║  ║  │   • Venue-specific stats            │ ║
+║  ┌────────────────────────────────┐  ║  ║  │   • Phase stats (PP/Mid/Death)      │ ║
+║  │   CSV Datasets (15+ files)     │  ║  ║  │   • Weather conditions              │ ║
+║  ├────────────────────────────────┤  ║  ║  │   • Pitch type                      │ ║
+║  │  📄 players.csv      244 rows  │  ║  ║  └─────────────────────────────────────┘ ║
+║  │  📄 squads.csv       675 rows  │  ║  ║                │                         ║
+║  │  📄 matches.csv      711 rows  │  ║  ║                ▼                         ║
+║  │  📄 player_vs_player 5439 rows │  ║  ║  ┌─────────────────────────────────────┐ ║
+║  │  📄 recent_form      512 rows  │  ║  ║  │   HYBRID ENSEMBLE MODEL             │ ║
+║  │  📄 venues.csv       26 rows   │  ║  ║  ├─────────────────────────────────────┤ ║
+║  │  📄 phase_stats      4820 rows │  ║  ║  │  ┌──────────────┐  ┌──────────────┐ │ ║
+║  │  📄 + 8 more files             │  ║  ║  │  │  XGBoost     │  │ Neural Net   │ │ ║
+║  └────────────────────────────────┘  ║  ║  │  │  2000 trees  │  │ 256→128→64→1 │ │ ║
+║                                      ║  ║  │  │  Depth: 4    │  │              │ │ ║
+║  ┌────────────────────────────────┐  ║  ║  │  │  LR: 0.01    │  │ ReLU + BN    │ │ ║
+║  │   In-Memory Cache              │  ║  ║  │  │              │  │              │ │ ║
+║  │   • Essential data loaded      │  ║  ║  │  │ MAE: 19.75   │  │ MAE: 45.33   │ │ ║
+║  │   • Lazy load on demand        │  ║  ║  │  │ Weight: 70%  │  │ Weight: 30%  │ │ ║
+║  │   • 5-min TTL for weather      │  ║  ║  │  └──────────────┘  └──────────────┘ │ ║
+║  └────────────────────────────────┘  ║  ║  │           │              │           │ ║
+║                                      ║  ║  │           └──────┬───────┘           │ ║
+╚══════════════════════════════════════╝  ║  │                  ▼                   │ ║
+                                          ║  │  ┌─────────────────────────────────┐ │ ║
+╔══════════════════════════════════════╗  ║  │  │   Ensemble Predictor            │ │ ║
+║   🌤️ EXTERNAL SERVICES              ║  ║  │  │   Final MAE: 22.63 runs         │ │ ║
+╠══════════════════════════════════════╣  ║  │  │   Output: 80-280 runs           │ │ ║
+║                                      ║  ║  │  └─────────────────────────────────┘ │ ║
+║  ┌────────────────────────────────┐  ║  ║  └─────────────────────────────────────┘ ║
+║  │   OpenWeatherMap API           │  ║  ║                                           ║
+║  │   • Real-time weather data     │  ║  ║  ┌─────────────────────────────────────┐ ║
+║  │   • 1-second timeout           │  ║  ║  │   Saved Models                      │ ║
+║  │   • Manual fallback            │  ║  ║  │   • xgb_model.pkl                   │ ║
+║  └────────────────────────────────┘  ║  ║  │   • mlp_model.pkl                   │ ║
+║                                      ║  ║  │   • scaler.pkl                      │ ║
+╚══════════════════════════════════════╝  ║  │   • ensemble_weights.pkl            │ ║
+                                          ║  └─────────────────────────────────────┘ ║
+                                          ╚═══════════════════════════════════════════╝
+
+┌──────────────────────────────────────────────────────────────────────────────────────┐
+│                              📊 PERFORMANCE METRICS                                   │
+├──────────────────────────────────────────────────────────────────────────────────────┤
+│  Backend Startup:        ~3 seconds                                                  │
+│  Teams API Response:     ~29ms                                                       │
+│  Players API Response:   ~50ms                                                       │
+│  Prediction API:         ~200ms                                                      │
+│  Summary Page Load:      Instant (cached data)                                       │
+│  Model Accuracy (MAE):   22.63 runs                                                  │
+│  5-Fold CV:              15.68 ± 0.80 runs                                           │
+└──────────────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────────────┐
+│                              🔄 DATA FLOW SEQUENCE                                    │
+├──────────────────────────────────────────────────────────────────────────────────────┤
+│                                                                                      │
+│  1. User selects teams      → Frontend calls /api/teams                              │
+│                              → Backend loads teams.csv                               │
+│                              → Data cached in LocalStorage                           │
+│                                                                                      │
+│  2. User selects players    → Frontend calls /api/players                            │
+│                              → Backend loads squads.csv + players.csv                │
+│                              → Player data cached in LocalStorage                    │
+│                                                                                      │
+│  3. User selects venue      → Frontend calls /api/venues                             │
+│                              → Backend loads venues.csv                              │
+│                              → Venue data cached in LocalStorage                     │
+│                                                                                      │
+│  4. User reviews summary    → Frontend loads from LocalStorage (instant!)            │
+│                              → No API calls needed                                   │
+│                              → Manual weather input                                  │
+│                                                                                      │
+│  5. User clicks predict     → Frontend sends POST /api/predict                       │
+│                              → Backend loads all stat files                          │
+│                              → Feature engineering (53 features)                     │
+│                              → XGBoost prediction (70%)                              │
+│                              → Neural Network prediction (30%)                       │
+│                              → Ensemble combines both                                │
+│                              → Returns: score, range, confidence, factors            │
+│                                                                                      │
+└──────────────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────────────┐
+│                              🛠️ TECHNOLOGY STACK                                     │
+├──────────────────────────────────────────────────────────────────────────────────────┤
+│  Frontend:       HTML5, CSS3, Vanilla JavaScript                                    │
+│  Backend:        FastAPI (Python 3.14)                                               │
+│  ML Framework:   XGBoost 2.0, TensorFlow/Keras                                       │
+│  Data:           Pandas, NumPy                                                       │
+│  Storage:        CSV files (15+ datasets)                                            │
+│  Caching:        LocalStorage (Frontend), In-Memory (Backend)                        │
+│  External API:   OpenWeatherMap                                                      │
+│  Server:         Uvicorn (Backend), Python HTTP Server (Frontend)                    │
+└──────────────────────────────────────────────────────────────────────────────────────┘
+
+╔══════════════════════════════════════════════════════════════════════════════════════╗
+║                              ✨ KEY FEATURES                                         ║
+╠══════════════════════════════════════════════════════════════════════════════════════╣
+║  ✅ Lazy Loading - Backend loads data on-demand for fast startup                    ║
+║  ✅ Smart Caching - Frontend caches selections for instant summary page             ║
+║  ✅ Hybrid Model - Combines XGBoost accuracy + Neural Network generalization        ║
+║  ✅ Rich Features - 53 features from 10+ data sources                               ║
+║  ✅ Real-time Weather - Optional API with manual fallback                           ║
+║  ✅ Responsive UI - Clean, modern interface with animations                         ║
+║  ✅ Fast Predictions - ~200ms response time                                         ║
+║  ✅ Historical Data - 711 matches from IPL 2015-2026                                ║
+╚══════════════════════════════════════════════════════════════════════════════════════╝

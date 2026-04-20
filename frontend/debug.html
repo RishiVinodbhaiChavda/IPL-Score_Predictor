@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Debug - LocalStorage</title>
+  <style>
+    body { font-family: monospace; background: #0d0118; color: #fff; padding: 2rem; }
+    pre { background: #1a0f2e; padding: 1rem; border-radius: 8px; overflow-x: auto; }
+    h2 { color: #ff6b35; }
+    button { padding: 0.5rem 1rem; margin: 0.5rem; background: #ff6b35; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>🔍 Debug Console</h1>
+  
+  <h2>LocalStorage State</h2>
+  <pre id="stateOutput">Loading...</pre>
+  
+  <h2>Actions</h2>
+  <button onclick="clearState()">Clear State</button>
+  <button onclick="location.href='index.html'">Go to Home</button>
+  <button onclick="location.href='summary.html'">Go to Summary</button>
+  
+  <h2>API Test</h2>
+  <button onclick="testAPI()">Test Teams API</button>
+  <pre id="apiOutput">Click button to test...</pre>
+
+  <script src="js/state.js"></script>
+  <script>
+    const state = loadState();
+    document.getElementById('stateOutput').textContent = JSON.stringify(state, null, 2);
+    
+    function clearState() {
+      clearState();
+      alert('State cleared!');
+      location.reload();
+    }
+    
+    async function testAPI() {
+      try {
+        const response = await fetch('http://localhost:8001/api/teams');
+        const data = await response.json();
+        document.getElementById('apiOutput').textContent = JSON.stringify(data, null, 2);
+      } catch (error) {
+        document.getElementById('apiOutput').textContent = 'Error: ' + error.message;
+      }
+    }
+  </script>
+</body>
+</html>

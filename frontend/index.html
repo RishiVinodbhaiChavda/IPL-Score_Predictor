@@ -33,13 +33,21 @@
 
 <div class="vs-container fade-in-delay-1">
   <div class="team-slot" id="slot1">
-    <div class="slot-placeholder-icon">🏏</div>
+    <div class="slot-placeholder-icon">
+      <div style="width:64px;height:64px;border-radius:50%;background:rgba(255,107,53,0.1);border:2px dashed rgba(255,107,53,0.3);display:flex;align-items:center;justify-content:center;">
+        <div style="width:32px;height:32px;border-radius:50%;background:rgba(255,107,53,0.2);border:2px solid rgba(255,107,53,0.4);"></div>
+      </div>
+    </div>
     <div class="slot-placeholder-text">Select Batting Team</div>
     <div class="slot-placeholder-sub">Batting First</div>
   </div>
   <div class="vs-badge">VS</div>
   <div class="team-slot" id="slot2">
-    <div class="slot-placeholder-icon">🎯</div>
+    <div class="slot-placeholder-icon">
+      <div style="width:64px;height:64px;border-radius:50%;background:rgba(124,58,237,0.1);border:2px dashed rgba(124,58,237,0.3);display:flex;align-items:center;justify-content:center;">
+        <div style="width:32px;height:32px;border-radius:50%;background:rgba(124,58,237,0.2);border:2px solid rgba(124,58,237,0.4);"></div>
+      </div>
+    </div>
     <div class="slot-placeholder-text">Select Bowling Team</div>
     <div class="slot-placeholder-sub">Bowling First</div>
   </div>
@@ -169,13 +177,16 @@ function fillSlot(slotNum, team) {
 function clearSlot(slotNum) {
   const el = document.getElementById(`slot${slotNum}`);
   el.classList.remove("filled");
-  const icon = slotNum === 1 ? "🏏" : "🎯";
-  const role = slotNum === 1 ? "Batting First" : "Bowling First";
-  const label = slotNum === 1 ? "Select Batting Team" : "Select Bowling Team";
+  const isSlot1 = slotNum === 1;
+  const color = isSlot1 ? "255,107,53" : "124,58,237";
   el.innerHTML = `
-    <div class="slot-placeholder-icon">${icon}</div>
-    <div class="slot-placeholder-text">${label}</div>
-    <div class="slot-placeholder-sub">${role}</div>
+    <div class="slot-placeholder-icon">
+      <div style="width:64px;height:64px;border-radius:50%;background:rgba(${color},0.1);border:2px dashed rgba(${color},0.3);display:flex;align-items:center;justify-content:center;">
+        <div style="width:32px;height:32px;border-radius:50%;background:rgba(${color},0.2);border:2px solid rgba(${color},0.4);"></div>
+      </div>
+    </div>
+    <div class="slot-placeholder-text">${isSlot1 ? "Select Batting Team" : "Select Bowling Team"}</div>
+    <div class="slot-placeholder-sub">${isSlot1 ? "Batting First" : "Bowling First"}</div>
   `;
 }
 
@@ -208,7 +219,20 @@ function updateStatus() {
 
 function goNext() {
   if (!selectedTeams[0] || !selectedTeams[1]) return;
-  saveState({ battingTeam: selectedTeams[0], bowlingTeam: selectedTeams[1] });
+  const battingTeam = teams.find(t => t.team_id === selectedTeams[0]);
+  const bowlingTeam = teams.find(t => t.team_id === selectedTeams[1]);
+  
+  console.log('Saving batting team:', battingTeam);
+  console.log('Saving bowling team:', bowlingTeam);
+  
+  saveState({
+    battingTeam: selectedTeams[0],
+    bowlingTeam: selectedTeams[1],
+    battingTeamData: battingTeam,
+    bowlingTeamData: bowlingTeam
+  });
+  
+  console.log('State saved, redirecting to squad.html');
   window.location.href = "squad.html";
 }
 

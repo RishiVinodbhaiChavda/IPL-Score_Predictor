@@ -1,0 +1,734 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Venue | IPL Score Predictor</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* ── Matchup Banner ── */
+    .matchup-banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      padding: 1.5rem 2rem;
+      flex-wrap: wrap;
+    }
+    .mb-team {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .mb-logo {
+      width: 72px; height: 72px;
+      border-radius: 50%;
+      object-fit: contain;
+      background: var(--bg2);
+      border: 2px solid var(--border);
+      transition: var(--transition);
+    }
+    .bat-team .mb-logo { border-color: var(--accent2); box-shadow: 0 0 20px rgba(255,107,43,0.35); }
+    .bowl-team .mb-logo { border-color: var(--accent); box-shadow: 0 0 20px rgba(0,229,255,0.35); }
+    .mb-name {
+      font-family: var(--font-display);
+      font-size: 1rem;
+      font-weight: 700;
+      text-align: center;
+      color: var(--text2);
+    }
+    .mb-label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.2rem 0.75rem;
+      border-radius: 20px;
+    }
+    .mb-label.bat  { background: rgba(255,107,43,0.15); color: var(--accent2); border: 1px solid rgba(255,107,43,0.3); }
+    .mb-label.bowl { background: rgba(124,58,237,0.15); color: #a78bfa;        border: 1px solid rgba(124,58,237,0.3); }
+    .mb-vs {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-shadow: 0 0 20px rgba(0,229,255,0.5);
+      animation: vsPulse 3s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+    @keyframes vsPulse {
+      0%,100% { text-shadow: 0 0 15px rgba(0,229,255,0.4); }
+      50%      { text-shadow: 0 0 35px rgba(0,229,255,0.8), 0 0 60px rgba(0,229,255,0.3); }
+    }
+
+    /* ── Venue Controls ── */
+    .venue-controls {
+      display: flex;
+      gap: 0.75rem;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 2rem 1.5rem;
+      flex-wrap: wrap;
+    }
+    .venue-controls .form-control { flex: 1; min-width: 200px; }
+
+    /* ── Stadium Reel ── */
+    .reel-section {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding: 1.5rem 0 0.5rem;
+    }
+    .reel-track {
+      display: flex;
+      gap: 1.5rem;
+      transition: transform 0.5s cubic-bezier(0.4,0,0.2,1);
+      padding: 1rem calc(50% - 170px);
+      will-change: transform;
+    }
+    .reel-card {
+      flex-shrink: 0;
+      width: 340px; height: 240px;
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.5s cubic-bezier(0.4,0,0.2,1);
+      opacity: 0.5;
+      transform: scale(0.9);
+      border: 2px solid transparent;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    .reel-card.active {
+      opacity: 1;
+      transform: scale(1.02);
+      border-color: var(--accent2);
+      box-shadow: 0 0 40px rgba(255,107,43,0.4), 0 0 80px rgba(255,107,43,0.1), 0 8px 30px rgba(0,0,0,0.4);
+    }
+    .reel-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 0%, transparent 40%, rgba(0,0,0,0.15) 100%);
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .reel-card.active::before {
+      opacity: 1;
+    }
+    .reel-card img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center 35%;  /* Focus on stadium structure (slightly above center) */
+      display: block;
+      filter: brightness(0.95) contrast(1.15) saturate(1.1);  /* Enhance stadium details */
+      transition: all 0.5s cubic-bezier(0.4,0,0.2,1);
+    }
+    .reel-card.active img {
+      filter: brightness(1.0) contrast(1.2) saturate(1.15);  /* Brighter when active */
+      transform: scale(1.02);
+    }
+    /* Vignette effect to focus on stadium */
+    .reel-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at center, transparent 30%, rgba(0,0,0,0.15) 100%);
+      pointer-events: none;
+      z-index: 1;
+    }
+    .reel-card-placeholder {
+      width: 100%; height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: linear-gradient(135deg, var(--bg2) 0%, var(--bg3) 100%);
+    }
+    .reel-card-placeholder .ph-icon { font-size: 3rem; opacity: 0.4; }
+    .reel-card-placeholder .ph-name {
+      font-family: var(--font-display);
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-align: center;
+      padding: 0 1rem;
+    }
+    .reel-card-overlay {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 2.5rem 1rem 0.85rem;
+      background: linear-gradient(to top, 
+        rgba(0,0,0,0.95) 0%, 
+        rgba(0,0,0,0.85) 30%, 
+        rgba(0,0,0,0.4) 70%, 
+        transparent 100%);
+      pointer-events: none;
+      z-index: 2;
+    }
+    .reel-card-name {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    }
+    .reel-card-city { 
+      font-size: 0.75rem; 
+      color: rgba(255,255,255,0.75); 
+      margin-top: 2px;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    }
+
+    /* ── Fixed Nav Arrows ── */
+    .nav-arrow {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      background: var(--accent2);
+      border: none;
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 700;
+      cursor: pointer;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+      box-shadow: 0 4px 20px rgba(255,107,43,0.45);
+      line-height: 1;
+    }
+    .nav-arrow:hover {
+      background: #ff8555;
+      transform: translateY(-50%) scale(1.1);
+      box-shadow: 0 6px 30px rgba(255,107,43,0.6);
+    }
+    .nav-arrow.left  { left: 1rem; }
+    .nav-arrow.right { right: 1rem; }
+
+    /* ── Dot Indicators ── */
+    .reel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      padding: 0.75rem 5rem;
+      margin-top: 0.25rem;
+    }
+    .reel-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.18);
+      cursor: pointer;
+      transition: all 0.25s;
+      flex-shrink: 0;
+    }
+    .reel-dot.active {
+      background: var(--accent2);
+      transform: scale(1.4);
+      box-shadow: 0 0 8px rgba(255,107,43,0.6);
+    }
+
+    /* ── Venue Info Card ── */
+    .venue-info-wrap {
+      max-width: 700px;
+      margin: 1.25rem auto 6rem;
+      padding: 0 2rem;
+    }
+    .venue-info-card {
+      background: var(--card-glass);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+      animation: fadeInUp 0.4s ease;
+    }
+    .venue-info-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent2), transparent);
+      opacity: 0.7;
+    }
+    .vic-name {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text2);
+      line-height: 1.2;
+      margin-bottom: 0.2rem;
+    }
+    .vic-city { color: var(--muted); font-size: 0.88rem; margin-bottom: 0.75rem; }
+    .vic-stats {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 0.75rem;
+    }
+    .vic-stat {
+      background: rgba(0,229,255,0.05);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.5rem 0.9rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      flex: 1;
+      min-width: 110px;
+    }
+    .vic-stat-label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.07em; }
+    .vic-stat-val   { font-family: var(--font-display); font-size: 1.1rem; font-weight: 700; color: var(--text2); }
+
+    /* ── No Results ── */
+    .no-results {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--muted);
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .nav-arrow.left  { left: 0.4rem; }
+      .nav-arrow.right { right: 0.4rem; }
+      .nav-arrow { width: 44px; height: 44px; font-size: 1.1rem; }
+      .matchup-banner { gap: 1.5rem; padding: 1rem; }
+      .mb-logo { width: 56px; height: 56px; }
+      .venue-controls { padding: 0 1rem 1rem; }
+      .venue-info-wrap { padding: 0 1rem; }
+      .reel-track { padding: 1rem calc(50% - 150px); }
+      .reel-card { width: 300px; height: 210px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Floating particles canvas -->
+<canvas id="particlesCanvas" style="position:fixed;inset:0;z-index:0;pointer-events:none;"></canvas>
+
+<!-- ── NAVBAR ── -->
+<nav class="navbar">
+  <a href="index.html" class="logo">&#127953; <span>IPL</span> Score Predictor</a>
+  <div class="nav-steps">
+    <div class="step-dot done"   title="Select Teams"></div>
+    <div class="step-dot done"   title="Select Players"></div>
+    <div class="step-dot active" title="Select Venue"></div>
+    <div class="step-dot"        title="Match Conditions"></div>
+  </div>
+</nav>
+
+<!-- ── MATCHUP BANNER ── -->
+<div class="matchup-banner fade-in">
+  <div class="mb-team bat-team">
+    <img class="mb-logo" id="batLogo" src="" alt="Batting team">
+    <div class="mb-name" id="batName">Loading...</div>
+    <div class="mb-label bat">Batting First</div>
+  </div>
+  <div class="mb-vs">VS</div>
+  <div class="mb-team bowl-team">
+    <img class="mb-logo" id="bowlLogo" src="" alt="Bowling team">
+    <div class="mb-name" id="bowlName">Loading...</div>
+    <div class="mb-label bowl">Bowling First</div>
+  </div>
+</div>
+
+<!-- ── SEARCH + DROPDOWN ── -->
+<div class="venue-controls fade-in-delay-1">
+  <input type="text" class="form-control" id="searchInput" placeholder="Search stadium or city..." autocomplete="off">
+  <select class="form-control" id="venueDropdown">
+    <option value="">Jump to stadium...</option>
+  </select>
+</div>
+
+<!-- ── STADIUM REEL ── -->
+<div class="reel-section fade-in-delay-2">
+  <div id="reelTrack" class="reel-track"></div>
+</div>
+<div class="reel-dots" id="reelDots"></div>
+
+<!-- ── VENUE INFO CARD ── -->
+<div class="venue-info-wrap fade-in-delay-3">
+  <div class="venue-info-card" id="venueInfoCard">
+    <div class="vic-name" id="vicName">—</div>
+    <div class="vic-city" id="vicCity"></div>
+    <div id="vicPitchBadge" class="pitch-badge"></div>
+    <div class="vic-stats">
+      <div class="vic-stat">
+        <span class="vic-stat-label">Avg 1st Innings</span>
+        <span class="vic-stat-val" id="vicAvg">—</span>
+      </div>
+      <div class="vic-stat">
+        <span class="vic-stat-label">Capacity</span>
+        <span class="vic-stat-val" id="vicCapacity">—</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── FIXED NAV ARROWS ── -->
+<button class="nav-arrow left"  id="arrowLeft"  aria-label="Previous stadium">&lt;</button>
+<button class="nav-arrow right" id="arrowRight" aria-label="Next stadium">&gt;</button>
+
+<!-- ── BOTTOM BAR ── -->
+<div class="bottom-bar">
+  <button class="btn btn-secondary" onclick="window.location.href='squad.html'">&#8592; Back to Squad</button>
+  <button class="btn btn-primary"   onclick="selectVenue()">Review Summary &#8594;</button>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/api.js"></script>
+<script src="js/state.js"></script>
+<script>
+/* ── Floating Particles ── */
+(function() {
+  const canvas = document.getElementById('particlesCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let w, h, particles = [];
+  function resize() { w = canvas.width = window.innerWidth; h = canvas.height = window.innerHeight; }
+  resize();
+  window.addEventListener('resize', resize);
+  for (let i = 0; i < 50; i++) {
+    particles.push({ x: Math.random()*w, y: Math.random()*h, vx:(Math.random()-0.5)*0.3, vy:(Math.random()-0.5)*0.3, r:Math.random()*1.5+0.5, a:Math.random()*0.35+0.08 });
+  }
+  function draw() {
+    ctx.clearRect(0,0,w,h);
+    particles.forEach(p => {
+      p.x+=p.vx; p.y+=p.vy;
+      if(p.x<0)p.x=w; if(p.x>w)p.x=0; if(p.y<0)p.y=h; if(p.y>h)p.y=0;
+      ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(0,229,255,${p.a})`; ctx.fill();
+    });
+    for(let i=0;i<particles.length;i++) for(let j=i+1;j<particles.length;j++) {
+      const dx=particles[i].x-particles[j].x, dy=particles[i].y-particles[j].y, d=Math.sqrt(dx*dx+dy*dy);
+      if(d<120){ ctx.beginPath(); ctx.moveTo(particles[i].x,particles[i].y); ctx.lineTo(particles[j].x,particles[j].y); ctx.strokeStyle=`rgba(0,229,255,${0.05*(1-d/120)})`; ctx.lineWidth=0.5; ctx.stroke(); }
+    }
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+/* ── Constants ── */
+const API = 'http://localhost:8001/api';
+
+// Local stadium images mapping
+const VENUE_IMAGES = {
+  "IPL_VEN_01": "assets/ACA vishakhapattanam.jpg",      // ACA-VDCA Cricket Stadium
+  "IPL_VEN_02": "assets/Arun Jetali.jpg",               // Arun Jaitley Stadium
+  "IPL_VEN_03": "assets/Baraspara.jpg",                 // Barsapara Cricket Stadium
+  "IPL_VEN_04": "assets/Breboun.jpg",                   // Brabourne Stadium
+  "IPL_VEN_05": "assets/D.Y Patil.jpg",                 // Dr DY Patil Sports Academy
+  "IPL_VEN_06": "assets/Dubai international.jpg",       // Dubai International Cricket Stadium
+  "IPL_VEN_07": "assets/Eden Gardens.jpg",              // Eden Gardens
+  "IPL_VEN_08": "assets/Ekana.jpg",                     // Ekana Cricket Stadium
+  "IPL_VEN_09": "assets/Green Park.jpg",                // Green Park
+  "IPL_VEN_10": "assets/Dharmshala.jpg",                // HPCA Stadium
+  "IPL_VEN_11": "assets/Holkar Indore.jpg",             // Holkar Cricket Stadium
+  "IPL_VEN_12": "assets/JSCA.jpg",                      // JSCA International Stadium
+  "IPL_VEN_13": "assets/Chinnaswami.jpg",               // M. Chinnaswamy Stadium
+  "IPL_VEN_14": "assets/Chepauk.jpg",                   // MA Chidambaram Stadium
+  "IPL_VEN_15": "assets/Mullanpur.jpg",                 // Maharaja Yadavindra Singh Stadium
+  "IPL_VEN_16": "assets/Saurashtra.jpg",                // MCA Stadium (Pune)
+  "IPL_VEN_17": "assets/Narendra modi.jpg",             // Narendra Modi Stadium
+  "IPL_VEN_18": "assets/Mohali.jpg",                    // PCA IS Bindra Stadium
+  "IPL_VEN_19": "assets/Rajiv Gandhi.jpg",              // Rajiv Gandhi International Stadium
+  "IPL_VEN_20": "assets/Saurashtra.jpg",                // SCA Stadium (Rajkot)
+  "IPL_VEN_21": "assets/Sawai mansingh.jpg",            // Sawai Mansingh Stadium
+  "IPL_VEN_22": "assets/Veer narayanshingh.jpg",        // Shaheed Veer Narayan Singh Stadium
+  "IPL_VEN_23": "assets/Sharjah.jpg",                   // Sharjah Cricket Stadium
+  "IPL_VEN_24": "assets/Zayed.jpg",                     // Sheikh Zayed Stadium
+  "IPL_VEN_25": "assets/Wankhede.jpg",                  // Wankhede Stadium
+  "IPL_VEN_26": "assets/Zayed.jpg"                      // Zayed Cricket Stadium (Abu Dhabi)
+};
+
+/* ── Venue data (static fallback + enriched from API) ── */
+const VENUES_STATIC = [
+  { venue_id:"IPL_VEN_01", venue_name:"ACA-VDCA Cricket Stadium",            city:"Visakhapatnam", pitch_type:"Balanced", avg_score:162, capacity:"27,000"  },
+  { venue_id:"IPL_VEN_02", venue_name:"Arun Jaitley Stadium",                city:"Delhi",         pitch_type:"Balanced", avg_score:168, capacity:"41,820"  },
+  { venue_id:"IPL_VEN_03", venue_name:"Barsapara Cricket Stadium",           city:"Guwahati",      pitch_type:"Balanced", avg_score:165, capacity:"40,000"  },
+  { venue_id:"IPL_VEN_04", venue_name:"Brabourne Stadium",                   city:"Mumbai",        pitch_type:"Batting",  avg_score:175, capacity:"20,000"  },
+  { venue_id:"IPL_VEN_05", venue_name:"Dr DY Patil Sports Academy",          city:"Navi Mumbai",   pitch_type:"Balanced", avg_score:170, capacity:"55,000"  },
+  { venue_id:"IPL_VEN_06", venue_name:"Dubai International Cricket Stadium", city:"Dubai",         pitch_type:"Balanced", avg_score:162, capacity:"25,000"  },
+  { venue_id:"IPL_VEN_07", venue_name:"Eden Gardens",                        city:"Kolkata",       pitch_type:"Balanced", avg_score:171, capacity:"68,000"  },
+  { venue_id:"IPL_VEN_08", venue_name:"Ekana Cricket Stadium",               city:"Lucknow",       pitch_type:"Balanced", avg_score:168, capacity:"50,000"  },
+  { venue_id:"IPL_VEN_09", venue_name:"Green Park",                          city:"Kanpur",        pitch_type:"Balanced", avg_score:160, capacity:"32,000"  },
+  { venue_id:"IPL_VEN_10", venue_name:"HPCA Stadium",                        city:"Dharamsala",    pitch_type:"Bowling",  avg_score:155, capacity:"23,000"  },
+  { venue_id:"IPL_VEN_11", venue_name:"Holkar Cricket Stadium",              city:"Indore",        pitch_type:"Batting",  avg_score:178, capacity:"30,000"  },
+  { venue_id:"IPL_VEN_12", venue_name:"JSCA International Stadium",          city:"Ranchi",        pitch_type:"Balanced", avg_score:163, capacity:"40,000"  },
+  { venue_id:"IPL_VEN_13", venue_name:"M. Chinnaswamy Stadium",              city:"Bengaluru",     pitch_type:"Batting",  avg_score:182, capacity:"38,000"  },
+  { venue_id:"IPL_VEN_14", venue_name:"MA Chidambaram Stadium",              city:"Chennai",       pitch_type:"Bowling",  avg_score:158, capacity:"50,000"  },
+  { venue_id:"IPL_VEN_15", venue_name:"Maharaja Yadavindra Singh Stadium",   city:"Mullanpur",     pitch_type:"Batting",  avg_score:180, capacity:"35,000"  },
+  { venue_id:"IPL_VEN_16", venue_name:"MCA Stadium",                         city:"Pune",          pitch_type:"Balanced", avg_score:170, capacity:"37,406"  },
+  { venue_id:"IPL_VEN_17", venue_name:"Narendra Modi Stadium",               city:"Ahmedabad",     pitch_type:"Batting",  avg_score:177, capacity:"132,000" },
+  { venue_id:"IPL_VEN_18", venue_name:"PCA IS Bindra Stadium",               city:"Mohali",        pitch_type:"Batting",  avg_score:174, capacity:"26,950"  },
+  { venue_id:"IPL_VEN_19", venue_name:"Rajiv Gandhi International Stadium",  city:"Hyderabad",     pitch_type:"Batting",  avg_score:176, capacity:"55,000"  },
+  { venue_id:"IPL_VEN_20", venue_name:"SCA Stadium",                         city:"Rajkot",        pitch_type:"Balanced", avg_score:169, capacity:"28,000"  },
+  { venue_id:"IPL_VEN_21", venue_name:"Sawai Mansingh Stadium",              city:"Jaipur",        pitch_type:"Batting",  avg_score:175, capacity:"30,000"  },
+  { venue_id:"IPL_VEN_22", venue_name:"Shaheed Veer Narayan Singh Stadium",  city:"Raipur",        pitch_type:"Balanced", avg_score:162, capacity:"65,000"  },
+  { venue_id:"IPL_VEN_23", venue_name:"Sharjah Cricket Stadium",             city:"Sharjah",       pitch_type:"Batting",  avg_score:165, capacity:"16,000"  },
+  { venue_id:"IPL_VEN_24", venue_name:"Sheikh Zayed Stadium",                city:"Abu Dhabi",     pitch_type:"Balanced", avg_score:160, capacity:"20,000"  },
+  { venue_id:"IPL_VEN_25", venue_name:"Wankhede Stadium",                    city:"Mumbai",        pitch_type:"Batting",  avg_score:180, capacity:"33,108"  },
+  { venue_id:"IPL_VEN_26", venue_name:"Zayed Cricket Stadium",               city:"Abu Dhabi",     pitch_type:"Balanced", avg_score:158, capacity:"20,000"  }
+];
+
+/* ── App State ── */
+const state = loadState();
+let allVenues = [...VENUES_STATIC];
+let filteredVenues = [...allVenues];
+let currentIndex = 0;
+
+/* ── Team Logos ── */
+async function loadTeams() {
+  try {
+    const res = await fetch(API + '/teams');
+    const teams = await res.json(); // plain array
+    const map = {};
+    teams.forEach(t => { map[t.team_id] = t; });
+
+    const bat  = map[state.battingTeam]  || {};
+    const bowl = map[state.bowlingTeam] || {};
+
+    const batImg = document.getElementById('batLogo');
+    batImg.src = bat.logo_url || '';
+    batImg.onerror = () => {
+      batImg.onerror = null;
+      batImg.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(bat.short_name||'BAT')}&background=1a0533&color=ff6b35&size=72&bold=true&rounded=true`;
+    };
+    document.getElementById('batName').textContent = bat.team_name || 'Batting Team';
+
+    const bowlImg = document.getElementById('bowlLogo');
+    bowlImg.src = bowl.logo_url || '';
+    bowlImg.onerror = () => {
+      bowlImg.onerror = null;
+      bowlImg.src = `https://ui-avatars.com/api/?name=${encodeURIComponent(bowl.short_name||'BWL')}&background=1a0533&color=7c3aed&size=72&bold=true&rounded=true`;
+    };
+    document.getElementById('bowlName').textContent = bowl.team_name || 'Bowling Team';
+  } catch (_) {
+    document.getElementById('batName').textContent  = 'Batting Team';
+    document.getElementById('bowlName').textContent = 'Bowling Team';
+  }
+}
+
+/* ── Try to enrich from API ── */
+async function loadVenuesFromAPI() {
+  try {
+    const res = await fetch(API + '/venues');
+    const data = await res.json();
+    if (Array.isArray(data) && data.length) {
+      // Merge API data with static (API may have more accurate avg_score / pitch_type)
+      allVenues = data.map(apiV => {
+        const stat = VENUES_STATIC.find(s => s.venue_id === apiV.venue_id) || {};
+        return { ...stat, ...apiV, capacity: stat.capacity || '—' };
+      });
+      filteredVenues = [...allVenues];
+    }
+  } catch (_) { /* use static data */ }
+}
+
+/* ── Image loading (local assets) ── */
+function setCardImage(img, venueId, venueName) {
+  const imagePath = VENUE_IMAGES[venueId];
+  
+  if (imagePath) {
+    img.src = imagePath;
+    img.onerror = () => {
+      // If local image fails, show placeholder
+      img.replaceWith(makePlaceholder(venueName));
+    };
+  } else {
+    // No image mapped, show placeholder
+    img.replaceWith(makePlaceholder(venueName));
+  }
+}
+
+/* ── Reel Builder ── */
+function buildReel() {
+  const track = document.getElementById('reelTrack');
+  const dots  = document.getElementById('reelDots');
+  track.innerHTML = '';
+  dots.innerHTML  = '';
+
+  if (!filteredVenues.length) {
+    track.innerHTML = '<div class="no-results">No stadiums match your search.</div>';
+    document.getElementById('venueInfoCard').style.opacity = '0.4';
+    return;
+  }
+  document.getElementById('venueInfoCard').style.opacity = '1';
+
+  filteredVenues.forEach((v, i) => {
+    // Card
+    const card = document.createElement('div');
+    card.className = 'reel-card' + (i === currentIndex ? ' active' : '');
+    card.dataset.index = i;
+    card.onclick = () => goTo(i);
+
+    const img = document.createElement('img');
+    img.alt = v.venue_name;
+    setCardImage(img, v.venue_id, v.venue_name);
+    card.appendChild(img);
+
+    const overlay = document.createElement('div');
+    overlay.className = 'reel-card-overlay';
+    overlay.innerHTML = `<div class="reel-card-name">${v.venue_name}</div><div class="reel-card-city">&#128205; ${v.city}</div>`;
+    card.appendChild(overlay);
+    track.appendChild(card);
+
+    // Dot
+    const dot = document.createElement('div');
+    dot.className = 'reel-dot' + (i === currentIndex ? ' active' : '');
+    dot.onclick = () => goTo(i);
+    dots.appendChild(dot);
+  });
+
+  positionReel();
+}
+
+function makePlaceholder(name) {
+  const div = document.createElement('div');
+  div.className = 'reel-card-placeholder';
+  div.innerHTML = `<div class="ph-icon">&#127967;</div><div class="ph-name">${name}</div>`;
+  return div;
+}
+
+function positionReel() {
+  const track = document.getElementById('reelTrack');
+  const cardW = 340;
+  const gap   = 24;
+  const offset = currentIndex * (cardW + gap);
+  track.style.transform = `translateX(-${offset}px)`;
+}
+
+/* ── Navigation ── */
+function goTo(index) {
+  if (!filteredVenues.length) return;
+  currentIndex = ((index % filteredVenues.length) + filteredVenues.length) % filteredVenues.length;
+
+  document.querySelectorAll('.reel-card').forEach((c, i) => c.classList.toggle('active', i === currentIndex));
+  document.querySelectorAll('.reel-dot').forEach((d, i)  => d.classList.toggle('active', i === currentIndex));
+
+  positionReel();
+  updateInfoCard(filteredVenues[currentIndex]);
+  syncDropdown();
+}
+
+/* ── Info Card ── */
+function updateInfoCard(v) {
+  const card = document.getElementById('venueInfoCard');
+  card.style.animation = 'none';
+  void card.offsetWidth;
+  card.style.animation = '';
+
+  document.getElementById('vicName').textContent     = v.venue_name;
+  document.getElementById('vicCity').textContent     = `&#128205; ${v.city}`;
+  document.getElementById('vicAvg').textContent      = `${v.avg_score} runs`;
+  document.getElementById('vicCapacity').textContent = v.capacity || '—';
+
+  const badge = document.getElementById('vicPitchBadge');
+  badge.textContent = (v.pitch_type || 'Balanced') + ' Pitch';
+  badge.className   = 'pitch-badge pitch-' + (v.pitch_type || 'Balanced');
+}
+
+/* ── Search ── */
+document.getElementById('searchInput').addEventListener('input', function() {
+  const q = this.value.trim().toLowerCase();
+  filteredVenues = q
+    ? allVenues.filter(v => v.venue_name.toLowerCase().includes(q) || v.city.toLowerCase().includes(q))
+    : [...allVenues];
+  currentIndex = 0;
+  buildReel();
+  if (filteredVenues.length) updateInfoCard(filteredVenues[0]);
+});
+
+/* ── Dropdown ── */
+function buildDropdown() {
+  const sel = document.getElementById('venueDropdown');
+  allVenues.forEach(v => {
+    const opt = document.createElement('option');
+    opt.value       = v.venue_id;
+    opt.textContent = `${v.venue_name} — ${v.city}`;
+    sel.appendChild(opt);
+  });
+}
+
+document.getElementById('venueDropdown').addEventListener('change', function() {
+  const id = this.value;
+  if (!id) return;
+  document.getElementById('searchInput').value = '';
+  filteredVenues = [...allVenues];
+  const idx = filteredVenues.findIndex(v => v.venue_id === id);
+  if (idx !== -1) { buildReel(); goTo(idx); }
+});
+
+function syncDropdown() {
+  const v = filteredVenues[currentIndex];
+  if (v) document.getElementById('venueDropdown').value = v.venue_id;
+}
+
+/* ── Select Venue ── */
+function selectVenue() {
+  if (!filteredVenues.length) return;
+  const v = filteredVenues[currentIndex];
+  
+  console.log('Saving venue:', v);
+  
+  saveState({
+    ...state,
+    venueId: v.venue_id,
+    venueName: v.venue_name,
+    pitchType: v.pitch_type,
+    venueData: v
+  });
+  
+  console.log('State saved, redirecting to summary.html');
+  window.location.href = 'summary.html';
+}
+
+/* ── Arrow buttons ── */
+document.getElementById('arrowLeft').onclick  = () => goTo(currentIndex - 1);
+document.getElementById('arrowRight').onclick = () => goTo(currentIndex + 1);
+
+/* ── Keyboard ── */
+document.addEventListener('keydown', e => {
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+  if (e.key === 'ArrowLeft')  goTo(currentIndex - 1);
+  if (e.key === 'ArrowRight') goTo(currentIndex + 1);
+  if (e.key === 'Enter')      selectVenue();
+});
+
+/* ── Init ── */
+async function init() {
+  await loadVenuesFromAPI();
+
+  if (state.venueId) {
+    const idx = allVenues.findIndex(v => v.venue_id === state.venueId);
+    if (idx !== -1) currentIndex = idx;
+  }
+
+  buildDropdown();
+  buildReel();
+  if (filteredVenues.length) updateInfoCard(filteredVenues[currentIndex]);
+  syncDropdown();
+
+  loadTeams(); // non-blocking
+}
+
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Match Summary | IPL Score Predictor</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <style>
+    /* ── Match Summary Styles ── */
+    .summary-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    /* ── Team Matchup Card ── */
+    .matchup-card {
+      background: var(--card-glass);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .matchup-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--accent2), transparent);
+    }
+    .team-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .team-logo {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      object-fit: contain;
+      background: var(--bg2);
+      border: 3px solid transparent;
+      transition: var(--transition);
+    }
+    .batting-team .team-logo { border-color: var(--accent2); box-shadow: 0 0 20px rgba(255,107,43,0.4); }
+    .bowling-team .team-logo { border-color: var(--accent); box-shadow: 0 0 20px rgba(0,229,255,0.4); }
+    .team-name {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text2);
+      text-align: center;
+    }
+    .team-role {
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+    }
+    .batting-team .team-role { background: rgba(255,107,43,0.15); color: var(--accent2); border: 1px solid rgba(255,107,43,0.3); }
+    .bowling-team .team-role { background: rgba(124,58,237,0.15); color: #a78bfa; border: 1px solid rgba(124,58,237,0.3); }
+    .vs-divider {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-shadow: 0 0 20px rgba(0,229,255,0.5);
+      animation: vsPulse 3s ease-in-out infinite;
+    }
+    @keyframes vsPulse {
+      0%,100% { text-shadow: 0 0 15px rgba(0,229,255,0.4); }
+      50%      { text-shadow: 0 0 35px rgba(0,229,255,0.8), 0 0 60px rgba(0,229,255,0.3); }
+    }
+
+    /* ── Playing XI Cards ── */
+    .xi-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+    .xi-card {
+      background: var(--card-glass);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 0.75rem;
+      position: relative;
+    }
+    .xi-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      opacity: 0.7;
+    }
+    .batting-xi::before { background: linear-gradient(90deg, transparent, var(--accent2), transparent); }
+    .bowling-xi::before { background: linear-gradient(90deg, transparent, var(--accent), transparent); }
+    .xi-title {
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text2);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .batting-xi .xi-title { color: var(--accent2); }
+    .bowling-xi .xi-title { color: var(--accent); }
+    .players-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.3rem;
+    }
+    .player-card {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.4rem;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 4px;
+      transition: var(--transition);
+      min-height: 0;
+    }
+    .player-card:hover {
+      background: rgba(255,255,255,0.05);
+      transform: translateX(2px);
+    }
+    .player-photo {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: var(--bg2);
+      border: 1px solid rgba(255,255,255,0.1);
+      flex-shrink: 0;
+    }
+    .player-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+      flex: 1;
+      min-width: 0;
+      line-height: 1;
+    }
+    .player-name {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--text2);
+      line-height: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 1px;
+    }
+    .player-role {
+      font-size: 0.6rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      line-height: 1;
+    }
+
+    /* ── Venue & Weather Card ── */
+    .venue-weather-card {
+      background: var(--card-glass);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      position: relative;
+    }
+    .venue-weather-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent3), transparent);
+      opacity: 0.7;
+    }
+    .venue-section, .weather-section {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--accent3);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .venue-info, .weather-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .info-row:last-child { border-bottom: none; }
+    .info-label {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .info-value {
+      font-weight: 600;
+      color: var(--text2);
+    }
+    .weather-status {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0.75rem;
+      background: rgba(0,229,255,0.1);
+      border: 1px solid rgba(0,229,255,0.2);
+      border-radius: var(--radius);
+      font-size: 0.85rem;
+    }
+    .weather-live { color: var(--accent3); }
+    .weather-default { color: var(--muted); }
+
+    /* ── Predict Button ── */
+    .predict-section {
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+    .predict-btn {
+      background: linear-gradient(135deg, var(--accent2) 0%, #ff8555 100%);
+      border: none;
+      color: #fff;
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 700;
+      padding: 1rem 3rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 4px 20px rgba(255,107,43,0.3);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .predict-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(255,107,43,0.5);
+    }
+    .predict-btn:active {
+      transform: translateY(0);
+    }
+
+    /* ── Loading State ── */
+    .loading-weather {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+    .loading-spinner {
+      width: 16px; height: 16px;
+      border: 2px solid rgba(0,229,255,0.2);
+      border-top: 2px solid var(--accent);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .summary-container { padding: 1rem; }
+      .matchup-card { flex-direction: column; gap: 1.5rem; padding: 1.5rem; }
+      .xi-section { grid-template-columns: 1fr; }
+      .venue-weather-card { grid-template-columns: 1fr; gap: 1.5rem; }
+      .players-grid { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+      .team-logo { width: 60px; height: 60px; }
+      .vs-divider { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Floating particles canvas -->
+<canvas id="particlesCanvas" style="position:fixed;inset:0;z-index:0;pointer-events:none;"></canvas>
+
+<!-- ── NAVBAR ── -->
+<nav class="navbar">
+  <a href="index.html" class="logo">🏏 <span>IPL</span> Score Predictor</a>
+  <div class="nav-steps">
+    <div class="step-dot done" title="Select Teams"></div>
+    <div class="step-dot done" title="Select Players"></div>
+    <div class="step-dot done" title="Select Venue"></div>
+    <div class="step-dot active" title="Match Summary"></div>
+  </div>
+</nav>
+
+<div class="page-header fade-in">
+  <h2>Match Summary</h2>
+  <p>Review all match details before prediction</p>
+</div>
+
+<div class="summary-container fade-in-delay-1">
+
+  <!-- Team Matchup -->
+  <div class="matchup-card">
+    <div class="team-info batting-team">
+      <img class="team-logo" id="battingLogo" src="" alt="Batting team">
+      <div class="team-name" id="battingName">Loading...</div>
+      <div class="team-role">Batting First</div>
+    </div>
+    <div class="vs-divider">VS</div>
+    <div class="team-info bowling-team">
+      <img class="team-logo" id="bowlingLogo" src="" alt="Bowling team">
+      <div class="team-name" id="bowlingName">Loading...</div>
+      <div class="team-role">Bowling First</div>
+    </div>
+  </div>
+
+  <!-- Playing XI -->
+  <div class="xi-section">
+    <div class="xi-card batting-xi">
+      <div class="xi-title">
+        🏏 Batting XI
+      </div>
+      <div class="players-grid" id="battingXI">
+        <!-- Players loaded by JS -->
+      </div>
+    </div>
+    <div class="xi-card bowling-xi">
+      <div class="xi-title">
+        🎯 Bowling XI
+      </div>
+      <div class="players-grid" id="bowlingXI">
+        <!-- Players loaded by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Venue & Weather -->
+  <div class="venue-weather-card">
+    <div class="venue-section">
+      <div class="section-title">
+        🏟️ Venue Details
+      </div>
+      <div class="venue-info">
+        <div class="info-row">
+          <span class="info-label">Stadium</span>
+          <span class="info-value" id="venueName">Loading...</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">City</span>
+          <span class="info-value" id="venueCity">Loading...</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Pitch Type</span>
+          <span class="info-value" id="pitchType">Loading...</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Average Score</span>
+          <span class="info-value" id="avgScore">Loading...</span>
+        </div>
+      </div>
+    </div>
+    <div class="weather-section">
+      <div class="section-title">
+        🌤️ Weather Conditions
+      </div>
+      <div class="weather-info" id="weatherInfo">
+        <!-- Weather inputs loaded by JS -->
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<!-- Bottom Bar -->
+<div class="bottom-bar">
+  <button class="btn btn-secondary" onclick="window.location.href='venue.html'">← Back to Venue</button>
+  <button class="btn btn-primary" onclick="predictScore()">🔮 Predict Score →</button>
+</div>
+
+<div class="loading-overlay" id="loader">
+  <div class="cricket-ball"></div>
+  <div class="loading-text">Running AI prediction...</div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script src="js/api.js"></script>
+<script src="js/state.js"></script>
+<script>
+/* ── Floating Particles ── */
+(function() {
+  const canvas = document.getElementById('particlesCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let w, h, particles = [];
+  function resize() { w = canvas.width = window.innerWidth; h = canvas.height = window.innerHeight; }
+  resize();
+  window.addEventListener('resize', resize);
+  for (let i = 0; i < 50; i++) {
+    particles.push({ x: Math.random()*w, y: Math.random()*h, vx:(Math.random()-0.5)*0.3, vy:(Math.random()-0.5)*0.3, r:Math.random()*1.5+0.5, a:Math.random()*0.35+0.08 });
+  }
+  function draw() {
+    ctx.clearRect(0,0,w,h);
+    particles.forEach(p => {
+      p.x+=p.vx; p.y+=p.vy;
+      if(p.x<0)p.x=w; if(p.x>w)p.x=0; if(p.y<0)p.y=h; if(p.y>h)p.y=0;
+      ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(0,229,255,${p.a})`; ctx.fill();
+    });
+    for(let i=0;i<particles.length;i++) for(let j=i+1;j<particles.length;j++) {
+      const dx=particles[i].x-particles[j].x, dy=particles[i].y-particles[j].y, d=Math.sqrt(dx*dx+dy*dy);
+      if(d<120){ ctx.beginPath(); ctx.moveTo(particles[i].x,particles[i].y); ctx.lineTo(particles[j].x,particles[j].y); ctx.strokeStyle=`rgba(0,229,255,${0.05*(1-d/120)})`; ctx.lineWidth=0.5; ctx.stroke(); }
+    }
+    requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+/* ── App Logic ── */
+const state = loadState();
+
+// Redirect if incomplete
+if (!state.battingTeam || !state.bowlingTeam || !state.battingXI || !state.bowlingXI || !state.venueId) {
+  window.location.href = 'index.html';
+}
+
+// Simple direct display - no API calls
+function loadTeamData() {
+  const battingTeam = state.battingTeamData;
+  const bowlingTeam = state.bowlingTeamData;
+
+  if (battingTeam) {
+    document.getElementById('battingLogo').src = battingTeam.logo_url || `https://ui-avatars.com/api/?name=${encodeURIComponent(battingTeam.short_name||'BAT')}&background=ff6b35&color=fff&size=80`;
+    document.getElementById('battingName').textContent = battingTeam.team_name || 'Batting Team';
+  }
+
+  if (bowlingTeam) {
+    document.getElementById('bowlingLogo').src = bowlingTeam.logo_url || `https://ui-avatars.com/api/?name=${encodeURIComponent(bowlingTeam.short_name||'BWL')}&background=7c3aed&color=fff&size=80`;
+    document.getElementById('bowlingName').textContent = bowlingTeam.team_name || 'Bowling Team';
+  }
+}
+
+function loadPlayingXI() {
+  const battingPlayers = state.battingXIData || [];
+  const bowlingPlayers = state.bowlingXIData || [];
+
+  // Batting XI
+  const battingXIEl = document.getElementById('battingXI');
+  battingXIEl.innerHTML = '';
+  battingPlayers.forEach(player => {
+    const card = document.createElement('div');
+    card.className = 'player-card';
+    card.innerHTML = `
+      <img class="player-photo" src="${player.photo_url || `https://ui-avatars.com/api/?name=${encodeURIComponent(player.player_name)}&background=ff6b35&color=fff&size=28`}" alt="${player.player_name}">
+      <div class="player-info">
+        <div class="player-name">${player.player_name}</div>
+        <div class="player-role">${player.role || 'Player'}</div>
+      </div>
+    `;
+    battingXIEl.appendChild(card);
+  });
+
+  // Bowling XI
+  const bowlingXIEl = document.getElementById('bowlingXI');
+  bowlingXIEl.innerHTML = '';
+  bowlingPlayers.forEach(player => {
+    const card = document.createElement('div');
+    card.className = 'player-card';
+    card.innerHTML = `
+      <img class="player-photo" src="${player.photo_url || `https://ui-avatars.com/api/?name=${encodeURIComponent(player.player_name)}&background=7c3aed&color=fff&size=28`}" alt="${player.player_name}">
+      <div class="player-info">
+        <div class="player-name">${player.player_name}</div>
+        <div class="player-role">${player.role || 'Player'}</div>
+      </div>
+    `;
+    bowlingXIEl.appendChild(card);
+  });
+}
+
+function loadVenueData() {
+  const venue = state.venueData;
+  if (venue) {
+    document.getElementById('venueName').textContent = venue.venue_name;
+    document.getElementById('venueCity').textContent = venue.city;
+    document.getElementById('pitchType').textContent = venue.pitch_type + ' Pitch';
+    document.getElementById('avgScore').textContent = venue.avg_score + ' runs';
+  }
+}
+
+function loadWeatherData() {
+  document.getElementById('weatherInfo').innerHTML = `
+    <div class="weather-status weather-default">
+      <span>📝 Manual Input</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Temperature</span>
+      <input type="number" id="tempInput" value="28" min="15" max="45" style="width:80px;padding:4px;border-radius:4px;border:1px solid var(--border);background:var(--bg2);color:var(--text2);">
+      <span>°C</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Humidity</span>
+      <input type="number" id="humidInput" value="65" min="20" max="100" style="width:80px;padding:4px;border-radius:4px;border:1px solid var(--border);background:var(--bg2);color:var(--text2);">
+      <span>%</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Dew Factor</span>
+      <input type="number" id="dewInput" value="3" min="0" max="10" step="0.1" style="width:80px;padding:4px;border-radius:4px;border:1px solid var(--border);background:var(--bg2);color:var(--text2);">
+      <span>/10</span>
+    </div>
+  `;
+}
+
+async function predictScore() {
+  const temperature = parseFloat(document.getElementById('tempInput').value) || 28;
+  const humidity = parseFloat(document.getElementById('humidInput').value) || 65;
+  const dew_factor = parseFloat(document.getElementById('dewInput').value) || 3;
+  
+  const payload = {
+    batting_team_id: state.battingTeam,
+    bowling_team_id: state.bowlingTeam,
+    batting_xi: state.battingXI,
+    bowling_xi: state.bowlingXI,
+    venue_id: state.venueId,
+    pitch_type: state.pitchType || 'Balanced',
+    temperature: temperature,
+    humidity: humidity,
+    dew_factor: dew_factor,
+    season: 2026,
+  };
+  
+  document.getElementById('loader').classList.add('active');
+  
+  try {
+    const result = await fetch('http://localhost:8001/api/predict', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    }).then(r => r.json());
+    
+    if (result.error) {
+      showToast(result.error.join(', '), 'error');
+      document.getElementById('loader').classList.remove('active');
+      return;
+    }
+    
+    saveState({ ...state, prediction: result });
+    window.location.href = 'result.html';
+  } catch (error) {
+    console.error('Prediction error:', error);
+    showToast('Prediction failed. Check if backend is running.', 'error');
+    document.getElementById('loader').classList.remove('active');
+  }
+}
+
+// Initialize - simple and direct
+loadTeamData();
+loadPlayingXI();
+loadVenueData();
+loadWeatherData();
+</script>
+</body>
+</html>
